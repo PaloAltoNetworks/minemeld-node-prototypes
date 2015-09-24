@@ -1,0 +1,108 @@
+author: lmori
+url: https://www.openbl.org/
+description: >
+    The OpenBL.org project (formerly known as the SSH blacklist) is about
+    detecting, logging and reporting various types of internet abuse. Currently
+    our hosts monitor ports 21 (FTP), 22 (SSH), 23 (TELNET), 25 (SMTP),
+    110 (POP3), 143 (IMAP), 587 (Submission), 993 (IMAPS) and 995 (POP3S)
+    for bruteforce login attacks as well as scans on ports 80 (HTTP) and
+    443 (HTTPS) for vulnerable installations of phpMyAdmin and other
+    web applications.
+
+prototypes:
+    base:
+        description: The suggested DEFAULT list
+        config:
+            source_name: http://www.openbl.org/lists/base.txt
+            attributes:
+                type: IPv4
+                direction: inbound
+                confidence: 50
+                share_level: green
+            cchar: "#"
+            url: http://www.openbl.org/lists/base.txt
+        class: minemeld.ft.http.HttpFT
+    base_1days:
+        description: IP list for last 1 days
+        config:
+            source_name: https://www.openbl.org/lists/base_1days.txt
+            attributes:
+                type: IPv4
+                direction: inbound
+                confidence: 50
+                share_level: green
+            cchar: "#"
+            url: https://www.openbl.org/lists/base_1days.txt
+        class: minemeld.ft.http.HttpFT
+    base_7days:
+        description: IP list for last 7 days
+        config:
+            source_name: https://www.openbl.org/lists/base_7days.txt
+            attributes:
+                type: IPv4
+                direction: inbound
+                confidence: 50
+                share_level: green
+            cchar: "#"
+            url: https://www.openbl.org/lists/base_7days.txt
+        class: minemeld.ft.http.HttpFT
+    base_30days:
+        description: IP list for last 30 days
+        config:
+            source_name: https://www.openbl.org/lists/base_30days.txt
+            attributes:
+                type: IPv4
+                direction: inbound
+                confidence: 50
+                share_level: green
+            cchar: "#"
+            url: https://www.openbl.org/lists/base_30days.txt
+        class: minemeld.ft.http.HttpFT
+    base_60days:
+        description: IP list for last 60 days
+        config:
+            source_name: https://www.openbl.org/lists/base_60days.txt
+            attributes:
+                type: IPv4
+                direction: inbound
+                confidence: 50
+                share_level: green
+            cchar: "#"
+            url: https://www.openbl.org/lists/base_60days.txt
+        class: minemeld.ft.http.HttpFT
+    base_90days:
+        description: IP list for last 90 days
+        config:
+            source_name: https://www.openbl.org/lists/base_90days.txt
+            attributes:
+                type: IPv4
+                direction: inbound
+                confidence: 50
+                share_level: green
+            cchar: "#"
+            url: https://www.openbl.org/lists/base_90days.txt
+        class: minemeld.ft.http.HttpFT
+    base_180days:
+        description: IP list for last 180 days
+        config:
+            source_name: https://www.openbl.org/lists/base_180days.txt
+            attributes:
+                type: IPv4
+                direction: inbound
+                confidence: 50
+                share_level: green
+            cchar: "#"
+            url: https://www.openbl.org/lists/base_180days.txt
+        class: minemeld.ft.http.HttpFT
+    base_360days:
+        description: IP list for last 360 days
+        config:
+            source_name: https://www.openbl.org/lists/base_360days.txt
+            attributes:
+                type: IPv4
+                direction: inbound
+                confidence: 50
+                share_level: green
+            cchar: "#"
+            url: https://www.openbl.org/lists/base_360days.txt
+        class: minemeld.ft.http.HttpFT

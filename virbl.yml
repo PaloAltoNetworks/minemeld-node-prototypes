@@ -1,0 +1,20 @@
+author: lmori
+url: http://virbl.org/
+description: >
+    Virbl is a project of which the idea was born during the RIPE-48 meeting.
+    The plan was to get reports of virusscanning mailservers, and put the
+    IP-addresses that were reported to send viruses on a blacklist.
+
+prototypes:
+    bl:
+        class: minemeld.ft.http.HttpFT
+        config:
+            source_name: http://virbl.org/download/virbl.dnsbl.bit.nl.txt
+            attributes:
+                application: smtp
+                direction: inbound
+                type: IPv4
+                confidence: 80
+                share_level: green
+            cchar: E
+            url: http://virbl.org/download/virbl.dnsbl.bit.nl.txt
