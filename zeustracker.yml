@@ -1,0 +1,28 @@
+author: lmori
+url: https://zeustracker.abuse.ch/
+description: "ZeuS Tracker tracks ZeuS Command&Control servers (hosts) around the world and provides you a domain- and a IP-blocklist"
+
+prototypes:
+    baddomains:
+        config:
+          source_name: https://zeustracker.abuse.ch/blocklist.php?download=baddomains
+          attributes:
+            type: domain
+            confidence: 100
+            share_level: green
+          cchar: "#"
+          url: https://zeustracker.abuse.ch/blocklist.php?download=baddomains
+          interval: 1800
+        class: minemeld.ft.http.HttpFT
+    badips:
+        config:
+          source_name: https://zeustracker.abuse.ch/blocklist.php?download=badips
+          attributes:
+            type: IPv4
+            direction: outbound
+            confidence: 100
+            share_level: green
+          cchar: "#"
+          url: https://zeustracker.abuse.ch/blocklist.php?download=badips
+          interval: 1800
+        class: minemeld.ft.http.HttpFT
