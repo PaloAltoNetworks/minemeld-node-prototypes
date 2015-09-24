@@ -1,6 +1,8 @@
 author: lmori
 url: https://zeustracker.abuse.ch/
-description: "ZeuS Tracker tracks ZeuS Command&Control servers (hosts) around the world and provides you a domain- and a IP-blocklist"
+description: >
+    ZeuS Tracker tracks ZeuS Command&Control servers (hosts) around the world and
+    provides you a domain- and a IP-blocklist
 
 prototypes:
     baddomains:
