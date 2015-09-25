@@ -1,0 +1,31 @@
+author: lmori
+url: http://danger.rulez.sk/index.php/bruteforceblocker/
+description: >
+    BruteForceBlocker is a perl script, that works along with
+    pf – firewall developed by OpenBSD team (Which is also
+    available on FreeBSD since version 5.2 is out). Since the
+    version of BruteForceBlocker 1.2 it is also possible to report
+    blocked IPs to the project site and share your information with
+    other users.
+
+prototype:
+    blist:
+        class: minemeld.ft.http.HttpFT
+        config:
+            url: http://danger.rulez.sk/projects/bruteforceblocker/blist.php
+            source_name: http://danger.rulez.sk/projects/bruteforceblocker/blist.php
+            indicator:
+                regex: '^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'
+            ignore_regex: '^#.*'
+            attributes:
+                type: IPv4
+                direction: inbound
+                share_level: green
+                confidence: 50
+            fields:
+                bruteforceblocker_count:
+                    regex:  '^[0-9\.]+\s+[^\t]+\s+([0-9]+)'
+                    transform: '\1'
+                bruteforceblocker_last_reported:
+                    regex: '^[0-9\.]+\s+#\s+([^\t]+)'
+                    transform: '\1'

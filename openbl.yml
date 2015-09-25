@@ -19,7 +19,7 @@ prototypes:
                 direction: inbound
                 confidence: 50
                 share_level: green
-            cchar: "#"
+            ignore_regex: '^#.*'
             url: http://www.openbl.org/lists/base.txt
         class: minemeld.ft.http.HttpFT
     base_1days:
@@ -31,7 +31,7 @@ prototypes:
                 direction: inbound
                 confidence: 50
                 share_level: green
-            cchar: "#"
+            ignore_regex: '^#.*'
             url: https://www.openbl.org/lists/base_1days.txt
         class: minemeld.ft.http.HttpFT
     base_7days:
@@ -43,7 +43,7 @@ prototypes:
                 direction: inbound
                 confidence: 50
                 share_level: green
-            cchar: "#"
+            ignore_regex: '^#.*'
             url: https://www.openbl.org/lists/base_7days.txt
         class: minemeld.ft.http.HttpFT
     base_30days:
@@ -55,7 +55,7 @@ prototypes:
                 direction: inbound
                 confidence: 50
                 share_level: green
-            cchar: "#"
+            ignore_regex: '^#.*'
             url: https://www.openbl.org/lists/base_30days.txt
         class: minemeld.ft.http.HttpFT
     base_60days:
@@ -67,7 +67,7 @@ prototypes:
                 direction: inbound
                 confidence: 50
                 share_level: green
-            cchar: "#"
+            ignore_regex: '^#.*'
             url: https://www.openbl.org/lists/base_60days.txt
         class: minemeld.ft.http.HttpFT
     base_90days:
@@ -79,7 +79,7 @@ prototypes:
                 direction: inbound
                 confidence: 50
                 share_level: green
-            cchar: "#"
+            ignore_regex: '^#.*'
             url: https://www.openbl.org/lists/base_90days.txt
         class: minemeld.ft.http.HttpFT
     base_180days:
@@ -91,7 +91,7 @@ prototypes:
                 direction: inbound
                 confidence: 50
                 share_level: green
-            cchar: "#"
+            ignore_regex: '^#.*'
             url: https://www.openbl.org/lists/base_180days.txt
         class: minemeld.ft.http.HttpFT
     base_360days:
@@ -103,6 +103,6 @@ prototypes:
                 direction: inbound
                 confidence: 50
                 share_level: green
-            cchar: "#"
+            ignore_regex: '^#.*'
             url: https://www.openbl.org/lists/base_360days.txt
         class: minemeld.ft.http.HttpFT

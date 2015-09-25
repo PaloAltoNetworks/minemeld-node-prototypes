@@ -16,5 +16,5 @@ prototypes:
                 type: IPv4
                 confidence: 80
                 share_level: green
-            cchar: E
+            ignore_regex: '^Export'
             url: http://virbl.org/download/virbl.dnsbl.bit.nl.txt

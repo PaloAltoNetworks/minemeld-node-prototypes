@@ -1,0 +1,38 @@
+author: lmori
+url: https://www.dshield.org/xml.html
+description: >
+    The ISC uses the DShield distributed intrusion detection system for
+    data collection and analysis. DShield collects data about malicious
+    activity from across the Internet. This data is cataloged and summarized
+    and can be used to discover trends in activity, confirm widespread
+    attacks, or assist in preparing better firewall rules.
+
+prototypes:
+    block:
+        class: minemeld.ft.http.HttpFT
+        config:
+            source_name: https://www.dshield.org/block.txt
+            interval: 600
+            url: https://www.dshield.org/block.txt
+            ignore_regex: "[#S].*"
+            indicator:
+                regex: '^([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})\t([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})'
+                transform: '\1-\2'
+            attributes:
+                type: IPv4
+                confidence: 100
+                share_level: green
+                direction: inbound
+            fields:
+                dshield_nattacks:
+                    regex: '^.*\t.*\t[0-9]+\t([0-9]+)'
+                    transform: '\1'
+                dshield_name:
+                    regex: '^.*\t.*\t[0-9]+\t[0-9]+\t([^\t]+)'
+                    transform: '\1'
+                dshield_country:
+                    regex: '^.*\t.*\t[0-9]+\t[0-9]+\t[^\t]+\t([A-Z]+)'
+                    transform: '\1'
+                dshield_email:
+                    regex: '^.*\t.*\t[0-9]+\t[0-9]+\t[^\t]+\t[A-Z]+\t(\S+)'
+                    transform: '\1'

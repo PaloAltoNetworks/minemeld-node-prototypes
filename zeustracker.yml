@@ -12,7 +12,7 @@ prototypes:
             type: domain
             confidence: 100
             share_level: green
-          cchar: "#"
+          ignore_regex: '^#'
           url: https://zeustracker.abuse.ch/blocklist.php?download=baddomains
           interval: 1800
         class: minemeld.ft.http.HttpFT
@@ -24,7 +24,7 @@ prototypes:
             direction: outbound
             confidence: 100
             share_level: green
-          cchar: "#"
+          ignore_regex: '#'
           url: https://zeustracker.abuse.ch/blocklist.php?download=badips
           interval: 1800
         class: minemeld.ft.http.HttpFT

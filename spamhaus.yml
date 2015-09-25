@@ -18,8 +18,9 @@ prototypes:
                 direction: inbound
                 confidence: 100
                 share_level: green
-            cchar: ;
-            split_char: ;
+            ignore_regex: '^;.*'
+            indicator:
+                regex: '^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}/[0-9]{1,2}'
             url: http://www.spamhaus.org/drop/drop.txt
         class: minemeld.ft.http.HttpFT
     EDROP:
@@ -31,7 +32,8 @@ prototypes:
                 direction: inbound
                 confidence: 100
                 share_level: green
-            cchar: ;
-            split_char: ;
+            ignore_regex: '^;.*'
+            indicator:
+                regex: '^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}/[0-9]{1,2}'
             url: http://www.spamhaus.org/drop/edrop.txt
         class: minemeld.ft.http.HttpFT
