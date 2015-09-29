@@ -1,0 +1,25 @@
+author: lmori
+description: >
+    AlienVault Reputation Monitor Alert is a free service that alerts you
+    whenever your public IPs and domains appear in the AlienVault Open Threat
+    Exchange (OTX).
+url: https://www.alienvault.com/open-threat-exchange/reputation-monitor
+
+prototypes:
+    reputation:
+        description: this just catches everything
+        class: minemeld.ft.csv.CSVFT
+        config:
+            url: http://reputation.alienvault.com/reputation.data
+            fieldnames:
+                - indicator
+                - alienvault_reliability
+                - alienvault_risk
+                - alienvault_type
+            delimiter: '#'
+            attributes:
+                type: IPv4
+                confidence: 80
+                share_level: green
+            source_name: http://reputation.alienvault.com/reputation.data
+            interval: 3600
