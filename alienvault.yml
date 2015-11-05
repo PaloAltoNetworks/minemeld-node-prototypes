@@ -21,5 +21,5 @@ prototypes:
                 type: IPv4
                 confidence: 80
                 share_level: green
-            source_name: http://reputation.alienvault.com/reputation.data
+            source_name: alientvault.reputation
             interval: 3600

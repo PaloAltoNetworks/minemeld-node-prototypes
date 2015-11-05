@@ -11,7 +11,7 @@ prototypes:
     block:
         class: minemeld.ft.http.HttpFT
         config:
-            source_name: https://www.dshield.org/block.txt
+            source_name: dshield.block
             interval: 619
             url: https://www.dshield.org/block.txt
             age_out:

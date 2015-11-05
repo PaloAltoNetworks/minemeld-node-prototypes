@@ -7,7 +7,7 @@ description: >
 prototypes:
     baddomains:
         config:
-          source_name: https://zeustracker.abuse.ch/blocklist.php?download=baddomains
+          source_name: zeustracker.baddomains
           attributes:
             type: domain
             confidence: 100
@@ -18,7 +18,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     badips:
         config:
-          source_name: https://zeustracker.abuse.ch/blocklist.php?download=badips
+          source_name: zeustracker.badips
           attributes:
             type: IPv4
             direction: outbound

@@ -18,7 +18,7 @@ prototypes:
                 type: IPv4
                 confidence: 80
                 share_level: green
-            source_name: https://sslbl.abuse.ch/blacklist/sslipblacklist.csv
+            source_name: sslblabusech.ipblacklist
     dyreblacklist:
         class: minemeld.ft.csv.CSVFT
         config:
@@ -32,4 +32,4 @@ prototypes:
                 type: IPv4
                 confidence: 80
                 share_level: green
-            source_name: https://sslbl.abuse.ch/blacklist/dyre_sslipblacklist.csv
+            source_name: sslblabusech.dyreblacklist
