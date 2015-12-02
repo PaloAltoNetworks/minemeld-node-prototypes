@@ -9,7 +9,7 @@ prototypes:
     bl:
         class: minemeld.ft.http.HttpFT
         config:
-            source_name: http://virbl.org/download/virbl.dnsbl.bit.nl.txt
+            source_name: virbl.bl
             attributes:
                 application: smtp
                 direction: inbound

@@ -13,7 +13,7 @@ prototypes:
     base:
         description: The suggested DEFAULT list
         config:
-            source_name: http://www.openbl.org/lists/base.txt
+            source_name: openbl.base
             attributes:
                 type: IPv4
                 direction: inbound
@@ -25,7 +25,7 @@ prototypes:
     base_1days:
         description: IP list for last 1 days
         config:
-            source_name: https://www.openbl.org/lists/base_1days.txt
+            source_name: openbl.base_1days
             attributes:
                 type: IPv4
                 direction: inbound
@@ -37,7 +37,7 @@ prototypes:
     base_7days:
         description: IP list for last 7 days
         config:
-            source_name: https://www.openbl.org/lists/base_7days.txt
+            source_name: openbl.base_7days
             attributes:
                 type: IPv4
                 direction: inbound
@@ -49,7 +49,7 @@ prototypes:
     base_30days:
         description: IP list for last 30 days
         config:
-            source_name: https://www.openbl.org/lists/base_30days.txt
+            source_name: openbl.base_30days
             attributes:
                 type: IPv4
                 direction: inbound
@@ -61,7 +61,7 @@ prototypes:
     base_60days:
         description: IP list for last 60 days
         config:
-            source_name: https://www.openbl.org/lists/base_60days.txt
+            source_name: openbl.base_60days
             attributes:
                 type: IPv4
                 direction: inbound
@@ -71,7 +71,7 @@ prototypes:
             url: https://www.openbl.org/lists/base_60days.txt
         class: minemeld.ft.http.HttpFT
     base_90days:
-        description: IP list for last 90 days
+        description: openbl.base_90days
         config:
             source_name: https://www.openbl.org/lists/base_90days.txt
             attributes:
@@ -85,7 +85,7 @@ prototypes:
     base_180days:
         description: IP list for last 180 days
         config:
-            source_name: https://www.openbl.org/lists/base_180days.txt
+            source_name: openbl.base_180days
             attributes:
                 type: IPv4
                 direction: inbound
@@ -97,7 +97,7 @@ prototypes:
     base_360days:
         description: IP list for last 360 days
         config:
-            source_name: https://www.openbl.org/lists/base_360days.txt
+            source_name: openbl.base_360days
             attributes:
                 type: IPv4
                 direction: inbound

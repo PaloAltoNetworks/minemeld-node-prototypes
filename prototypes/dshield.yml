@@ -9,11 +9,16 @@ description: >
 
 prototypes:
     block:
+        description: suggested block list
         class: minemeld.ft.http.HttpFT
         config:
-            source_name: https://www.dshield.org/block.txt
-            interval: 600
+            source_name: dshield.block
+            interval: 619
             url: https://www.dshield.org/block.txt
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
             ignore_regex: "[#S].*"
             indicator:
                 regex: '^([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})\t([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})'

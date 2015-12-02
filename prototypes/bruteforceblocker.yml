@@ -8,12 +8,12 @@ description: >
     blocked IPs to the project site and share your information with
     other users.
 
-prototype:
+prototypes:
     blist:
         class: minemeld.ft.http.HttpFT
         config:
             url: http://danger.rulez.sk/projects/bruteforceblocker/blist.php
-            source_name: http://danger.rulez.sk/projects/bruteforceblocker/blist.php
+            source_name: bruteforceblocker.blist
             indicator:
                 regex: '^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'
             ignore_regex: '^#.*'

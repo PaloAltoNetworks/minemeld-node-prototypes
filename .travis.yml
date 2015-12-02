@@ -1,0 +1,17 @@
+script:
+    - if [ -n "$TRAVIS_TAG" ]; then export BUILD_VERSION="$TRAVIS_TAG"; fi
+    - if [ -z "$TRAVIS_TAG" ]; then export BUILD_VERSION="$TRAVIS_BUILD_NUMBER"; fi
+    - mkdir $BUILD_VERSION
+    - mkdir dist
+    - cp prototypes/* $BUILD_VERSION
+    - tar -cvzf dist/minemeld-prototypes-$BUILD_VERSION.tar.gz $BUILD_VERSION
+
+deploy:
+  provider: s3
+  access_key_id: "$S3_ACCESS_KEY"
+  secret_access_key: "$S3_SECRET_ACCESS_KEY"
+  bucket: "minemeld"
+  skip_cleanup: true
+  local_dir: dist
+  on:
+    tags: true

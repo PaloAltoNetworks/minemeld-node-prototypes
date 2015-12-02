@@ -12,7 +12,7 @@ prototypes:
     DROP:
         description: Spamhaus Don't Route Or Peer List (DROP)
         config:
-            source_name: http://www.spamhaus.org/drop/drop.txt
+            source_name: spamhaus.DROP
             attributes:
                 type: IPv4
                 direction: inbound
@@ -26,7 +26,7 @@ prototypes:
     EDROP:
         description: Spamhaus Extended DROP List (EDROP)
         config:
-            source_name: http://www.spamhaus.org/drop/edrop.txt
+            source_name: spamhaus.EDROP
             attributes:
                 type: IPv4
                 direction: inbound
