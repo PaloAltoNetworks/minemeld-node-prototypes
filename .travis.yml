@@ -1,0 +1,6 @@
+script:
+    - if [ -n "$TRAVIS_TAG" ]; then export BUILD_VERSION="$TRAVIS_TAG"; fi
+    - if [ -z "$TRAVIS_TAG" ]; then export BUILD_VERSION="$TRAVIS_BUILD_NUMBER"; fi
+    - mkdir $BUILD_VERSION
+    - cp prototypes/* $BUILD_VERSION
+    - tar -cvzf minemeld-prototypes-$BUILD_VERSION.tar.gz $BUILD_VERSION
