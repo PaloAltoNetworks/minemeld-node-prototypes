@@ -9,6 +9,7 @@ description: >
 
 prototypes:
     block:
+        description: suggested block list
         class: minemeld.ft.http.HttpFT
         config:
             source_name: dshield.block
