@@ -13,5 +13,6 @@ deploy:
   bucket: "minemeld"
   skip_cleanup: true
   local_dir: dist
+  acl: public_read
   on:
     tags: true
