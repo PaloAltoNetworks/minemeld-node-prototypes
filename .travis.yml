@@ -1,3 +1,5 @@
+language: C
+
 install: true
 
 script:
@@ -22,4 +24,4 @@ deploy:
 after_deploy:
     - "export MD5SUM=$(md5sum dist/minemeld-prototypes-$BUILD_VERSION.tar.gz | awk '{ print $1 }')"
     - "export SHA256SUM=$(sha256sum dist/minemeld-prototypes-$BUILD_VERSION.tar.gz | awk '{ print $1 }')"
-    - "curl -i \"https://$MINEMELD_AUTOUPDATE_API_HOST/beta/package?file=minemeld-prototypes-$BUILD_VERSION.tar.gz&version=$BUILD_VERSION&md5=$MD5SUM&sha256=$SHA256SUM&package=minemeld-prototypes" -H \"x-api-key: $MINEMELD_AUTOUPDATE_API_KEY\""
+    - 'curl -i "https://$MINEMELD_AUTOUPDATE_API_HOST/beta/package?file=minemeld-prototypes-$BUILD_VERSION.tar.gz&version=$BUILD_VERSION&md5=$MD5SUM&sha256=$SHA256SUM&package=minemeld-prototypes" -H "x-api-key: $MINEMELD_AUTOUPDATE_API_KEY"'
