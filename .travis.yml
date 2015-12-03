@@ -1,4 +1,6 @@
-install:
+addons:
+  apt:
+    packages:
     - curl
 
 script:
