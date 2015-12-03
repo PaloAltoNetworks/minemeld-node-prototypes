@@ -1,7 +1,4 @@
-addons:
-  apt:
-    packages:
-    - curl
+install: true
 
 script:
     - if [ -n "$TRAVIS_TAG" ]; then export BUILD_VERSION="$TRAVIS_TAG"; fi
@@ -10,6 +7,7 @@ script:
     - mkdir dist
     - cp prototypes/* $BUILD_VERSION
     - tar -cvzf dist/minemeld-prototypes-$BUILD_VERSION.tar.gz $BUILD_VERSION
+    - curl http://www.google.com
 
 deploy:
   provider: s3
