@@ -1,5 +1,4 @@
-install:
-    - curl
+install: true
 
 script:
     - if [ -n "$TRAVIS_TAG" ]; then export BUILD_VERSION="$TRAVIS_TAG"; fi
