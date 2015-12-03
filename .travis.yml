@@ -7,7 +7,6 @@ script:
     - mkdir dist
     - cp prototypes/* $BUILD_VERSION
     - tar -cvzf dist/minemeld-prototypes-$BUILD_VERSION.tar.gz $BUILD_VERSION
-    - curl http://www.google.com
 
 deploy:
   provider: s3
