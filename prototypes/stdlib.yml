@@ -1,0 +1,139 @@
+author: lmori
+description: Library of prototypes for commonly used nodes
+
+prototypes:
+    aggergatorIPv4Generic:
+        description: Generic Aggregator for IPv4 indicators
+        class: AggregatorIPv4
+        config:
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept IPv4
+                  conditions:
+                    - type == 'IPv4'
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+
+    aggregatorIPv4Inbound:
+        description: Aggregator for inbound IPv4 indicators
+        class: AggregatorIPv4
+        config:
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept inbound IPv4
+                  conditions:
+                    - type == 'IPv4'
+                    - direction == 'inbound'
+                  actions:
+                    - accept
+                - name: accept generic IPv4
+                    - type == 'IPv4'
+                    - direction == null
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+
+    aggregatorIPv4Outbound:
+        description: Aggregator for outbound IPv4 indicators
+        class: AggregatorIPv4
+        config:
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept inbound IPv4
+                  conditions:
+                    - type == 'IPv4'
+                    - direction == 'outbound'
+                  actions:
+                    - accept
+                - name: accept generic IPv4
+                    - type == 'IPv4'
+                    - direction == null
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+    feedLCGreen:
+        description: >
+            EBL for low confidence indicators (<50) and share level green
+        class: RedisSet
+        config:
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept confidence < 50 and share level green
+                  conditions:
+                    - confidence < 50
+                    - share_level == 'green'
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+
+    feedMCGreen:
+        description: >
+            EBL for medium confidence indicators (>=50,<75) and share level green
+        class: RedisSet
+        config:
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept confidence < 50 and share level green
+                  conditions:
+                    - confidence >= 50
+                    - confidence < 75
+                    - share_level == 'green'
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+
+    feedHCGreen:
+        description: >
+            EBL for high confidence indicators (>75) and share level green
+        class: RedisSet
+        config:
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept confidence > 75 and share level green
+                  conditions:
+                    - confidence > 75
+                    - share_level == 'green'
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+    localSyslog:
+        description: >
+            Syslog node connection to the local syslog server to receive PAN-OS logs
+        class: minemeld.ft.syslog.SyslogMatcher
