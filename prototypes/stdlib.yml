@@ -70,6 +70,7 @@ prototypes:
                 - name: drop all
                   actions:
                     - drop
+
     feedLCGreen:
         description: >
             EBL for low confidence indicators (<50) and share level green
@@ -115,7 +116,7 @@ prototypes:
 
     feedHCGreen:
         description: >
-            EBL for high confidence indicators (>75) and share level green
+            EBL for high confidence indicators (>75) and share level green, with value
         class: RedisSet
         config:
             infilters:
@@ -133,6 +134,74 @@ prototypes:
                 - name: drop all
                   actions:
                     - drop
+
+    feedLCGreenWithValue:
+        description: >
+            EBL for low confidence indicators (<50) and share level green, with value
+        class: RedisSet
+        config:
+            store_value: true
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept confidence < 50 and share level green
+                  conditions:
+                    - confidence < 50
+                    - share_level == 'green'
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+
+    feedMCGreenWithValue:
+        description: >
+            EBL for medium confidence indicators (>=50,<75) and share level green, with value
+        class: RedisSet
+        config:
+            store_value: true
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept confidence < 50 and share level green
+                  conditions:
+                    - confidence >= 50
+                    - confidence < 75
+                    - share_level == 'green'
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+
+    feedHCGreenWithValue:
+        description: >
+            EBL for high confidence indicators (>75) and share level green, with value
+        class: RedisSet
+        config:
+            store_value: true
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept confidence > 75 and share level green
+                  conditions:
+                    - confidence > 75
+                    - share_level == 'green'
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+
     localSyslog:
         description: >
             Syslog node connection to the local syslog server to receive PAN-OS logs
