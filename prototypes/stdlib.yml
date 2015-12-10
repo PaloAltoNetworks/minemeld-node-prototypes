@@ -2,7 +2,7 @@ author: lmori
 description: Library of prototypes for commonly used nodes
 
 prototypes:
-    aggergatorIPv4Generic:
+    aggregatorIPv4Generic:
         description: Generic Aggregator for IPv4 indicators
         class: AggregatorIPv4
         config:
