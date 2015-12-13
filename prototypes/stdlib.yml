@@ -206,3 +206,17 @@ prototypes:
         description: >
             Syslog node connection to the local syslog server to receive PAN-OS logs
         class: minemeld.ft.syslog.SyslogMatcher
+
+    localLogStash:
+        description: >
+            Logstash node to send indicators message to a local logstash instance
+        class: minemeld.ft.logstash.LogstashOutput
+        config:
+            logstash_host: 127.0.0.1
+            logstash_port: 5514
+
+    dagPusher:
+        description: >
+            Push IP unicast indicators to PAN-OS devices via DAG, typically connected
+            to a syslog node
+        class: minemeld.ft.dag.DagPusher
