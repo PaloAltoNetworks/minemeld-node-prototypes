@@ -3,8 +3,9 @@ description: Library of prototypes for commonly used nodes
 
 prototypes:
     aggregatorIPv4Generic:
+        development_status: STABLE
         description: Generic Aggregator for IPv4 indicators
-        class: AggregatorIPv4
+        class: minemeld.ft.ipop.AggregateIPv4FT
         config:
             infilters:
                 - name: accept withdraws
@@ -22,8 +23,9 @@ prototypes:
                     - drop
 
     aggregatorIPv4Inbound:
+        development_status: STABLE
         description: Aggregator for inbound IPv4 indicators
-        class: AggregatorIPv4
+        class: minemeld.ft.ipop.AggregateIPv4FT
         config:
             infilters:
                 - name: accept withdraws
@@ -47,8 +49,9 @@ prototypes:
                     - drop
 
     aggregatorIPv4Outbound:
+        development_status: STABLE
         description: Aggregator for outbound IPv4 indicators
-        class: AggregatorIPv4
+        class: minemeld.ft.ipop.AggregateIPv4FT
         config:
             infilters:
                 - name: accept withdraws
@@ -72,9 +75,10 @@ prototypes:
                     - drop
 
     feedLCGreen:
+        development_status: STABLE
         description: >
             EBL for low confidence indicators (<50) and share level green
-        class: RedisSet
+        class: minemeld.ft.redis.RedisSet
         config:
             infilters:
                 - name: accept withdraws
@@ -93,9 +97,10 @@ prototypes:
                     - drop
 
     feedMCGreen:
+        development_status: STABLE
         description: >
             EBL for medium confidence indicators (>=50,<75) and share level green
-        class: RedisSet
+        class: minemeld.ft.redis.RedisSet
         config:
             infilters:
                 - name: accept withdraws
@@ -115,9 +120,10 @@ prototypes:
                     - drop
 
     feedHCGreen:
+        development_status: STABLE
         description: >
             EBL for high confidence indicators (>75) and share level green, with value
-        class: RedisSet
+        class: minemeld.ft.redis.RedisSet
         config:
             infilters:
                 - name: accept withdraws
@@ -136,9 +142,10 @@ prototypes:
                     - drop
 
     feedLCGreenWithValue:
+        development_status: STABLE
         description: >
             EBL for low confidence indicators (<50) and share level green, with value
-        class: RedisSet
+        class: minemeld.ft.redis.RedisSet
         config:
             store_value: true
             infilters:
@@ -158,9 +165,10 @@ prototypes:
                     - drop
 
     feedMCGreenWithValue:
+        development_status: STABLE
         description: >
             EBL for medium confidence indicators (>=50,<75) and share level green, with value
-        class: RedisSet
+        class: minemeld.ft.redis.RedisSet
         config:
             store_value: true
             infilters:
@@ -181,9 +189,10 @@ prototypes:
                     - drop
 
     feedHCGreenWithValue:
+        development_status: STABLE
         description: >
             EBL for high confidence indicators (>75) and share level green, with value
-        class: RedisSet
+        class: minemeld.ft.redis.RedisSet
         config:
             store_value: true
             infilters:
@@ -203,19 +212,23 @@ prototypes:
                     - drop
 
     localSyslog:
+        development_status: STABLE
         description: >
             Syslog node connection to the local syslog server to receive PAN-OS logs
         class: minemeld.ft.syslog.SyslogMatcher
 
     localLogStash:
+        development_status: STABLE
         description: >
-            Logstash node to send indicators message to a local logstash instance
+            Logstash node to send indicators message to a local logstash instance on
+            port 5514
         class: minemeld.ft.logstash.LogstashOutput
         config:
             logstash_host: 127.0.0.1
             logstash_port: 5514
 
     dagPusher:
+        development_status: STABLE
         description: >
             Push IP unicast indicators to PAN-OS devices via DAG, typically connected
             to a syslog node
