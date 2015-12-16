@@ -10,6 +10,7 @@ description: >
 
 prototypes:
     DROP:
+        development_status: STABLE
         description: Spamhaus Don't Route Or Peer List (DROP)
         config:
             source_name: spamhaus.DROP
@@ -24,6 +25,7 @@ prototypes:
             url: http://www.spamhaus.org/drop/drop.txt
         class: minemeld.ft.http.HttpFT
     EDROP:
+        development_status: STABLE
         description: Spamhaus Extended DROP List (EDROP)
         config:
             source_name: spamhaus.EDROP

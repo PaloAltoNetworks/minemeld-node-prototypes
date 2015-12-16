@@ -6,6 +6,7 @@ description: >
 
 prototypes:
     baddomains:
+        development_status: STABLE
         config:
           source_name: zeustracker.baddomains
           attributes:
@@ -17,6 +18,7 @@ prototypes:
           interval: 1800
         class: minemeld.ft.http.HttpFT
     badips:
+        development_status: STABLE
         config:
           source_name: zeustracker.badips
           attributes:

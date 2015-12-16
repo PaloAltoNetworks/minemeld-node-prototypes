@@ -2,10 +2,12 @@ author: lmori
 description: >
     www.blocklist.de is a free and voluntary service provided by a
     Fraud/Abuse-specialist, whose servers are often attacked on
-    SSH-, Mail-Login-, FTP-, Webserver- and other services. 
+    SSH-, Mail-Login-, FTP-, Webserver- and other services.
+url: http://www.blocklist.de/en/index.html
 
 prototypes:
     all:
+        development_status: STABLE
         description: >
             All IP addresses that have attacked one of our
             customers/servers in the last 48 hours.
@@ -19,6 +21,7 @@ prototypes:
                 confidence: 50
         class: minemeld.ft.http.HttpFT
     ssh:
+        development_status: STABLE
         description: >
             All IP addresses which have been reported within the last
             48 hours as having run attacks on the service SSH
@@ -33,6 +36,7 @@ prototypes:
                 application: ssh
         class: minemeld.ft.http.HttpFT
     mail:
+        development_status: STABLE
         description: >
             All IP addresses which have been reported within the last
             48 hours as having run attacks on the service Mail, Postfix.
@@ -47,6 +51,7 @@ prototypes:
                 application: smtp
         class: minemeld.ft.http.HttpFT
     apache:
+        development_status: STABLE
         description: >
             All IP addresses which have been reported within the last
             48 hours as having run attacks on the service Apache,
@@ -61,6 +66,7 @@ prototypes:
                 confidence: 50
         class: minemeld.ft.http.HttpFT
     imap:
+        development_status: STABLE
         description: >
             All IP addresses which have been reported within the last
             48 hours for attacks on the Service imap, sasl, pop3..... 
@@ -75,6 +81,7 @@ prototypes:
                 application: imap
         class: minemeld.ft.http.HttpFT
     ftp:
+        development_status: STABLE
         description: >
             All IP addresses which have been reported within the
             last 48 hours for attacks on the Service FTP. 
@@ -89,6 +96,7 @@ prototypes:
                 application: ftp
         class: minemeld.ft.http.HttpFT
     sip:
+        development_status: STABLE
         description: >
             All IP addresses that tried to login in a SIP-, VOIP- or 
             Asterisk-Server and are inclueded in the IPs-List from
@@ -104,6 +112,7 @@ prototypes:
                 application: sip
         class: minemeld.ft.http.HttpFT
     bots:
+        development_status: STABLE
         description: >
             All IP addresses which have been reported within the
             last 48 hours as having run attacks attacks on the RFI-Attacks,
@@ -119,6 +128,7 @@ prototypes:
                 confidence: 50
         class: minemeld.ft.http.HttpFT
     strongips:
+        development_status: STABLE
         description: >
             All IPs which are older then 2 month and have more
             then 5.000 attacks. 
@@ -132,6 +142,7 @@ prototypes:
                 confidence: 50
         class: minemeld.ft.http.HttpFT
     ircbot:
+        development_status: STABLE
         description: ''
         config:
             source_name: blocklist_de.ircbot
@@ -143,6 +154,7 @@ prototypes:
                 confidence: 50
         class: minemeld.ft.http.HttpFT
     bruteforcelogin:
+        development_status: STABLE
         description: >
             All IPs which attacks Joomlas, Wordpress and other
             Web-Logins with Brute-Force Logins. 

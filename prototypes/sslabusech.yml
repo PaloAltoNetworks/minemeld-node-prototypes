@@ -6,6 +6,7 @@ description: >
 
 prototypes:
     ipblacklist:
+        development_status: STABLE
         class: minemeld.ft.csv.CSVFT
         config:
             url: https://sslbl.abuse.ch/blacklist/sslipblacklist.csv
@@ -20,6 +21,7 @@ prototypes:
                 share_level: green
             source_name: sslblabusech.ipblacklist
     dyreblacklist:
+        development_status: STABLE
         class: minemeld.ft.csv.CSVFT
         config:
             url: https://sslbl.abuse.ch/blacklist/dyre_sslipblacklist.csv
