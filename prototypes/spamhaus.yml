@@ -11,6 +11,7 @@ description: >
 prototypes:
     DROP:
         development_status: STABLE
+        node_type: miner
         description: Spamhaus Don't Route Or Peer List (DROP)
         config:
             source_name: spamhaus.DROP
@@ -26,6 +27,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     EDROP:
         development_status: STABLE
+        node_type: miner
         description: Spamhaus Extended DROP List (EDROP)
         config:
             source_name: spamhaus.EDROP

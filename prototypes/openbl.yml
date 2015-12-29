@@ -12,6 +12,7 @@ description: >
 prototypes:
     base:
         development_status: STABLE
+        node_type: miner
         description: The suggested DEFAULT list
         config:
             source_name: openbl.base
@@ -25,6 +26,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     base_1days:
         development_status: STABLE
+        node_type: miner
         description: IP list for last 1 days
         config:
             source_name: openbl.base_1days
@@ -38,6 +40,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     base_7days:
         development_status: STABLE
+        node_type: miner
         description: IP list for last 7 days
         config:
             source_name: openbl.base_7days
@@ -51,6 +54,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     base_30days:
         development_status: STABLE
+        node_type: miner
         description: IP list for last 30 days
         config:
             source_name: openbl.base_30days
@@ -64,6 +68,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     base_60days:
         development_status: STABLE
+        node_type: miner
         description: IP list for last 60 days
         config:
             source_name: openbl.base_60days
@@ -77,6 +82,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     base_90days:
         development_status: STABLE
+        node_type: miner
         description: openbl.base_90days
         config:
             source_name: https://www.openbl.org/lists/base_90days.txt
@@ -90,6 +96,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     base_180days:
         development_status: STABLE
+        node_type: miner
         description: IP list for last 180 days
         config:
             source_name: openbl.base_180days
@@ -103,6 +110,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     base_360days:
         development_status: STABLE
+        node_type: miner
         description: IP list for last 360 days
         config:
             source_name: openbl.base_360days

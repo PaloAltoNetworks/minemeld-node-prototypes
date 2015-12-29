@@ -9,6 +9,8 @@ description: >
 
 prototypes:
     O365:
+        development_status: EXPERIMENTAL
+        node_type: miner
         description: >
             The endpoints listed in this section are only to support the portal and identity
             portion of Office 365.
@@ -24,6 +26,8 @@ prototypes:
                 share_level: green
 
     exchangeOnline:
+        development_status: EXPERIMENTAL
+        node_type: miner
         description: >
             If you have licensed Exchange Online as a standalone or as part of a suite, you
             must be able to reach the following endpoints.
@@ -39,6 +43,8 @@ prototypes:
                 share_level: green
 
     skypeBusinessOnline:
+        development_status: EXPERIMENTAL
+        node_type: miner
         description: >
             If you have licensed Skype for Business Online as a standalone or as part of a
             suite, you must be able to reach the Office 365 portal and identity URLs as well
@@ -55,6 +61,8 @@ prototypes:
                 share_level: green
 
     sharepointOnline:
+        development_status: EXPERIMENTAL
+        node_type: miner
         description: >
             If you have licensed SharePoint Online as a standalone or as part of a suite,
             you must be able to reach the Office 365 portal and identity URLs as well as
@@ -71,6 +79,8 @@ prototypes:
                 share_level: green
 
     exchangeOnlineProtection:
+        development_status: EXPERIMENTAL
+        node_type: miner
         description: >
             If you have licensed Exchange Online Protection (EOP) as a standalone or as part
             of a suite, you must be able to reach the Office 365 portal and identity URLs as
@@ -87,6 +97,8 @@ prototypes:
                 share_level: green
 
     O365RemoteAnalyzers:
+        development_status: EXPERIMENTAL
+        node_type: miner
         description: >
             This list of IPv4 IP addresses is the current list required for the Office 365
             remote analyzer tools.
@@ -102,6 +114,8 @@ prototypes:
                 share_level: green
 
     yammer:
+        development_status: EXPERIMENTAL
+        node_type: miner
         description: >
             This list of URLs and IPv4 IP subnet is the current list required for Yammer.
         class: minemeld.ft.o365.O365XML
@@ -116,6 +130,8 @@ prototypes:
                 share_level: green
 
     O365ProPlus:
+        development_status: EXPERIMENTAL
+        node_type: miner
         description: >
             Here is the current list of endpoints PCs and Macs need to be able to access
             to use Office 365 ProPlus.
@@ -131,6 +147,8 @@ prototypes:
                 share_level: green
 
     officeOnline:
+        development_status: EXPERIMENTAL
+        node_type: miner
         description: >
             This list of IP addresses is the current list required for Office Web Apps.
         class: minemeld.ft.o365.O365XML
@@ -145,6 +163,8 @@ prototypes:
                 share_level: green
 
     officeiPad:
+        development_status: EXPERIMENTAL
+        node_type: miner
         description: >
             This is the current list of Office for iPad URLs.
         class: minemeld.ft.o365.O365XML
@@ -159,6 +179,8 @@ prototypes:
                 share_level: green
 
     officeMobile:
+        development_status: EXPERIMENTAL
+        node_type: miner
         description: >
             This is the current list of Office Mobile URLs.
         class: minemeld.ft.o365.O365XML
