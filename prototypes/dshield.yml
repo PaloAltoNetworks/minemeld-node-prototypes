@@ -10,6 +10,7 @@ description: >
 prototypes:
     block:
         development_status: STABLE
+        node_type: miner
         description: suggested block list
         class: minemeld.ft.http.HttpFT
         config:

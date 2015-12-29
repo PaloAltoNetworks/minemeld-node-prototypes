@@ -1,0 +1,195 @@
+author: lmori
+url: 'https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US'
+description: >
+    This reference article lists every endpoints used by Office 365.
+    If your organization restricts computers on your network from connecting to the Internet,
+    this article lists the endpoints (FQDNs, Ports, URLs, IPv4, and IPv6 address ranges) that
+    you should include in your outbound allow lists to ensure your computers can successfully
+    use Office 365.
+
+prototypes:
+    O365:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            The endpoints listed in this section are only to support the portal and identity
+            portion of Office 365.
+        class: minemeld.ft.o365.O365XML
+        config:
+            products:
+                - o365
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                share_level: green
+
+    exchangeOnline:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            If you have licensed Exchange Online as a standalone or as part of a suite, you
+            must be able to reach the following endpoints.
+        class: minemeld.ft.o365.O365XML
+        config:
+            products:
+                - EXO
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                share_level: green
+
+    skypeBusinessOnline:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            If you have licensed Skype for Business Online as a standalone or as part of a
+            suite, you must be able to reach the Office 365 portal and identity URLs as well
+            as the Skype for Business Online URLs or IP addresses.
+        class: minemeld.ft.o365.O365XML
+        config:
+            products:
+                - LYO
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                share_level: green
+
+    sharepointOnline:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            If you have licensed SharePoint Online as a standalone or as part of a suite,
+            you must be able to reach the Office 365 portal and identity URLs as well as
+            the SharePoint Online URLs or IP addresses.
+        class: minemeld.ft.o365.O365XML
+        config:
+            products:
+                - SPO
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                share_level: green
+
+    exchangeOnlineProtection:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            If you have licensed Exchange Online Protection (EOP) as a standalone or as part
+            of a suite, you must be able to reach the Office 365 portal and identity URLs as
+            well as the EOP IP addresses.
+        class: minemeld.ft.o365.O365XML
+        config:
+            products:
+                - EOP
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                share_level: green
+
+    O365RemoteAnalyzers:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            This list of IPv4 IP addresses is the current list required for the Office 365
+            remote analyzer tools.
+        class: minemeld.ft.o365.O365XML
+        config:
+            products:
+                - RCA
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                share_level: green
+
+    yammer:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            This list of URLs and IPv4 IP subnet is the current list required for Yammer.
+        class: minemeld.ft.o365.O365XML
+        config:
+            products:
+                - Yammer
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                share_level: green
+
+    O365ProPlus:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            Here is the current list of endpoints PCs and Macs need to be able to access
+            to use Office 365 ProPlus.
+        class: minemeld.ft.o365.O365XML
+        config:
+            products:
+                - ProPlus
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                share_level: green
+
+    officeOnline:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            This list of IP addresses is the current list required for Office Web Apps.
+        class: minemeld.ft.o365.O365XML
+        config:
+            products:
+                - WAC
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                share_level: green
+
+    officeiPad:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            This is the current list of Office for iPad URLs.
+        class: minemeld.ft.o365.O365XML
+        config:
+            products:
+                - OfficeiPad
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                share_level: green
+
+    officeMobile:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            This is the current list of Office Mobile URLs.
+        class: minemeld.ft.o365.O365XML
+        config:
+            products:
+                - OfficeMobile
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                share_level: green

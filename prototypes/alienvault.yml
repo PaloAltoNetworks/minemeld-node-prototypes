@@ -7,7 +7,8 @@ url: https://www.alienvault.com/open-threat-exchange/reputation-monitor
 
 prototypes:
     reputation:
-        development_status: EXPERIMENTAL 
+        development_status: EXPERIMENTAL
+        node_type: miner
         description: this just catches everything
         class: minemeld.ft.csv.CSVFT
         config:

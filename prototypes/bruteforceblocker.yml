@@ -11,6 +11,7 @@ description: >
 prototypes:
     blist:
         development_status: STABLE
+        node_type: miner
         class: minemeld.ft.http.HttpFT
         config:
             url: http://danger.rulez.sk/projects/bruteforceblocker/blist.php

@@ -2,8 +2,30 @@ author: lmori
 description: Library of prototypes for commonly used nodes
 
 prototypes:
+    aggregatorURL:
+        development_status: STABLE
+        node_type: processor
+        description: Aggregator for URL indicators
+        class: minemeld.ft.op.AggregateFT
+        config:
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept URL
+                  conditions:
+                    - type == 'URL'
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+
     aggregatorIPv4Generic:
         development_status: STABLE
+        node_type: processor
         description: Generic Aggregator for IPv4 indicators
         class: minemeld.ft.ipop.AggregateIPv4FT
         config:
@@ -24,6 +46,7 @@ prototypes:
 
     aggregatorIPv4Inbound:
         development_status: STABLE
+        node_type: processor
         description: Aggregator for inbound IPv4 indicators
         class: minemeld.ft.ipop.AggregateIPv4FT
         config:
@@ -50,6 +73,7 @@ prototypes:
 
     aggregatorIPv4Outbound:
         development_status: STABLE
+        node_type: processor
         description: Aggregator for outbound IPv4 indicators
         class: minemeld.ft.ipop.AggregateIPv4FT
         config:
@@ -76,6 +100,7 @@ prototypes:
 
     feedLCGreen:
         development_status: STABLE
+        node_type: output
         description: >
             EBL for low confidence indicators (<50) and share level green
         class: minemeld.ft.redis.RedisSet
@@ -98,6 +123,7 @@ prototypes:
 
     feedMCGreen:
         development_status: STABLE
+        node_type: output
         description: >
             EBL for medium confidence indicators (>=50,<75) and share level green
         class: minemeld.ft.redis.RedisSet
@@ -121,6 +147,7 @@ prototypes:
 
     feedHCGreen:
         development_status: STABLE
+        node_type: output
         description: >
             EBL for high confidence indicators (>75) and share level green, with value
         class: minemeld.ft.redis.RedisSet
@@ -143,6 +170,7 @@ prototypes:
 
     feedLCGreenWithValue:
         development_status: STABLE
+        node_type: output
         description: >
             EBL for low confidence indicators (<50) and share level green, with value
         class: minemeld.ft.redis.RedisSet
@@ -166,6 +194,7 @@ prototypes:
 
     feedMCGreenWithValue:
         development_status: STABLE
+        node_type: output
         description: >
             EBL for medium confidence indicators (>=50,<75) and share level green, with value
         class: minemeld.ft.redis.RedisSet
@@ -190,6 +219,7 @@ prototypes:
 
     feedHCGreenWithValue:
         development_status: STABLE
+        node_type: output
         description: >
             EBL for high confidence indicators (>75) and share level green, with value
         class: minemeld.ft.redis.RedisSet
@@ -213,12 +243,14 @@ prototypes:
 
     localSyslog:
         development_status: STABLE
+        node_type: processor
         description: >
             Syslog node connection to the local syslog server to receive PAN-OS logs
         class: minemeld.ft.syslog.SyslogMatcher
 
     localLogStash:
         development_status: STABLE
+        node_type: output
         description: >
             Logstash node to send indicators message to a local logstash instance on
             port 5514
@@ -229,6 +261,7 @@ prototypes:
 
     dagPusher:
         development_status: STABLE
+        node_type: output
         description: >
             Push IP unicast indicators to PAN-OS devices via DAG, typically connected
             to a syslog node

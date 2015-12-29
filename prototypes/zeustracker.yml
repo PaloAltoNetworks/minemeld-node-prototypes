@@ -7,6 +7,7 @@ description: >
 prototypes:
     baddomains:
         development_status: STABLE
+        node_type: miner
         config:
           source_name: zeustracker.baddomains
           attributes:
@@ -19,6 +20,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     badips:
         development_status: STABLE
+        node_type: miner
         config:
           source_name: zeustracker.badips
           attributes:

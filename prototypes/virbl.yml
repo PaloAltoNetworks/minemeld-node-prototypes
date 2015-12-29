@@ -8,6 +8,7 @@ description: >
 prototypes:
     bl:
         development_status: STABLE
+        node_type: miner
         class: minemeld.ft.http.HttpFT
         config:
             source_name: virbl.bl
