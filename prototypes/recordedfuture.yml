@@ -1,0 +1,21 @@
+author: lmori
+url: https://www.recordedfuture.com/
+description: >
+    RecordedFuture threat feeds.
+
+prototypes:
+    threatfeed:
+        development_status: STABLE
+        node_type: miner
+        description: >
+            Threat Feed. You need a valid RecordedFuture API
+            token to use this feed.
+        class: minemeld.ft.recordedfuture.ThreatFeed
+        config:
+            confidence: 80
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 3307
+            attributes:
+                share_level: red
