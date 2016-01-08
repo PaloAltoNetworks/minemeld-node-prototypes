@@ -266,3 +266,76 @@ prototypes:
             Push IP unicast indicators to PAN-OS devices via DAG, typically connected
             to a syslog node
         class: minemeld.ft.dag.DagPusher
+
+    feedLCRedWithValue:
+        development_status: STABLE
+        node_type: output
+        description: >
+            EBL for low confidence indicators (<50) and share level red, with value
+        class: minemeld.ft.redis.RedisSet
+        config:
+            store_value: true
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept confidence < 50 and share level red
+                  conditions:
+                    - confidence < 50
+                    - share_level == 'red'
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+
+    feedMCRedWithValue:
+        development_status: STABLE
+        node_type: output
+        description: >
+            EBL for medium confidence indicators (>=50,<75) and share level red, with value
+        class: minemeld.ft.redis.RedisSet
+        config:
+            store_value: true
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept confidence < 50 and share level red
+                  conditions:
+                    - confidence >= 50
+                    - confidence < 75
+                    - share_level == 'red'
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+
+    feedHCRedWithValue:
+        development_status: STABLE
+        node_type: output
+        description: >
+            EBL for high confidence indicators (>75) and share level red, with value
+        class: minemeld.ft.redis.RedisSet
+        config:
+            store_value: true
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept confidence > 75 and share level red
+                  conditions:
+                    - confidence > 75
+                    - share_level == 'red'
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
