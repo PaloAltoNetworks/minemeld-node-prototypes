@@ -5,11 +5,13 @@ description: >
 
 prototypes:
     threatfeed:
-        development_status: STABLE
+        development_status: EXPERIMENTAL
         node_type: miner
         description: >
             Threat Feed. You need a valid RecordedFuture API
-            token to use this feed.
+            token to use this feed. After setting the token
+            it could take up to one hour before the feed is
+            fully refreshed.
         class: minemeld.ft.recordedfuture.ThreatFeed
         config:
             confidence: 80
