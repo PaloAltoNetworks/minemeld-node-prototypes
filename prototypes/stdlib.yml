@@ -23,6 +23,27 @@ prototypes:
                   actions:
                     - drop
 
+    aggregatorDomain:
+        development_status: STABLE
+        node_type: processor
+        description: Aggregator for domain indicators
+        class: minemeld.ft.op.AggregateFT
+        config:
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept domain
+                  conditions:
+                    - type == 'domain'
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+
     aggregatorIPv4Generic:
         development_status: STABLE
         node_type: processor
@@ -63,6 +84,7 @@ prototypes:
                   actions:
                     - accept
                 - name: accept generic IPv4
+                  conditions:
                     - type == 'IPv4'
                     - direction == null
                   actions:
@@ -90,6 +112,7 @@ prototypes:
                   actions:
                     - accept
                 - name: accept generic IPv4
+                  conditions:
                     - type == 'IPv4'
                     - direction == null
                   actions:
