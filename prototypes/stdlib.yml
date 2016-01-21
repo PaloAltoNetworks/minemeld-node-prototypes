@@ -387,3 +387,15 @@ prototypes:
                 - name: drop all
                   actions:
                     - drop
+
+    listIPv4Generic:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            list of IPv4 addresses. Use a name starting with "wl" to create a whitelist for
+            an aggregator
+        class: minemeld.ft.local.YamlIPv4FT
+        config:
+            attributes:
+                confidence: 100
+                share_level: red
