@@ -64,7 +64,7 @@ prototypes:
         class: minemeld.ft.ipop.AggregateIPv4FT
         config:
             whitelist_prefixes:
-                - WL
+                - wl
             infilters:
                 - name: accept withdraws
                   conditions:
@@ -90,7 +90,7 @@ prototypes:
         class: minemeld.ft.ipop.AggregateIPv4FT
         config:
             whitelist_prefixes:
-                - WL
+                - wl
             infilters:
                 - name: accept withdraws
                   conditions:
@@ -123,7 +123,7 @@ prototypes:
         class: minemeld.ft.ipop.AggregateIPv4FT
         config:
             whitelist_prefixes:
-                - WL
+                - wl
             infilters:
                 - name: accept withdraws
                   conditions:
