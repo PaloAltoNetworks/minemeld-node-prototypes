@@ -296,6 +296,18 @@ prototypes:
             Syslog node connection to the local syslog server to receive PAN-OS logs
         class: minemeld.ft.syslog.SyslogMatcher
 
+    localSyslogToLogStash:
+        development_status: EXPERIMENTAL
+        node_type: processor
+        description: >
+            Syslog node connection to the local syslog server to receive PAN-OS logs.
+            This prototype also logs matching sessions/indicators pairs to a Logstash
+            instance on localhost:5514
+        class: minemeld.ft.syslog.SyslogMatcher
+        config:
+            logstash_host: 127.0.0.1
+            logstash_port: 5514
+
     localLogStash:
         development_status: STABLE
         node_type: output
