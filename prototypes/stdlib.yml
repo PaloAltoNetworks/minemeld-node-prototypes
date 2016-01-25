@@ -5,9 +5,14 @@ prototypes:
     aggregatorURL:
         development_status: STABLE
         node_type: processor
-        description: Aggregator for URL indicators
+        description: >
+            Aggregator for URL indicators.
+            Inputs with names starting with "wl" will be interpreted as
+            whitelists.
         class: minemeld.ft.op.AggregateFT
         config:
+            whitelist_prefixes:
+                - wl
             infilters:
                 - name: accept withdraws
                   conditions:
@@ -26,9 +31,14 @@ prototypes:
     aggregatorDomain:
         development_status: STABLE
         node_type: processor
-        description: Aggregator for domain indicators
+        description: >
+            Aggregator for domain indicators.
+            Inputs with names starting with "wl" will be interpreted as
+            whitelists.
         class: minemeld.ft.op.AggregateFT
         config:
+            whitelist_prefixes:
+                - wl
             infilters:
                 - name: accept withdraws
                   conditions:
@@ -47,9 +57,14 @@ prototypes:
     aggregatorIPv4Generic:
         development_status: STABLE
         node_type: processor
-        description: Generic Aggregator for IPv4 indicators
+        description: >
+            Generic Aggregator for IPv4 indicators.
+            Inputs with names starting with "wl" will be interpreted as
+            whitelists.
         class: minemeld.ft.ipop.AggregateIPv4FT
         config:
+            whitelist_prefixes:
+                - wl
             infilters:
                 - name: accept withdraws
                   conditions:
@@ -68,9 +83,14 @@ prototypes:
     aggregatorIPv4Inbound:
         development_status: STABLE
         node_type: processor
-        description: Aggregator for inbound IPv4 indicators
+        description: >
+            Aggregator for inbound IPv4 indicators.
+            Inputs with names starting with "wl" will be interpreted as
+            whitelists.
         class: minemeld.ft.ipop.AggregateIPv4FT
         config:
+            whitelist_prefixes:
+                - wl
             infilters:
                 - name: accept withdraws
                   conditions:
@@ -96,9 +116,14 @@ prototypes:
     aggregatorIPv4Outbound:
         development_status: STABLE
         node_type: processor
-        description: Aggregator for outbound IPv4 indicators
+        description: >
+            Aggregator for outbound IPv4 indicators.
+            Inputs with names starting with "wl" will be interpreted as
+            whitelists.
         class: minemeld.ft.ipop.AggregateIPv4FT
         config:
+            whitelist_prefixes:
+                - wl
             infilters:
                 - name: accept withdraws
                   conditions:
@@ -362,3 +387,20 @@ prototypes:
                 - name: drop all
                   actions:
                     - drop
+
+    listIPv4Generic:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            list of IPv4 addresses. Use a name starting with "wl" to create a whitelist for
+            an aggregator
+        class: minemeld.ft.local.YamlIPv4FT
+        config:
+            interval: 53
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 67
+            attributes:
+                confidence: 100
+                share_level: red
