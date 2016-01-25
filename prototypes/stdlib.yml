@@ -5,9 +5,14 @@ prototypes:
     aggregatorURL:
         development_status: STABLE
         node_type: processor
-        description: Aggregator for URL indicators
+        description: >
+            Aggregator for URL indicators.
+            Inputs with names starting with "wl" will be interpreted as
+            whitelists.
         class: minemeld.ft.op.AggregateFT
         config:
+            whitelist_prefixes:
+                - wl
             infilters:
                 - name: accept withdraws
                   conditions:
@@ -23,12 +28,43 @@ prototypes:
                   actions:
                     - drop
 
+    aggregatorDomain:
+        development_status: STABLE
+        node_type: processor
+        description: >
+            Aggregator for domain indicators.
+            Inputs with names starting with "wl" will be interpreted as
+            whitelists.
+        class: minemeld.ft.op.AggregateFT
+        config:
+            whitelist_prefixes:
+                - wl
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept domain
+                  conditions:
+                    - type == 'domain'
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+
     aggregatorIPv4Generic:
         development_status: STABLE
         node_type: processor
-        description: Generic Aggregator for IPv4 indicators
+        description: >
+            Generic Aggregator for IPv4 indicators.
+            Inputs with names starting with "wl" will be interpreted as
+            whitelists.
         class: minemeld.ft.ipop.AggregateIPv4FT
         config:
+            whitelist_prefixes:
+                - wl
             infilters:
                 - name: accept withdraws
                   conditions:
@@ -47,9 +83,14 @@ prototypes:
     aggregatorIPv4Inbound:
         development_status: STABLE
         node_type: processor
-        description: Aggregator for inbound IPv4 indicators
+        description: >
+            Aggregator for inbound IPv4 indicators.
+            Inputs with names starting with "wl" will be interpreted as
+            whitelists.
         class: minemeld.ft.ipop.AggregateIPv4FT
         config:
+            whitelist_prefixes:
+                - wl
             infilters:
                 - name: accept withdraws
                   conditions:
@@ -63,6 +104,7 @@ prototypes:
                   actions:
                     - accept
                 - name: accept generic IPv4
+                  conditions:
                     - type == 'IPv4'
                     - direction == null
                   actions:
@@ -74,9 +116,14 @@ prototypes:
     aggregatorIPv4Outbound:
         development_status: STABLE
         node_type: processor
-        description: Aggregator for outbound IPv4 indicators
+        description: >
+            Aggregator for outbound IPv4 indicators.
+            Inputs with names starting with "wl" will be interpreted as
+            whitelists.
         class: minemeld.ft.ipop.AggregateIPv4FT
         config:
+            whitelist_prefixes:
+                - wl
             infilters:
                 - name: accept withdraws
                   conditions:
@@ -90,6 +137,7 @@ prototypes:
                   actions:
                     - accept
                 - name: accept generic IPv4
+                  conditions:
                     - type == 'IPv4'
                     - direction == null
                   actions:
@@ -248,6 +296,18 @@ prototypes:
             Syslog node connection to the local syslog server to receive PAN-OS logs
         class: minemeld.ft.syslog.SyslogMatcher
 
+    localSyslogToLogStash:
+        development_status: EXPERIMENTAL
+        node_type: processor
+        description: >
+            Syslog node connection to the local syslog server to receive PAN-OS logs.
+            This prototype also logs matching sessions/indicators pairs to a Logstash
+            instance on localhost:5514
+        class: minemeld.ft.syslog.SyslogMatcher
+        config:
+            logstash_host: 127.0.0.1
+            logstash_port: 5514
+
     localLogStash:
         development_status: STABLE
         node_type: output
@@ -266,3 +326,93 @@ prototypes:
             Push IP unicast indicators to PAN-OS devices via DAG, typically connected
             to a syslog node
         class: minemeld.ft.dag.DagPusher
+
+    feedLCRedWithValue:
+        development_status: STABLE
+        node_type: output
+        description: >
+            EBL for low confidence indicators (<50) and share level red, with value
+        class: minemeld.ft.redis.RedisSet
+        config:
+            store_value: true
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept confidence < 50 and share level red
+                  conditions:
+                    - confidence < 50
+                    - share_level == 'red'
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+
+    feedMCRedWithValue:
+        development_status: STABLE
+        node_type: output
+        description: >
+            EBL for medium confidence indicators (>=50,<75) and share level red, with value
+        class: minemeld.ft.redis.RedisSet
+        config:
+            store_value: true
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept confidence < 50 and share level red
+                  conditions:
+                    - confidence >= 50
+                    - confidence < 75
+                    - share_level == 'red'
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+
+    feedHCRedWithValue:
+        development_status: STABLE
+        node_type: output
+        description: >
+            EBL for high confidence indicators (>75) and share level red, with value
+        class: minemeld.ft.redis.RedisSet
+        config:
+            store_value: true
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept confidence > 75 and share level red
+                  conditions:
+                    - confidence > 75
+                    - share_level == 'red'
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+
+    listIPv4Generic:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            list of IPv4 addresses. Use a name starting with "wl" to create a whitelist for
+            an aggregator
+        class: minemeld.ft.local.YamlIPv4FT
+        config:
+            interval: 53
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 67
+            attributes:
+                confidence: 100
+                share_level: red
