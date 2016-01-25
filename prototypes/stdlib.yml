@@ -396,6 +396,11 @@ prototypes:
             an aggregator
         class: minemeld.ft.local.YamlIPv4FT
         config:
+            interval: 53
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 67
             attributes:
                 confidence: 100
                 share_level: red
