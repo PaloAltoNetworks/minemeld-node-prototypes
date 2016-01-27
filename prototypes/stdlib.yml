@@ -182,7 +182,7 @@ prototypes:
                     - __method == 'withdraw'
                   actions:
                     - accept
-                - name: accept confidence < 50 and share level green
+                - name: accept confidence 50-75 and share level green
                   conditions:
                     - confidence >= 50
                     - confidence < 75
@@ -254,7 +254,7 @@ prototypes:
                     - __method == 'withdraw'
                   actions:
                     - accept
-                - name: accept confidence < 50 and share level green
+                - name: accept confidence 50-75 and share level green
                   conditions:
                     - confidence >= 50
                     - confidence < 75
@@ -283,6 +283,76 @@ prototypes:
                   conditions:
                     - confidence > 75
                     - share_level == 'green'
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+
+    feedLCWithValue:
+        development_status: STABLE
+        node_type: output
+        description: >
+            EBL for low confidence indicators (<50), with value
+        class: minemeld.ft.redis.RedisSet
+        config:
+            store_value: true
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept confidence < 50
+                  conditions:
+                    - confidence < 50
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+
+    feedMCWithValue:
+        development_status: STABLE
+        node_type: output
+        description: >
+            EBL for medium confidence indicators (>=50,<75), with value
+        class: minemeld.ft.redis.RedisSet
+        config:
+            store_value: true
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept confidence 50-75
+                  conditions:
+                    - confidence >= 50
+                    - confidence < 75
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+
+    feedHCWithValue:
+        development_status: STABLE
+        node_type: output
+        description: >
+            EBL for high confidence indicators (>75), with value
+        class: minemeld.ft.redis.RedisSet
+        config:
+            store_value: true
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept confidence > 75
+                  conditions:
+                    - confidence > 75
                   actions:
                     - accept
                 - name: drop all
