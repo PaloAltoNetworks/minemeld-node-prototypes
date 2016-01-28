@@ -486,3 +486,37 @@ prototypes:
             attributes:
                 confidence: 100
                 share_level: red
+
+    listURLGeneric:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            list of URLs. Use a name starting with "wl" to create a whitelist for
+            an aggregator
+        class: minemeld.ft.local.YamlURLFT
+        config:
+            interval: 53
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 67
+            attributes:
+                confidence: 100
+                share_level: red
+
+    listDomainGeneric:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            list of domain. Use a name starting with "wl" to create a whitelist for
+            an aggregator
+        class: minemeld.ft.local.YamlDomainFT
+        config:
+            interval: 53
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 67
+            attributes:
+                confidence: 100
+                share_level: red
