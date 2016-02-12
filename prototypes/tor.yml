@@ -1,0 +1,31 @@
+author: lmori
+url: https://www.torproject.org/
+description: >
+    Tor is free software and an open network that helps you defend
+    against traffic analysis, a form of network surveillance that
+    threatens personal freedom and privacy, confidential business
+    activities and relationships, and state security.
+
+prototypes:
+    exit_addresses:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: Tor Exit addresses
+        class: minemeld.ft.http.HttpFT
+        config:
+            source_name: tor.exit_addresses
+            interval: 3307
+            url: https://check.torproject.org/exit-addresses
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 631
+            ignore_regex: "^LastStatus|^ExitNode|^Published"
+            indicator:
+                regex: '^ExitAddress\s([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})\s.*'
+                transform: '\1'
+            attributes:
+                type: IPv4
+                confidence: 100
+                share_level: green
+                direction: inbound
