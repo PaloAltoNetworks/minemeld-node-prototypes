@@ -1,0 +1,38 @@
+author: lmori
+url: http://hailataxii.com/
+description: >
+    Hail a TAXII.com is a repository of Open Source Cyber
+    Threat Intellegence feeds in STIX format.
+
+prototypes:
+    guest_Lehigh_edu:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        class: minemeld.ft.taxii.TaxiiClient
+        config:
+            source_name: hailataxii.guest.Lehigh_edu
+            discovery_service: http://hailataxii.com/taxii-discovery-service
+            username: guest
+            password: guest
+            collection: guest.Lehigh_edu
+            attributes:
+                confidence: 30
+            age_out:
+               sudden_death: false
+               default: 30d
+
+    guest_phishtank_com:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        class: minemeld.ft.taxii.TaxiiClient
+        config:
+            source_name: hailataxii.guest.phishtank_com
+            discovery_service: http://hailataxii.com/taxii-discovery-service
+            username: guest
+            password: guest
+            collection: guest.phishtank_com
+            attributes:
+                confidence: 30
+            age_out:
+               sudden_death: false
+               default: 30d
