@@ -1,0 +1,24 @@
+author: lmori
+url: https://autofocus.paloaltonetworks.com/
+description: >
+    AutoFocus re-imagines threat intelligence, allowing you to
+    protect your organization from unique and targeted threats
+    in a simpler, more effective way. AutoFocus prioritizes the
+    most critical threats targeting your network, adds context,
+    and enables you to take decisive action.
+
+prototypes:
+    exportList:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            Miner for Autofocus Export List. You need a valid AutofoucsAPI Key.
+        config:
+            attributes:
+                confidence: 70
+                share_level: red
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 677
+        class: minemeld.ft.autofocus.ExportList
