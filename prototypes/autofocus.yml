@@ -12,7 +12,7 @@ prototypes:
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
-            Miner for Autofocus Export List. You need a valid AutofoucsAPI Key.
+            Miner for Autofocus Export List. You need a valid Autofocus API Key.
         config:
             attributes:
                 confidence: 70
