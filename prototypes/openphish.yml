@@ -1,0 +1,24 @@
+author: lmori
+url: https://openphish.com/
+description: >
+    OpenPhish launched in June 2014 as a result of a three-year research on
+    phishing detection
+
+prototypes:
+    feed:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: The free feed
+        config:
+            source_name: openphish.feed
+            attributes:
+                type: URL
+                confidence: 50
+                share_level: green
+            url: https://openphish.com/feed.txt
+            interval: 307
+            age_out:
+                default: 30d
+                sudden_death: true
+                interval: 131
+        class: minemeld.ft.http.HttpFT
