@@ -1,0 +1,371 @@
+author: lmori
+url: https://ransomwaretracker.abuse.ch/
+description: >
+    Ransomware Tracker tracks and monitors the status of domain names,
+    IP addresses and URLs that are associated with Ransomware, such as
+    Botnet C&C servers, distribution sites and payment sites.
+
+prototypes:
+    CW_C2_URLBL:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: CryptoWall C2 URLs
+        config:
+          source_name: ransomwaretracker.CW_C2_URLBL
+          attributes:
+            type: URL
+            confidence: 100
+            share_level: green
+          ignore_regex: '^#'
+          url: https://ransomwaretracker.abuse.ch/downloads/CW_C2_URLBL.txt
+          interval: 300
+          age_out:
+            default: null
+            sudden_death: true
+        class: minemeld.ft.http.HttpFT
+    CW_C2_DOMBL:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: CryptoWall C2 domains
+        config:
+          source_name: ransomwaretracker.CW_C2_DOMBL
+          attributes:
+            type: domain
+            confidence: 40
+            share_level: green
+          ignore_regex: '^#'
+          url: https://ransomwaretracker.abuse.ch/downloads/CW_C2_DOMBL.txt
+          interval: 300
+          age_out:
+            default: null
+            sudden_death: true
+        class: minemeld.ft.http.HttpFT
+    CW_PS_DOMBL:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: CryptoWall C2 Payment Sites domains
+        config:
+          source_name: ransomwaretracker.CW_PS_DOMBL
+          attributes:
+            type: domain
+            confidence: 100
+            share_level: green
+          ignore_regex: '^#'
+          url: https://ransomwaretracker.abuse.ch/downloads/CW_PS_DOMBL.txt
+          interval: 300
+          age_out:
+            default: null
+            sudden_death: true
+        class: minemeld.ft.http.HttpFT
+    CW_PS_IPBL:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: CryptoWall Payment Sites IPs
+        config:
+          source_name: ransomwaretracker.CW_PS_IPBL
+          attributes:
+            type: IPv4
+            confidence: 70
+            share_level: green
+            direction: outbound
+          ignore_regex: '^#'
+          url: https://ransomwaretracker.abuse.ch/downloads/CW_PS_IPBL.txt
+          interval: 300
+          age_out:
+            default: null
+            sudden_death: true
+        class: minemeld.ft.http.HttpFT
+    TC_C2_URLBL:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: TeslaCrypt C2 URLs
+        config:
+          source_name: ransomwaretracker.TC_C2_URLBL
+          attributes:
+            type: URL
+            confidence: 100
+            share_level: green
+          ignore_regex: '^#'
+          url: https://ransomwaretracker.abuse.ch/downloads/TC_C2_URLBL.txt
+          interval: 300
+          age_out:
+            default: null
+            sudden_death: true
+        class: minemeld.ft.http.HttpFT
+    TC_C2_DOMBL:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: TeslaCrypt C2 domains
+        config:
+          source_name: ransomwaretracker.TC_C2_DOMBL
+          attributes:
+            type: domain
+            confidence: 40
+            share_level: green
+          ignore_regex: '^#'
+          url: https://ransomwaretracker.abuse.ch/downloads/TC_C2_DOMBL.txt
+          interval: 300
+          age_out:
+            default: null
+            sudden_death: true
+        class: minemeld.ft.http.HttpFT
+    TC_PS_DOMBL:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: TeslaCrypt Payment Sites domains
+        config:
+          source_name: ransomwaretracker.TC_PS_DOMBL
+          attributes:
+            type: domain
+            confidence: 40
+            share_level: green
+          ignore_regex: '^#'
+          url: https://ransomwaretracker.abuse.ch/downloads/TC_PS_DOMBL.txt
+          interval: 300
+          age_out:
+            default: null
+            sudden_death: true
+        class: minemeld.ft.http.HttpFT
+    TC_PS_IPBL:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: TeslaCrypt Payment Sites IPs
+        config:
+          source_name: ransomwaretracker.TC_PS_IPBL
+          attributes:
+            type: IPv4
+            confidence: 70
+            share_level: green
+            direction: outbound
+          ignore_regex: '^#'
+          url: https://ransomwaretracker.abuse.ch/downloads/TC_PS_IPBL.txt
+          interval: 300
+          age_out:
+            default: null
+            sudden_death: true
+        class: minemeld.ft.http.HttpFT
+    TC_DS_URLBL:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: TeslaCrypt Distribution Sites URLs
+        config:
+          source_name: ransomwaretracker.TC_DS_URLBL
+          attributes:
+            type: URL
+            confidence: 100
+            share_level: green
+          ignore_regex: '^#'
+          url: https://ransomwaretracker.abuse.ch/downloads/TC_DS_URLBL.txt
+          interval: 300
+          age_out:
+            default: null
+            sudden_death: true
+        class: minemeld.ft.http.HttpFT
+    LY_C2_DOMBL:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: Locky C2 domains
+        config:
+          source_name: ransomwaretracker.LY_C2_DOMBL
+          attributes:
+            type: domain
+            confidence: 100
+            share_level: green
+          ignore_regex: '^#'
+          url: https://ransomwaretracker.abuse.ch/downloads/LY_C2_DOMBL.txt
+          interval: 300
+          age_out:
+            default: null
+            sudden_death: true
+        class: minemeld.ft.http.HttpFT
+    LY_C2_IPBL:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: Locky IPs
+        config:
+          source_name: ransomwaretracker.LY_C2_IPBL
+          attributes:
+            type: IPv4
+            confidence: 70
+            share_level: green
+            direction: outbound
+          ignore_regex: '^#'
+          url: https://ransomwaretracker.abuse.ch/downloads/LY_C2_IPBL.txt
+          interval: 300
+          age_out:
+            default: null
+            sudden_death: true
+        class: minemeld.ft.http.HttpFT
+    LY_PS_DOMBL:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: Locky Payment Sites domains
+        config:
+          source_name: ransomwaretracker.LY_PS_DOMBL
+          attributes:
+            type: domain
+            confidence: 100
+            share_level: green
+          ignore_regex: '^#'
+          url: https://ransomwaretracker.abuse.ch/downloads/LY_PS_DOMBL.txt
+          interval: 300
+          age_out:
+            default: null
+            sudden_death: true
+        class: minemeld.ft.http.HttpFT
+    LY_PS_IPBL:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: Locky Payment Sites IPs
+        config:
+          source_name: ransomwaretracker.LY_PS_IPBL
+          attributes:
+            type: IPv4
+            confidence: 40
+            share_level: green
+          ignore_regex: '^#'
+          url: https://ransomwaretracker.abuse.ch/downloads/LY_PS_IPBL.txt
+          interval: 300
+          age_out:
+            default: null
+            sudden_death: true
+        class: minemeld.ft.http.HttpFT
+    LY_DS_URLBL:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: Locky Distribution Sites URLs
+        config:
+          source_name: ransomwaretracker.LY_DS_URLBL
+          attributes:
+            type: URL
+            confidence: 100
+            share_level: green
+          ignore_regex: '^#'
+          url: https://ransomwaretracker.abuse.ch/downloads/LY_DS_URLBL.txt
+          interval: 300
+          age_out:
+            default: null
+            sudden_death: true
+        class: minemeld.ft.http.HttpFT
+    TL_C2_DOMBL:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: TorrentLocker C2 domains
+        config:
+          source_name: ransomwaretracker.TL_C2_DOMBL
+          attributes:
+            type: domain
+            confidence: 100
+            share_level: green
+          ignore_regex: '^#'
+          url: https://ransomwaretracker.abuse.ch/downloads/TL_C2_DOMBL.txt
+          interval: 300
+          age_out:
+            default: null
+            sudden_death: true
+        class: minemeld.ft.http.HttpF
+    TL_C2_IPBL:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: TorrentLocker C2 IPs
+        config:
+          source_name: ransomwaretracker.TL_C2_IPBL
+          attributes:
+            type: IPv4
+            confidence: 70
+            share_level: green
+            direction: outbound
+          ignore_regex: '^#'
+          url: https://ransomwaretracker.abuse.ch/downloads/TL_C2_IPBL.txt
+          interval: 300
+          age_out:
+            default: null
+            sudden_death: true
+        class: minemeld.ft.http.HttpF
+    TL_PS_DOMBL:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: TorrentLocker Payment Sites domains
+        config:
+          source_name: ransomwaretracker.TL_PS_DOMBL
+          attributes:
+            type: domain
+            confidence: 100
+            share_level: green
+          ignore_regex: '^#'
+          url: https://ransomwaretracker.abuse.ch/downloads/TL_PS_DOMBL.txt
+          interval: 300
+          age_out:
+            default: null
+            sudden_death: true
+        class: minemeld.ft.http.HttpF
+    TL_PS_IPBL:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: TorrentLocker Payment Sites IPs
+        config:
+          source_name: ransomwaretracker.TL_PS_IPBL
+          attributes:
+            type: IPv4
+            confidence: 70
+            share_level: green
+            direction: outbound
+          ignore_regex: '^#'
+          url: https://ransomwaretracker.abuse.ch/downloads/TL_PS_IPBL.txt
+          interval: 300
+          age_out:
+            default: null
+            sudden_death: true
+        class: minemeld.ft.http.HttpF
+    RW_DOMBL:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: Combined Ransomware domains
+        config:
+          source_name: ransomwaretracker.RW_DOMBL
+          attributes:
+            type: domain
+            confidence: 100
+            share_level: green
+          ignore_regex: '^#'
+          url: https://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt
+          interval: 300
+          age_out:
+            default: null
+            sudden_death: true
+        class: minemeld.ft.http.HttpF
+    RW_URLBL:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: Combined Ransomware URLs
+        config:
+          source_name: ransomwaretracker.RW_URLBL
+          attributes:
+            type: URL
+            confidence: 100
+            share_level: green
+          ignore_regex: '^#'
+          url: https://ransomwaretracker.abuse.ch/downloads/RW_URLBL.txt
+          interval: 300
+          age_out:
+            default: null
+            sudden_death: true
+        class: minemeld.ft.http.HttpF
+    RW_IPBL:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: Combined Ransomware IPs
+        config:
+          source_name: ransomwaretracker.RW_IPBL
+          attributes:
+            type: IPv4
+            confidence: 70
+            share_level: green
+            direction: outbound
+          ignore_regex: '^#'
+          url: https://ransomwaretracker.abuse.ch/downloads/RW_IPBL.txt
+          interval: 300
+          age_out:
+            default: null
+            sudden_death: true
+        class: minemeld.ft.http.HttpF
