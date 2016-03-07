@@ -263,7 +263,7 @@ prototypes:
           age_out:
             default: null
             sudden_death: true
-        class: minemeld.ft.http.HttpF
+        class: minemeld.ft.http.HttpFT
     TL_C2_IPBL:
         development_status: EXPERIMENTAL
         node_type: miner
@@ -281,7 +281,7 @@ prototypes:
           age_out:
             default: null
             sudden_death: true
-        class: minemeld.ft.http.HttpF
+        class: minemeld.ft.http.HttpFT
     TL_PS_DOMBL:
         development_status: EXPERIMENTAL
         node_type: miner
@@ -298,7 +298,7 @@ prototypes:
           age_out:
             default: null
             sudden_death: true
-        class: minemeld.ft.http.HttpF
+        class: minemeld.ft.http.HttpFT
     TL_PS_IPBL:
         development_status: EXPERIMENTAL
         node_type: miner
@@ -316,7 +316,7 @@ prototypes:
           age_out:
             default: null
             sudden_death: true
-        class: minemeld.ft.http.HttpF
+        class: minemeld.ft.http.HttpFT
     RW_DOMBL:
         development_status: EXPERIMENTAL
         node_type: miner
@@ -333,7 +333,7 @@ prototypes:
           age_out:
             default: null
             sudden_death: true
-        class: minemeld.ft.http.HttpF
+        class: minemeld.ft.http.HttpFT
     RW_URLBL:
         development_status: EXPERIMENTAL
         node_type: miner
@@ -350,7 +350,7 @@ prototypes:
           age_out:
             default: null
             sudden_death: true
-        class: minemeld.ft.http.HttpF
+        class: minemeld.ft.http.HttpFT
     RW_IPBL:
         development_status: EXPERIMENTAL
         node_type: miner
@@ -368,4 +368,4 @@ prototypes:
           age_out:
             default: null
             sudden_death: true
-        class: minemeld.ft.http.HttpF
+        class: minemeld.ft.http.HttpFT
