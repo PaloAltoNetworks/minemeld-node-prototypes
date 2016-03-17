@@ -359,6 +359,13 @@ prototypes:
                   actions:
                     - drop
 
+    syslogMiner:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            Miner for PAN-OS syslog messages
+        class: minemeld.ft.syslog.SyslogMiner
+
     localSyslog:
         development_status: STABLE
         node_type: processor
