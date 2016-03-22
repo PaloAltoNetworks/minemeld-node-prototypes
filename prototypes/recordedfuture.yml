@@ -1,18 +1,24 @@
 author: lmori
 url: https://www.recordedfuture.com/
 description: >
-    RecordedFuture threat feeds.
+    Recorded Future delivers automated, real-time threat intelligence that
+    enables organizations to defend themselves at the speed and scale of the
+    Internet. Our service continuously analyzes content from the entire Web
+    to give you unmatched insight into emerging threats.
+    Follow us on Twitter @RecordedFuture
 
 prototypes:
-    threatfeed:
+    IPRiskList:
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
-            Threat Feed. You need a valid RecordedFuture API
-            token to use this feed. After setting the token
-            it could take up to one hour before the feed is
-            fully refreshed.
-        class: minemeld.ft.recordedfuture.ThreatFeed
+            Recorded Future continually analyzes indicator-related reporting
+            from sources including websites, blogs, paste sites, IRC, malware
+            analyses, social media, and open source threat feeds to identify
+            and score IP Addresses for current risk. The risk list includes
+            evidence details for risk scores. To access this resource, you need
+            a valid API token.
+        class: minemeld.ft.recordedfuture.IPRiskList
         config:
             confidence: 80
             age_out:

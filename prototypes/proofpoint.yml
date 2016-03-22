@@ -1,0 +1,44 @@
+author: lmori
+description: >
+    Proofpoint ET Intelligence Actionable threat intelligence with
+    global context, to identify the source and type of malicious activity
+    on hundreds of thousands of malicious IP addresses and domains.
+    Updated hourly.
+url: https://www.proofpoint.com/us/threat-intelligence-overview
+
+prototypes:
+    ETIntelligenceIPs:
+        development_status: STABLE
+        node_type: miner
+        description: >
+            Detailed feed of IPs classified in different categories.
+            You need a valid authorization code from Proofpoint ET
+            to access this feed.
+        class: minemeld.ft.proofpoint.ETIntelligenceIP
+        config:
+            interval: 1861
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 919
+            attributes:
+                share_level: red
+                confidence: 70
+
+    ETIntelligenceDomains:
+        development_status: STABLE
+        node_type: miner
+        description: >
+            Detailed feed of domains classified in different categories.
+            You need a valid authorization code from Proofpoint ET
+            to access this feed.
+        class: minemeld.ft.proofpoint.ETIntelligenceDomain
+        config:
+            interval: 1861
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 919
+            attributes:
+                share_level: red
+                confidence: 80
