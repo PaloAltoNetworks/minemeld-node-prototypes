@@ -365,6 +365,10 @@ prototypes:
         description: >
             Miner for PAN-OS syslog messages
         class: minemeld.ft.syslog.SyslogMiner
+        config:
+            source_name: panos.syslog
+            attributes:
+                confidence: 50
 
     localSyslog:
         development_status: STABLE
