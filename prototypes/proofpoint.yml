@@ -7,14 +7,14 @@ description: >
 url: https://www.proofpoint.com/us/threat-intelligence-overview
 
 prototypes:
-    ETIntelligenceIPs:
+    EmergingThreatsIPs:
         development_status: STABLE
         node_type: miner
         description: >
             Detailed feed of IPs classified in different categories.
             You need a valid authorization code from Proofpoint ET
             to access this feed.
-        class: minemeld.ft.proofpoint.ETIntelligenceIP
+        class: minemeld.ft.proofpoint.EmergingThreatsIP
         config:
             interval: 1861
             age_out:
@@ -25,14 +25,14 @@ prototypes:
                 share_level: red
                 confidence: 70
 
-    ETIntelligenceDomains:
+    EmergingThreatsDomains:
         development_status: STABLE
         node_type: miner
         description: >
             Detailed feed of domains classified in different categories.
             You need a valid authorization code from Proofpoint ET
             to access this feed.
-        class: minemeld.ft.proofpoint.ETIntelligenceDomain
+        class: minemeld.ft.proofpoint.EmergingThreatsDomain
         config:
             interval: 1861
             age_out:
