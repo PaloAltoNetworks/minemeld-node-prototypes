@@ -193,3 +193,100 @@ prototypes:
                 interval: 257
             attributes:
                 share_level: green
+
+    planner:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            This is the current list of Planner IPs and URLs.
+        class: minemeld.ft.o365.O365XML
+        config:
+            products:
+                - Planner
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                share_level: green
+
+    oneNote:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            This is the current list of OneNote IPs and URLs.
+        class: minemeld.ft.o365.O365XML
+        config:
+            products:
+                - OneNote
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                share_level: green
+
+    identity:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            This is the current list of Office 365 authentication and
+            identity IPs and URLs.
+        class: minemeld.ft.o365.O365XML
+        config:
+            products:
+                - identity
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                share_level: green
+
+    sway:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            This is the current list of Sway IPs and URLs.
+        class: minemeld.ft.o365.O365XML
+        config:
+            products:
+                - Sway
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                share_level: green
+
+    office365Video:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            This is the current list of Office365 Video IPs and URLs.
+        class: minemeld.ft.o365.O365XML
+        config:
+            products:
+                - Office365Video
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                share_level: green
+
+    crls:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            This is the current list of Office365 CRLs IPs and URLs.
+        class: minemeld.ft.o365.O365XML
+        config:
+            products:
+                - CRLs
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                share_level: green
