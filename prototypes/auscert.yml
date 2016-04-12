@@ -1,0 +1,136 @@
+author: lmori
+url: https://www.auscert.org.au/
+description: >
+    AusCERT is a leading Cyber Emergency Response Team (CERT)
+    in Australia and the Asia/Pacific region.
+
+prototypes:
+    7days_combo:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: 7 days combo
+        config:
+            source_name: auscert.7days_combo
+            url: https://www.auscert.org.au/download.html?f=628
+            attributes:
+                type: URL
+                share_level: red
+                confidence: 80
+        class: minemeld.ft.http.HttpFT
+
+    7days_malware:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: 7 days malware
+        config:
+            source_name: auscert.7day_smalware
+            url: https://www.auscert.org.au/download.html?f=790
+            attributes:
+                type: URL
+                share_level: red
+                confidence: 80
+        class: minemeld.ft.http.HttpFT
+
+    7days_phishing:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: 7 days phishing
+        config:
+            source_name: auscert.7days_phishing
+            url: https://www.auscert.org.au/download.html?f=791
+            attributes:
+                type: URL
+                share_level: red
+                confidence: 80
+        class: minemeld.ft.http.HttpFT
+
+    7days_dumpsites:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: 7 days log or dump sites
+        config:
+            source_name: auscert.7days_dumpsites
+            url: https://www.auscert.org.au/download.html?f=792
+            attributes:
+                type: URL
+                share_level: red
+                confidence: 80
+        class: minemeld.ft.http.HttpFT
+
+    7days_muling:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: 7 days muling
+        config:
+            source_name: auscert.7days_muling
+            url: https://www.auscert.org.au/download.html?f=793
+            attributes:
+                type: URL
+                share_level: red
+                confidence: 80
+        class: minemeld.ft.http.HttpFT
+
+    1day_combo:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: 1 day combo
+        config:
+            source_name: auscert.1day_combo
+            url: https://www.auscert.org.au/download.html?f=627
+            attributes:
+                type: URL
+                share_level: red
+                confidence: 80
+        class: minemeld.ft.http.HttpFT
+
+    1day_malware:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: 1 day malware
+        config:
+            source_name: auscert.1day_malware
+            url: https://www.auscert.org.au/download.html?f=794
+            attributes:
+                type: URL
+                share_level: red
+                confidence: 80
+        class: minemeld.ft.http.HttpFT
+
+    1day_phishing:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: 1 day phishing
+        config:
+            source_name: auscert.1day_phishing
+            url: https://www.auscert.org.au/download.html?f=795
+            attributes:
+                type: URL
+                share_level: red
+                confidence: 80
+        class: minemeld.ft.http.HttpFT
+
+    1day_dumpsites:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: 1 day1 log or dump sites
+        config:
+            source_name: auscert.1day_dumpsites
+            url: https://www.auscert.org.au/download.html?f=796
+            attributes:
+                type: URL
+                share_level: red
+                confidence: 80
+        class: minemeld.ft.http.HttpFT
+
+    1day_muling:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: 1 day muling
+        config:
+            source_name: auscert.1day_muling
+            url: https://www.auscert.org.au/download.html?f=797
+            attributes:
+                type: URL
+                share_level: red
+                confidence: 80
+        class: minemeld.ft.http.HttpFT
