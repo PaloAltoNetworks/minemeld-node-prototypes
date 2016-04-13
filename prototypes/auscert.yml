@@ -16,7 +16,7 @@ prototypes:
                 type: URL
                 share_level: red
                 confidence: 80
-        class: minemeld.ft.http.HttpFT
+        class: minemeld.ft.auscert.MaliciousURLFeed
 
     7days_malware:
         development_status: EXPERIMENTAL
@@ -29,7 +29,7 @@ prototypes:
                 type: URL
                 share_level: red
                 confidence: 80
-        class: minemeld.ft.http.HttpFT
+        class: minemeld.ft.auscert.MaliciousURLFeed
 
     7days_phishing:
         development_status: EXPERIMENTAL
@@ -42,7 +42,7 @@ prototypes:
                 type: URL
                 share_level: red
                 confidence: 80
-        class: minemeld.ft.http.HttpFT
+        class: minemeld.ft.auscert.MaliciousURLFeed
 
     7days_dumpsites:
         development_status: EXPERIMENTAL
@@ -55,7 +55,7 @@ prototypes:
                 type: URL
                 share_level: red
                 confidence: 80
-        class: minemeld.ft.http.HttpFT
+        class: minemeld.ft.auscert.MaliciousURLFeed
 
     7days_muling:
         development_status: EXPERIMENTAL
@@ -68,7 +68,7 @@ prototypes:
                 type: URL
                 share_level: red
                 confidence: 80
-        class: minemeld.ft.http.HttpFT
+        class: minemeld.ft.auscert.MaliciousURLFeed
 
     1day_combo:
         development_status: EXPERIMENTAL
@@ -81,7 +81,7 @@ prototypes:
                 type: URL
                 share_level: red
                 confidence: 80
-        class: minemeld.ft.http.HttpFT
+        class: minemeld.ft.auscert.MaliciousURLFeed
 
     1day_malware:
         development_status: EXPERIMENTAL
@@ -94,7 +94,7 @@ prototypes:
                 type: URL
                 share_level: red
                 confidence: 80
-        class: minemeld.ft.http.HttpFT
+        class: minemeld.ft.auscert.MaliciousURLFeed
 
     1day_phishing:
         development_status: EXPERIMENTAL
@@ -107,7 +107,7 @@ prototypes:
                 type: URL
                 share_level: red
                 confidence: 80
-        class: minemeld.ft.http.HttpFT
+        class: minemeld.ft.auscert.MaliciousURLFeed
 
     1day_dumpsites:
         development_status: EXPERIMENTAL
@@ -120,7 +120,7 @@ prototypes:
                 type: URL
                 share_level: red
                 confidence: 80
-        class: minemeld.ft.http.HttpFT
+        class: minemeld.ft.auscert.MaliciousURLFeed
 
     1day_muling:
         development_status: EXPERIMENTAL
@@ -133,4 +133,4 @@ prototypes:
                 type: URL
                 share_level: red
                 confidence: 80
-        class: minemeld.ft.http.HttpFT
+        class: minemeld.ft.auscert.MaliciousURLFeed
