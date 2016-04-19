@@ -1,0 +1,102 @@
+author: lmori
+url: http://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html
+description: >
+    Amazon Web Services (AWS) publishes its current IP address ranges
+    in JSON format
+
+prototypes:
+    AMAZON:
+        description: all AMAZON ranges
+        class: minemeld.ft.json.SimpleJSON
+        config:
+            source_name: aws.AMAZON
+            url: https://ip-ranges.amazonaws.com/ip-ranges.json
+            extractor: "prefixes[?service=='AMAZON']"
+            prefix: aws
+            indicator: ip_prefix
+            fields:
+                - region
+                - service
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                type: IPv4
+                confidence: 100
+    EC2:
+        description: EC2 ranges
+        class: minemeld.ft.json.SimpleJSON
+        config:
+            source_name: aws.EC2
+            url: https://ip-ranges.amazonaws.com/ip-ranges.json
+            extractor: "prefixes[?service=='EC2']"
+            prefix: aws
+            indicator: ip_prefix
+            fields:
+                - region
+                - service
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                type: IPv4
+                confidence: 100
+    ROUTE53:
+        description: ROUTE53 ranges
+        class: minemeld.ft.json.SimpleJSON
+        config:
+            source_name: aws.ROUTE53
+            url: https://ip-ranges.amazonaws.com/ip-ranges.json
+            extractor: "prefixes[?service=='ROUTE53']"
+            prefix: aws
+            indicator: ip_prefix
+            fields:
+                - region
+                - service
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                type: IPv4
+                confidence: 100
+    ROUTE53_HEALTHCHECKS:
+        description: ROUTE53_HEALTHCHECKS ranges
+        class: minemeld.ft.json.SimpleJSON
+        config:
+            source_name: aws.ROUTE53_HEALTHCHECKS
+            url: https://ip-ranges.amazonaws.com/ip-ranges.json
+            extractor: "prefixes[?service=='ROUTE53_HEALTHCHECKS']"
+            prefix: aws
+            indicator: ip_prefix
+            fields:
+                - region
+                - service
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                type: IPv4
+                confidence: 100
+    CLOUDFRONT:
+        description: CLOUDFRONT ranges
+        class: minemeld.ft.json.SimpleJSON
+        config:
+            source_name: aws.CLOUDFRONT
+            url: https://ip-ranges.amazonaws.com/ip-ranges.json
+            extractor: "prefixes[?service=='CLOUDFRONT']"
+            prefix: aws
+            indicator: ip_prefix
+            fields:
+                - region
+                - service
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                type: IPv4
+                confidence: 100
