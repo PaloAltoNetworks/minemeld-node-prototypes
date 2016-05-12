@@ -7,6 +7,7 @@ description: >
 prototypes:
     AMAZON:
         description: all AMAZON ranges
+        node_type: miner
         class: minemeld.ft.json.SimpleJSON
         config:
             source_name: aws.AMAZON
@@ -26,6 +27,7 @@ prototypes:
                 confidence: 100
     EC2:
         description: EC2 ranges
+        node_type: miner
         class: minemeld.ft.json.SimpleJSON
         config:
             source_name: aws.EC2
@@ -45,6 +47,7 @@ prototypes:
                 confidence: 100
     ROUTE53:
         description: ROUTE53 ranges
+        node_type: miner
         class: minemeld.ft.json.SimpleJSON
         config:
             source_name: aws.ROUTE53
@@ -64,6 +67,7 @@ prototypes:
                 confidence: 100
     ROUTE53_HEALTHCHECKS:
         description: ROUTE53_HEALTHCHECKS ranges
+        node_type: miner
         class: minemeld.ft.json.SimpleJSON
         config:
             source_name: aws.ROUTE53_HEALTHCHECKS
@@ -83,6 +87,7 @@ prototypes:
                 confidence: 100
     CLOUDFRONT:
         description: CLOUDFRONT ranges
+        node_type: miner
         class: minemeld.ft.json.SimpleJSON
         config:
             source_name: aws.CLOUDFRONT
