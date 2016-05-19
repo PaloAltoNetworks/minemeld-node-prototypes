@@ -24,4 +24,6 @@ deploy:
 after_deploy:
     - "export MD5SUM=$(md5sum dist/minemeld-prototypes-$BUILD_VERSION.tar.gz | awk '{ print $1 }')"
     - "export SHA256SUM=$(sha256sum dist/minemeld-prototypes-$BUILD_VERSION.tar.gz | awk '{ print $1 }')"
-    - 'curl -f -i "https://$MINEMELD_AUTOUPDATE_API_HOST/0_9/package?file=minemeld-prototypes-$BUILD_VERSION.tar.gz&version=$BUILD_VERSION&md5=$MD5SUM&sha256=$SHA256SUM&package=minemeld-prototypes" -H "x-api-key: $MINEMELD_AUTOUPDATE_API_KEY"'
+    - 'if [[ "$TRAVIS_TAG" == *"b"* ]]; then export STAGE=beta0_9; else export STAGE=0_9; fi'
+    - echo $STAGE
+    - 'curl -f -i "https://$MINEMELD_AUTOUPDATE_API_HOST/$STAGE/package?file=minemeld-prototypes-$BUILD_VERSION.tar.gz&version=$BUILD_VERSION&md5=$MD5SUM&sha256=$SHA256SUM&package=minemeld-prototypes" -H "x-api-key: $MINEMELD_AUTOUPDATE_API_KEY"'
