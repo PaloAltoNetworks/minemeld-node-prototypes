@@ -176,7 +176,7 @@ prototypes:
         development_status: STABLE
         node_type: output
         description: >
-            EBL for low confidence indicators (<50) and share level green
+            EDL for low confidence indicators (<50) and share level green
         class: minemeld.ft.redis.RedisSet
         config:
             infilters:
@@ -199,7 +199,7 @@ prototypes:
         development_status: STABLE
         node_type: output
         description: >
-            EBL for medium confidence indicators (>=50,<75) and share level green
+            EDL for medium confidence indicators (>=50,<75) and share level green
         class: minemeld.ft.redis.RedisSet
         config:
             infilters:
@@ -223,7 +223,7 @@ prototypes:
         development_status: STABLE
         node_type: output
         description: >
-            EBL for high confidence indicators (>75) and share level green, with value
+            EDL for high confidence indicators (>75) and share level green, with value
         class: minemeld.ft.redis.RedisSet
         config:
             infilters:
@@ -246,7 +246,7 @@ prototypes:
         development_status: STABLE
         node_type: output
         description: >
-            EBL for low confidence indicators (<50) and share level green, with value
+            EDL for low confidence indicators (<50) and share level green, with value
         class: minemeld.ft.redis.RedisSet
         config:
             store_value: true
@@ -270,7 +270,7 @@ prototypes:
         development_status: STABLE
         node_type: output
         description: >
-            EBL for medium confidence indicators (>=50,<75) and share level green, with value
+            EDL for medium confidence indicators (>=50,<75) and share level green, with value
         class: minemeld.ft.redis.RedisSet
         config:
             store_value: true
@@ -295,7 +295,7 @@ prototypes:
         development_status: STABLE
         node_type: output
         description: >
-            EBL for high confidence indicators (>75) and share level green, with value
+            EDL for high confidence indicators (>75) and share level green, with value
         class: minemeld.ft.redis.RedisSet
         config:
             store_value: true
@@ -319,7 +319,7 @@ prototypes:
         development_status: STABLE
         node_type: output
         description: >
-            EBL for low confidence indicators (<50), with value
+            EDL for low confidence indicators (<50), with value
         class: minemeld.ft.redis.RedisSet
         config:
             store_value: true
@@ -342,7 +342,7 @@ prototypes:
         development_status: STABLE
         node_type: output
         description: >
-            EBL for medium confidence indicators (>=50,<75), with value
+            EDL for medium confidence indicators (>=50,<75), with value
         class: minemeld.ft.redis.RedisSet
         config:
             store_value: true
@@ -366,7 +366,7 @@ prototypes:
         development_status: STABLE
         node_type: output
         description: >
-            EBL for high confidence indicators (>75), with value
+            EDL for high confidence indicators (>75), with value
         class: minemeld.ft.redis.RedisSet
         config:
             store_value: true
@@ -438,7 +438,7 @@ prototypes:
         development_status: STABLE
         node_type: output
         description: >
-            EBL for low confidence indicators (<50) and share level red, with value
+            EDL for low confidence indicators (<50) and share level red, with value
         class: minemeld.ft.redis.RedisSet
         config:
             store_value: true
@@ -462,7 +462,7 @@ prototypes:
         development_status: STABLE
         node_type: output
         description: >
-            EBL for medium confidence indicators (>=50,<75) and share level red, with value
+            EDL for medium confidence indicators (>=50,<75) and share level red, with value
         class: minemeld.ft.redis.RedisSet
         config:
             store_value: true
@@ -487,7 +487,7 @@ prototypes:
         development_status: STABLE
         node_type: output
         description: >
-            EBL for high confidence indicators (>75) and share level red, with value
+            EDL for high confidence indicators (>75) and share level red, with value
         class: minemeld.ft.redis.RedisSet
         config:
             store_value: true
