@@ -1,0 +1,19 @@
+author: lmori
+url: 'https://www.microsoft.com/EN-US/DOWNLOAD/confirmation.aspx?id=41653'
+description: >
+    List of Microsoft Azure Public IP addresses.
+
+prototypes:
+    cloudIPs:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            Public IP addresses of Microsoft Azure
+        class: minemeld.ft.azure.AzureXML
+        config:
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                share_level: green
