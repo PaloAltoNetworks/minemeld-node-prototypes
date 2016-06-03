@@ -1,0 +1,24 @@
+author: lmori
+url: https://www.anomali.com/
+description: >
+    The Anomali mandate is to deliver innovative and effective technologies
+    and solutions to address cyber security challenges for organizations of
+    all sizes. Through trust, collaboration, and communication, Anomali
+    strives to implement intelligence driven solutions to achieve its
+    vision: a more secure world.
+
+prototypes:
+    opticAPI:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            Miner for Anomali Optic API
+        class: minemeld.ft.anomali.Intelligence
+        config:
+            age_out:
+                default: 90d
+                sudden_death: true
+                interval: 3307
+            attributes:
+                share_level: red
+                confidence: 30
