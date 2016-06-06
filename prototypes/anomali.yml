@@ -1,11 +1,13 @@
 author: lmori
 url: https://www.anomali.com/
 description: >
-    The Anomali mandate is to deliver innovative and effective technologies
-    and solutions to address cyber security challenges for organizations of
-    all sizes. Through trust, collaboration, and communication, Anomali
-    strives to implement intelligence driven solutions to achieve its
-    vision: a more secure world.
+    Anomali delivers earlier detection and identification of adversaries
+    in your organizations network by making it possible to correlate
+    tens of millions of threat indicators against your real time network
+    activity logs and up to a year or more of forensic log data.
+    Anomali’s approach enables detection at every point along the kill
+    chain, making it possible to mitigate threats before material damage
+    to your organization has occurred.
 
 prototypes:
     opticAPI:
