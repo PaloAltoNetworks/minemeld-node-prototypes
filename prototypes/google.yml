@@ -1,0 +1,32 @@
+author: lmori
+url: 'https://www.google.com'
+description: >
+    Miners for retrieving google net blocks for different services
+
+prototypes:
+    netBlocks:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            Net blocks of Google services
+        class: minemeld.ft.google.GoogleNetBlocks
+        config:
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                share_level: green
+    GCENetBlocks:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            Net blocks of GCE
+        class: minemeld.ft.google.GoogleCloudNetBlocks
+        config:
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                share_level: green

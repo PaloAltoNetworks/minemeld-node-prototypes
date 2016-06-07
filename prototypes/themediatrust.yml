@@ -1,0 +1,26 @@
+author: lmori
+url: https://www.themediatrust.com/digital-threat-intelligence.php
+description: >
+    Digital Threat Intelligence (DTI) from The Media Trust provides real-time,
+    actionable intelligence that is 100% derived from The Media Trust's
+    continuous, 24/7 monitoring of websites, mobile apps and digital
+    advertising across a variety of online and mobile browser/OS, device,
+    geography and user profile combinations. DTI delivers real-time qualitative
+    and quantitative information on actual malware attacking the most
+    heavily-trafficked websites visited by employees and everyday consumers.
+
+prototypes:
+    DTIAPI:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            Miner for The Media Trust DTI API
+        class: minemeld.ft.tmt.DTIAPI
+        config:
+            age_out:
+                default: 30d
+                sudden_death: false
+                interval: 3307
+            attributes:
+                share_level: red
+                confidence: 70

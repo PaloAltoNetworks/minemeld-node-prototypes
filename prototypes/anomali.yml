@@ -1,0 +1,26 @@
+author: lmori
+url: https://www.anomali.com/
+description: >
+    Anomali delivers earlier detection and identification of adversaries
+    in your organizations network by making it possible to correlate
+    tens of millions of threat indicators against your real time network
+    activity logs and up to a year or more of forensic log data.
+    Anomali’s approach enables detection at every point along the kill
+    chain, making it possible to mitigate threats before material damage
+    to your organization has occurred.
+
+prototypes:
+    opticAPI:
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            Miner for Anomali Optic API
+        class: minemeld.ft.anomali.Intelligence
+        config:
+            age_out:
+                default: 90d
+                sudden_death: true
+                interval: 3307
+            attributes:
+                share_level: red
+                confidence: 30
