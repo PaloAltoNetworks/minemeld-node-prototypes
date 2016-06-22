@@ -1,0 +1,23 @@
+description: >
+    badips.com is a community based IP blacklist service.
+    You can report malicious IPs and you can download
+    blacklists or query our API to find out if a IP is listed.
+url: https://www.badips.com
+
+prototypes:
+    blocklist_any_3_2weeks:
+        author: CERT (uc3m.es)
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            blocklist with IPs of last 2 weeks any category and score > 3
+        class: minemeld.ft.http.HttpFT
+        config:
+            source_name: badips.any_3
+            url: https://www.badips.com/get/list/any/3?age=2w
+            user_agent: MineMeld
+            attributes:
+                type: IPv4
+                direction: inbound
+                share_level: green
+                confidence: 50
