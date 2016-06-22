@@ -1,7 +1,7 @@
-language: C
+language: python
 
 before_install:
-    - sudo apt-get install -y python-tox
+    - pip install tox
 
 install: true
 
