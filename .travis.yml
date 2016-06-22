@@ -1,8 +1,7 @@
 language: C
 
-addons:
-  apt:
-    - python-tox
+before_install:
+    - sudo apt-get install -y python-tox
 
 install: true
 
