@@ -1,4 +1,3 @@
-author: lmori
 description: >
     AlienVault Reputation Monitor Alert is a free service that alerts you
     whenever your public IPs and domains appear in the AlienVault Open Threat
@@ -7,6 +6,7 @@ url: https://www.alienvault.com/open-threat-exchange/reputation-monitor
 
 prototypes:
     reputation:
+        author: Palo Alto Networks
         development_status: EXPERIMENTAL
         node_type: miner
         description: this just catches everything

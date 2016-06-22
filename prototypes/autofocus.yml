@@ -1,4 +1,3 @@
-author: lmori
 url: https://autofocus.paloaltonetworks.com/
 description: >
     AutoFocus re-imagines threat intelligence, allowing you to
@@ -9,6 +8,7 @@ description: >
 
 prototypes:
     exportList:
+        author: Palo Alto Networks
         development_status: EXPERIMENTAL
         node_type: miner
         description: >

@@ -1,4 +1,3 @@
-author: lmori
 url: https://sslbl.abuse.ch/blacklist/
 description: >
     SSLBL offers various types of blacklists that allows you to block bad SSL
@@ -6,6 +5,7 @@ description: >
 
 prototypes:
     ipblacklist:
+        author: Palo Alto Networks
         development_status: STABLE
         node_type: miner
         class: minemeld.ft.csv.CSVFT
@@ -22,6 +22,7 @@ prototypes:
                 share_level: green
             source_name: sslblabusech.ipblacklist
     dyreblacklist:
+        author: Palo Alto Networks
         development_status: STABLE
         node_type: miner
         class: minemeld.ft.csv.CSVFT

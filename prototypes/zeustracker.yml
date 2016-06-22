@@ -1,4 +1,3 @@
-author: lmori
 url: https://zeustracker.abuse.ch/
 description: >
     ZeuS Tracker tracks ZeuS Command&Control servers (hosts) around the world and
@@ -6,6 +5,7 @@ description: >
 
 prototypes:
     baddomains:
+        author: Palo Alto Networks
         development_status: STABLE
         node_type: miner
         config:
@@ -19,6 +19,7 @@ prototypes:
           interval: 1800
         class: minemeld.ft.http.HttpFT
     badips:
+        author: Palo Alto Networks
         development_status: STABLE
         node_type: miner
         config:
