@@ -13,6 +13,7 @@ prototypes:
         development_status: STABLE
         node_type: miner
         class: minemeld.ft.http.HttpFT
+        description: IP blocklist
         config:
             url: http://danger.rulez.sk/projects/bruteforceblocker/blist.php
             source_name: bruteforceblocker.blist

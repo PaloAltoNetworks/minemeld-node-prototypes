@@ -1,8 +1,13 @@
 language: C
 
+addons:
+  apt:
+    - python-tox
+
 install: true
 
 script:
+    - tox
     - if [ -n "$TRAVIS_TAG" ]; then export BUILD_VERSION="$TRAVIS_TAG"; fi
     - if [ -z "$TRAVIS_TAG" ]; then export BUILD_VERSION="$TRAVIS_BUILD_NUMBER"; fi
     - mkdir $BUILD_VERSION

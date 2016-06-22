@@ -1,4 +1,5 @@
 description: Library of prototypes for commonly used nodes
+url: https://go.paloaltonetworks.com/minemeld
 
 prototypes:
     aggregatorURL:
@@ -418,6 +419,7 @@ prototypes:
         description: >
             Syslog node connection to the local syslog server to receive PAN-OS logs
         class: minemeld.ft.syslog.SyslogMatcher
+        config: {}
 
     localSyslogToLogStash:
         author: Palo Alto Networks
@@ -452,6 +454,7 @@ prototypes:
             Push IP unicast indicators to PAN-OS devices via DAG, typically connected
             to a syslog node
         class: minemeld.ft.dag.DagPusher
+        config: {}
 
     feedLCRedWithValue:
         author: Palo Alto Networks

@@ -7,6 +7,10 @@ prototypes:
     ipblacklist:
         author: Palo Alto Networks
         development_status: STABLE
+        description: >
+            The SSL IP Blacklist contains all hosts (IP addresses) that SSLBL has
+            seen in the past 30 days being associated with a malicious SSL
+            certificate.
         node_type: miner
         class: minemeld.ft.csv.CSVFT
         config:
@@ -25,6 +29,7 @@ prototypes:
         author: Palo Alto Networks
         development_status: STABLE
         node_type: miner
+        description: Dyre SSL blacklist
         class: minemeld.ft.csv.CSVFT
         config:
             url: https://sslbl.abuse.ch/blacklist/dyre_sslipblacklist.csv
