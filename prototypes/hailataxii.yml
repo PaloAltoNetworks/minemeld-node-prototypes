@@ -9,6 +9,7 @@ prototypes:
         development_status: EXPERIMENTAL
         node_type: miner
         class: minemeld.ft.taxii.TaxiiClient
+        description: public TAXII feed from Lehigh.edu
         config:
             source_name: hailataxii.guest.Lehigh_edu
             discovery_service: http://hailataxii.com/taxii-discovery-service
@@ -26,6 +27,7 @@ prototypes:
         development_status: EXPERIMENTAL
         node_type: miner
         class: minemeld.ft.taxii.TaxiiClient
+        description: public TAXII feed from phishtank.com
         config:
             source_name: hailataxii.guest.phishtank_com
             discovery_service: http://hailataxii.com/taxii-discovery-service

@@ -10,6 +10,7 @@ prototypes:
         development_status: STABLE
         node_type: miner
         class: minemeld.ft.http.HttpFT
+        description: virbl IP blocklist
         config:
             source_name: virbl.bl
             attributes:
