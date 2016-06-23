@@ -1,4 +1,3 @@
-author: lmori
 url: https://www.anomali.com/
 description: >
     Anomali delivers earlier detection and identification of adversaries
@@ -11,6 +10,7 @@ description: >
 
 prototypes:
     opticAPI:
+        author: Palo Alto Networks
         development_status: EXPERIMENTAL
         node_type: miner
         description: >

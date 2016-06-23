@@ -1,4 +1,3 @@
-author: lmori
 url: https://www.torproject.org/
 description: >
     Tor is free software and an open network that helps you defend
@@ -8,6 +7,7 @@ description: >
 
 prototypes:
     exit_addresses:
+        author: Palo Alto Networks
         development_status: EXPERIMENTAL
         node_type: miner
         description: Tor Exit addresses

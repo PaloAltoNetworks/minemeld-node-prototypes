@@ -1,4 +1,3 @@
-author: lmori
 url: https://www.spamhaus.org/
 description: >
     The Spamhaus Project is an international nonprofit organization whose
@@ -10,6 +9,7 @@ description: >
 
 prototypes:
     DROP:
+        author: Palo Alto Networks
         development_status: STABLE
         node_type: miner
         description: Spamhaus Don't Route Or Peer List (DROP)
@@ -31,6 +31,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
 
     EDROP:
+        author: Palo Alto Networks
         development_status: STABLE
         node_type: miner
         description: Spamhaus Extended DROP List (EDROP)

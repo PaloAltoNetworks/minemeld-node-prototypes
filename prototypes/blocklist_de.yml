@@ -1,4 +1,3 @@
-author: lmori
 description: >
     www.blocklist.de is a free and voluntary service provided by a
     Fraud/Abuse-specialist, whose servers are often attacked on
@@ -7,6 +6,7 @@ url: http://www.blocklist.de/en/index.html
 
 prototypes:
     all:
+        author: Palo Alto Networks
         development_status: STABLE
         node_type: miner
         description: >
@@ -22,6 +22,7 @@ prototypes:
                 confidence: 50
         class: minemeld.ft.http.HttpFT
     ssh:
+        author: Palo Alto Networks
         development_status: STABLE
         node_type: miner
         description: >
@@ -38,6 +39,7 @@ prototypes:
                 application: ssh
         class: minemeld.ft.http.HttpFT
     mail:
+        author: Palo Alto Networks
         development_status: STABLE
         node_type: miner
         description: >
@@ -54,6 +56,7 @@ prototypes:
                 application: smtp
         class: minemeld.ft.http.HttpFT
     apache:
+        author: Palo Alto Networks
         development_status: STABLE
         node_type: miner
         description: >
@@ -70,6 +73,7 @@ prototypes:
                 confidence: 50
         class: minemeld.ft.http.HttpFT
     imap:
+        author: Palo Alto Networks
         development_status: STABLE
         node_type: miner
         description: >
@@ -86,6 +90,7 @@ prototypes:
                 application: imap
         class: minemeld.ft.http.HttpFT
     ftp:
+        author: Palo Alto Networks
         development_status: STABLE
         node_type: miner
         description: >
@@ -102,6 +107,7 @@ prototypes:
                 application: ftp
         class: minemeld.ft.http.HttpFT
     sip:
+        author: Palo Alto Networks
         development_status: STABLE
         node_type: miner
         description: >
@@ -119,6 +125,7 @@ prototypes:
                 application: sip
         class: minemeld.ft.http.HttpFT
     bots:
+        author: Palo Alto Networks
         development_status: STABLE
         node_type: miner
         description: >
@@ -136,6 +143,7 @@ prototypes:
                 confidence: 50
         class: minemeld.ft.http.HttpFT
     strongips:
+        author: Palo Alto Networks
         development_status: STABLE
         node_type: miner
         description: >
@@ -151,6 +159,7 @@ prototypes:
                 confidence: 50
         class: minemeld.ft.http.HttpFT
     ircbot:
+        author: Palo Alto Networks
         development_status: STABLE
         node_type: miner
         description: ''
@@ -164,6 +173,7 @@ prototypes:
                 confidence: 50
         class: minemeld.ft.http.HttpFT
     bruteforcelogin:
+        author: Palo Alto Networks
         development_status: STABLE
         node_type: miner
         description: >

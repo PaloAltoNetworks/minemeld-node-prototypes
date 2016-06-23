@@ -1,4 +1,3 @@
-author: lmori
 url: https://zeustracker.abuse.ch/
 description: >
     ZeuS Tracker tracks ZeuS Command&Control servers (hosts) around the world and
@@ -6,7 +5,15 @@ description: >
 
 prototypes:
     baddomains:
+        author: Palo Alto Networks
         development_status: STABLE
+        description: >
+          If you want to block domain names used by the ZeuS trojan, you
+          should use this list. The ZeuS domain blocklist is
+          the recommended blocklist if you want to block only ZeuS domain names.
+          It excludes domain names that ZeuS Tracker believes to be hijacked
+          (level 2). Hence the false positive rate should be much lower compared
+          to the standard ZeuS domain blocklist.
         node_type: miner
         config:
           source_name: zeustracker.baddomains
@@ -19,7 +26,15 @@ prototypes:
           interval: 1800
         class: minemeld.ft.http.HttpFT
     badips:
+        author: Palo Alto Networks
         development_status: STABLE
+        description: >
+          This blocklists only includes IPv4 addresses that are used by the ZeuS
+          trojan. It is the recommened blocklist if you want to block only ZeuS IPs.
+          It excludes IP addresses that ZeuS Tracker believes to be hijacked
+          (level 2) or belong to a free web hosting provider (level 3). Hence the
+          false postive rate should be much lower compared to the standard ZeuS IP
+          blocklist (see below).
         node_type: miner
         config:
           source_name: zeustracker.badips

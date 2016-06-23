@@ -1,4 +1,3 @@
-author: lmori
 url: http://virbl.org/
 description: >
     Virbl is a project of which the idea was born during the RIPE-48 meeting.
@@ -7,9 +6,11 @@ description: >
 
 prototypes:
     bl:
+        author: Palo Alto Networks
         development_status: STABLE
         node_type: miner
         class: minemeld.ft.http.HttpFT
+        description: virbl IP blocklist
         config:
             source_name: virbl.bl
             attributes:
