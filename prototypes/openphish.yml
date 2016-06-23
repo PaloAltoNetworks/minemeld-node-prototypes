@@ -1,4 +1,3 @@
-author: lmori
 url: https://openphish.com/
 description: >
     OpenPhish launched in June 2014 as a result of a three-year research on
@@ -6,6 +5,7 @@ description: >
 
 prototypes:
     feed:
+        author: Palo Alto Networks
         development_status: EXPERIMENTAL
         node_type: miner
         description: The free feed

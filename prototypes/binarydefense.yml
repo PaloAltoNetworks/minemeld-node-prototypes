@@ -5,6 +5,7 @@ description: >
 
 prototypes:
     banlist:
+        author: Axel Bodart (ulg.ac.be)
         development_status: EXPERIMENTAL
         node_type: miner
         description: The full banlist

@@ -1,4 +1,3 @@
-author: lmori
 url: 'https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US'
 description: >
     This reference article lists every endpoints used by Office 365.
@@ -9,6 +8,7 @@ description: >
 
 prototypes:
     O365:
+        author: Palo Alto Networks
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -26,6 +26,7 @@ prototypes:
                 share_level: green
 
     exchangeOnline:
+        author: Palo Alto Networks
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -43,6 +44,7 @@ prototypes:
                 share_level: green
 
     skypeBusinessOnline:
+        author: Palo Alto Networks
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -61,6 +63,7 @@ prototypes:
                 share_level: green
 
     sharepointOnline:
+        author: Palo Alto Networks
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -79,6 +82,7 @@ prototypes:
                 share_level: green
 
     exchangeOnlineProtection:
+        author: Palo Alto Networks
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -97,6 +101,7 @@ prototypes:
                 share_level: green
 
     O365RemoteAnalyzers:
+        author: Palo Alto Networks
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -114,6 +119,7 @@ prototypes:
                 share_level: green
 
     yammer:
+        author: Palo Alto Networks
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -130,6 +136,7 @@ prototypes:
                 share_level: green
 
     O365ProPlus:
+        author: Palo Alto Networks
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -147,6 +154,7 @@ prototypes:
                 share_level: green
 
     officeOnline:
+        author: Palo Alto Networks
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -163,6 +171,7 @@ prototypes:
                 share_level: green
 
     officeiPad:
+        author: Palo Alto Networks
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -179,6 +188,7 @@ prototypes:
                 share_level: green
 
     officeMobile:
+        author: Palo Alto Networks
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -195,6 +205,7 @@ prototypes:
                 share_level: green
 
     planner:
+        author: Palo Alto Networks
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -211,6 +222,7 @@ prototypes:
                 share_level: green
 
     oneNote:
+        author: Palo Alto Networks
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -227,6 +239,7 @@ prototypes:
                 share_level: green
 
     identity:
+        author: Palo Alto Networks
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -244,6 +257,7 @@ prototypes:
                 share_level: green
 
     sway:
+        author: Palo Alto Networks
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -260,6 +274,7 @@ prototypes:
                 share_level: green
 
     office365Video:
+        author: Palo Alto Networks
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -276,6 +291,7 @@ prototypes:
                 share_level: green
 
     crls:
+        author: Palo Alto Networks
         development_status: EXPERIMENTAL
         node_type: miner
         description: >

@@ -1,4 +1,3 @@
-author: lmori
 url: http://danger.rulez.sk/index.php/bruteforceblocker/
 description: >
     BruteForceBlocker is a perl script, that works along with
@@ -10,6 +9,7 @@ description: >
 
 prototypes:
     blist:
+        author: Palo Alto Networks
         development_status: STABLE
         node_type: miner
         class: minemeld.ft.http.HttpFT

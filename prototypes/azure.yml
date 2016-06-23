@@ -1,10 +1,10 @@
-author: lmori
 url: 'https://www.microsoft.com/EN-US/DOWNLOAD/confirmation.aspx?id=41653'
 description: >
     List of Microsoft Azure Public IP addresses.
 
 prototypes:
     cloudIPs:
+        author: Palo Alto Networks
         development_status: EXPERIMENTAL
         node_type: miner
         description: >

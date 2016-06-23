@@ -1,4 +1,3 @@
-author: lmori
 url: https://www.recordedfuture.com/
 description: >
     Recorded Future delivers automated, real-time threat intelligence that
@@ -9,6 +8,7 @@ description: >
 
 prototypes:
     IPRiskList:
+        author: Palo Alto Networks
         development_status: EXPERIMENTAL
         node_type: miner
         description: >

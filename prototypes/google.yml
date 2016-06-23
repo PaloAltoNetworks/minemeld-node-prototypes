@@ -1,10 +1,10 @@
-author: lmori
 url: 'https://www.google.com'
 description: >
     Miners for retrieving google net blocks for different services
 
 prototypes:
     netBlocks:
+        author: Palo Alto Networks
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -18,6 +18,7 @@ prototypes:
             attributes:
                 share_level: green
     GCENetBlocks:
+        author: Palo Alto Networks
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
