@@ -603,3 +603,12 @@ prototypes:
             attributes:
                 confidence: 100
                 share_level: red
+
+    taxiiDataFeed:
+        author: Palo Alto Networks
+        development_status: EXPERIMENTAL
+        node_type: output
+        description: TAXII DataFeed
+        class: minemeld.ft.taxii.DataFeed
+        config: {}
+
