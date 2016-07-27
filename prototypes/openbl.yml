@@ -10,7 +10,7 @@ description: >
 
 prototypes:
     base:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
         description: The suggested DEFAULT list
@@ -25,7 +25,7 @@ prototypes:
             url: http://www.openbl.org/lists/base.txt
         class: minemeld.ft.http.HttpFT
     base_1days:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
         description: IP list for last 1 days
@@ -40,7 +40,7 @@ prototypes:
             url: https://www.openbl.org/lists/base_1days.txt
         class: minemeld.ft.http.HttpFT
     base_7days:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
         description: IP list for last 7 days
@@ -55,7 +55,7 @@ prototypes:
             url: https://www.openbl.org/lists/base_7days.txt
         class: minemeld.ft.http.HttpFT
     base_30days:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
         description: IP list for last 30 days
@@ -70,7 +70,7 @@ prototypes:
             url: https://www.openbl.org/lists/base_30days.txt
         class: minemeld.ft.http.HttpFT
     base_60days:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
         description: IP list for last 60 days
@@ -85,7 +85,7 @@ prototypes:
             url: https://www.openbl.org/lists/base_60days.txt
         class: minemeld.ft.http.HttpFT
     base_90days:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
         description: openbl.base_90days
@@ -100,7 +100,7 @@ prototypes:
             url: https://www.openbl.org/lists/base_90days.txt
         class: minemeld.ft.http.HttpFT
     base_180days:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
         description: IP list for last 180 days
@@ -115,7 +115,7 @@ prototypes:
             url: https://www.openbl.org/lists/base_180days.txt
         class: minemeld.ft.http.HttpFT
     base_360days:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
         description: IP list for last 360 days

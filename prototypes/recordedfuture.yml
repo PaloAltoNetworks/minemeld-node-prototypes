@@ -8,7 +8,7 @@ description: >
 
 prototypes:
     IPRiskList:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: >

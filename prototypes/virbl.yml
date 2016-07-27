@@ -6,7 +6,7 @@ description: >
 
 prototypes:
     bl:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
         class: minemeld.ft.http.HttpFT

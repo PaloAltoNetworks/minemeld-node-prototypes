@@ -5,7 +5,7 @@ description: >
 
 prototypes:
     ipblacklist:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         description: >
             The SSL IP Blacklist contains all hosts (IP addresses) that SSLBL has
@@ -26,7 +26,7 @@ prototypes:
                 share_level: green
             source_name: sslblabusech.ipblacklist
     dyreblacklist:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
         description: Dyre SSL blacklist

@@ -8,7 +8,7 @@ description: >
 
 prototypes:
     O365:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -26,7 +26,7 @@ prototypes:
                 share_level: green
 
     exchangeOnline:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -44,7 +44,7 @@ prototypes:
                 share_level: green
 
     skypeBusinessOnline:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -63,7 +63,7 @@ prototypes:
                 share_level: green
 
     sharepointOnline:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -82,7 +82,7 @@ prototypes:
                 share_level: green
 
     exchangeOnlineProtection:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -101,7 +101,7 @@ prototypes:
                 share_level: green
 
     O365RemoteAnalyzers:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -119,7 +119,7 @@ prototypes:
                 share_level: green
 
     yammer:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -136,7 +136,7 @@ prototypes:
                 share_level: green
 
     O365ProPlus:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -154,7 +154,7 @@ prototypes:
                 share_level: green
 
     officeOnline:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -171,7 +171,7 @@ prototypes:
                 share_level: green
 
     officeiPad:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -188,7 +188,7 @@ prototypes:
                 share_level: green
 
     officeMobile:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -205,7 +205,7 @@ prototypes:
                 share_level: green
 
     planner:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -222,7 +222,7 @@ prototypes:
                 share_level: green
 
     oneNote:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -239,7 +239,7 @@ prototypes:
                 share_level: green
 
     identity:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -257,7 +257,7 @@ prototypes:
                 share_level: green
 
     sway:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -274,7 +274,7 @@ prototypes:
                 share_level: green
 
     office365Video:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -291,7 +291,7 @@ prototypes:
                 share_level: green
 
     crls:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: >

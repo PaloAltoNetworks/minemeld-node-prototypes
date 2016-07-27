@@ -6,7 +6,7 @@ url: https://www.alienvault.com/open-threat-exchange/reputation-monitor
 
 prototypes:
     reputation:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: this just catches everything

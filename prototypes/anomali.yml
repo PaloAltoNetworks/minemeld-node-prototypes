@@ -10,7 +10,7 @@ description: >
 
 prototypes:
     opticAPI:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: >

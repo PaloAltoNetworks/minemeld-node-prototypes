@@ -3,7 +3,7 @@ url: https://go.paloaltonetworks.com/minemeld
 
 prototypes:
     aggregatorURL:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: processor
         description: >
@@ -30,7 +30,7 @@ prototypes:
                     - drop
 
     aggregatorIPv6Simple:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: processor
         description: >
@@ -57,7 +57,7 @@ prototypes:
                     - drop
 
     aggregatorDomain:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: processor
         description: >
@@ -84,7 +84,7 @@ prototypes:
                     - drop
 
     aggregatorIPv4Generic:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: processor
         description: >
@@ -111,7 +111,7 @@ prototypes:
                     - drop
 
     aggregatorIPv4Inbound:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: processor
         description: >
@@ -145,7 +145,7 @@ prototypes:
                     - drop
 
     aggregatorIPv4Outbound:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: processor
         description: >
@@ -179,7 +179,7 @@ prototypes:
                     - drop
 
     feedLCGreen:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: output
         description: >
@@ -203,7 +203,7 @@ prototypes:
                     - drop
 
     feedMCGreen:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: output
         description: >
@@ -228,7 +228,7 @@ prototypes:
                     - drop
 
     feedHCGreen:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: output
         description: >
@@ -252,7 +252,7 @@ prototypes:
                     - drop
 
     feedLCGreenWithValue:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: output
         description: >
@@ -277,7 +277,7 @@ prototypes:
                     - drop
 
     feedMCGreenWithValue:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: output
         description: >
@@ -303,7 +303,7 @@ prototypes:
                     - drop
 
     feedHCGreenWithValue:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: output
         description: >
@@ -328,7 +328,7 @@ prototypes:
                     - drop
 
     feedLCWithValue:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: output
         description: >
@@ -352,7 +352,7 @@ prototypes:
                     - drop
 
     feedMCWithValue:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: output
         description: >
@@ -377,7 +377,7 @@ prototypes:
                     - drop
 
     feedHCWithValue:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: output
         description: >
@@ -401,7 +401,7 @@ prototypes:
                     - drop
 
     syslogMiner:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -413,7 +413,7 @@ prototypes:
                 confidence: 50
 
     localSyslog:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: processor
         description: >
@@ -422,7 +422,7 @@ prototypes:
         config: {}
 
     localSyslogToLogStash:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: processor
         description: >
@@ -435,7 +435,7 @@ prototypes:
             logstash_port: 5514
 
     localLogStash:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: output
         description: >
@@ -447,7 +447,7 @@ prototypes:
             logstash_port: 5514
 
     dagPusher:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: output
         description: >
@@ -457,7 +457,7 @@ prototypes:
         config: {}
 
     feedLCRedWithValue:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: output
         description: >
@@ -482,7 +482,7 @@ prototypes:
                     - drop
 
     feedMCRedWithValue:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: output
         description: >
@@ -508,7 +508,7 @@ prototypes:
                     - drop
 
     feedHCRedWithValue:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: output
         description: >
@@ -533,7 +533,7 @@ prototypes:
                     - drop
 
     listIPv4Generic:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -551,7 +551,7 @@ prototypes:
                 share_level: red
 
     listIPv6Generic:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -569,7 +569,7 @@ prototypes:
                 share_level: red
 
     listURLGeneric:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -587,7 +587,7 @@ prototypes:
                 share_level: red
 
     listDomainGeneric:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -605,7 +605,7 @@ prototypes:
                 share_level: red
 
     taxiiDataFeed:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: output
         description: TAXII DataFeed
