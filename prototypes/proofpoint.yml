@@ -7,7 +7,7 @@ url: https://www.proofpoint.com/us/threat-intelligence-overview
 
 prototypes:
     EmergingThreatsIPs:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
         description: >
@@ -26,7 +26,7 @@ prototypes:
                 confidence: 70
 
     EmergingThreatsDomains:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
         description: >

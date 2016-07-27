@@ -5,7 +5,7 @@ description: >
 
 prototypes:
     AMAZON:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         description: all AMAZON ranges
         node_type: miner
@@ -27,7 +27,7 @@ prototypes:
                 type: IPv4
                 confidence: 100
     EC2:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         description: EC2 ranges
         node_type: miner
@@ -49,7 +49,7 @@ prototypes:
                 type: IPv4
                 confidence: 100
     ROUTE53:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         description: ROUTE53 ranges
         node_type: miner
@@ -71,7 +71,7 @@ prototypes:
                 type: IPv4
                 confidence: 100
     ROUTE53_HEALTHCHECKS:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         description: ROUTE53_HEALTHCHECKS ranges
         node_type: miner
@@ -93,7 +93,7 @@ prototypes:
                 type: IPv4
                 confidence: 100
     CLOUDFRONT:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         description: CLOUDFRONT ranges
         node_type: miner

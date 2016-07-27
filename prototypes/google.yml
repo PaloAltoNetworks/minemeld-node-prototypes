@@ -4,7 +4,7 @@ description: >
 
 prototypes:
     netBlocks:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
@@ -18,7 +18,7 @@ prototypes:
             attributes:
                 share_level: green
     GCENetBlocks:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: >

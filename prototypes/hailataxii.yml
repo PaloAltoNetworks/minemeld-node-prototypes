@@ -5,7 +5,7 @@ description: >
 
 prototypes:
     guest_Lehigh_edu:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         class: minemeld.ft.taxii.TaxiiClient
@@ -23,7 +23,7 @@ prototypes:
                default: 30d
 
     guest_phishtank_com:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         class: minemeld.ft.taxii.TaxiiClient

@@ -6,7 +6,7 @@ description: >
 
 prototypes:
     CW_C2_URLBL:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: CryptoWall C2 URLs
@@ -24,7 +24,7 @@ prototypes:
             sudden_death: true
         class: minemeld.ft.http.HttpFT
     CW_C2_DOMBL:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: CryptoWall C2 domains
@@ -42,7 +42,7 @@ prototypes:
             sudden_death: true
         class: minemeld.ft.http.HttpFT
     CW_PS_DOMBL:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: CryptoWall C2 Payment Sites domains
@@ -60,7 +60,7 @@ prototypes:
             sudden_death: true
         class: minemeld.ft.http.HttpFT
     CW_PS_IPBL:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: CryptoWall Payment Sites IPs
@@ -79,7 +79,7 @@ prototypes:
             sudden_death: true
         class: minemeld.ft.http.HttpFT
     TC_C2_URLBL:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: TeslaCrypt C2 URLs
@@ -97,7 +97,7 @@ prototypes:
             sudden_death: true
         class: minemeld.ft.http.HttpFT
     TC_C2_DOMBL:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: TeslaCrypt C2 domains
@@ -115,7 +115,7 @@ prototypes:
             sudden_death: true
         class: minemeld.ft.http.HttpFT
     TC_PS_DOMBL:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: TeslaCrypt Payment Sites domains
@@ -133,7 +133,7 @@ prototypes:
             sudden_death: true
         class: minemeld.ft.http.HttpFT
     TC_PS_IPBL:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: TeslaCrypt Payment Sites IPs
@@ -152,7 +152,7 @@ prototypes:
             sudden_death: true
         class: minemeld.ft.http.HttpFT
     TC_DS_URLBL:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: TeslaCrypt Distribution Sites URLs
@@ -170,7 +170,7 @@ prototypes:
             sudden_death: true
         class: minemeld.ft.http.HttpFT
     LY_C2_DOMBL:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: Locky C2 domains
@@ -188,7 +188,7 @@ prototypes:
             sudden_death: true
         class: minemeld.ft.http.HttpFT
     LY_C2_IPBL:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: Locky IPs
@@ -207,7 +207,7 @@ prototypes:
             sudden_death: true
         class: minemeld.ft.http.HttpFT
     LY_PS_DOMBL:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: Locky Payment Sites domains
@@ -225,7 +225,7 @@ prototypes:
             sudden_death: true
         class: minemeld.ft.http.HttpFT
     LY_PS_IPBL:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: Locky Payment Sites IPs
@@ -243,7 +243,7 @@ prototypes:
             sudden_death: true
         class: minemeld.ft.http.HttpFT
     LY_DS_URLBL:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: Locky Distribution Sites URLs
@@ -261,7 +261,7 @@ prototypes:
             sudden_death: true
         class: minemeld.ft.http.HttpFT
     TL_C2_DOMBL:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: TorrentLocker C2 domains
@@ -279,7 +279,7 @@ prototypes:
             sudden_death: true
         class: minemeld.ft.http.HttpFT
     TL_C2_IPBL:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: TorrentLocker C2 IPs
@@ -298,7 +298,7 @@ prototypes:
             sudden_death: true
         class: minemeld.ft.http.HttpFT
     TL_PS_DOMBL:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: TorrentLocker Payment Sites domains
@@ -316,7 +316,7 @@ prototypes:
             sudden_death: true
         class: minemeld.ft.http.HttpFT
     TL_PS_IPBL:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: TorrentLocker Payment Sites IPs
@@ -335,7 +335,7 @@ prototypes:
             sudden_death: true
         class: minemeld.ft.http.HttpFT
     RW_DOMBL:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: Combined Ransomware domains
@@ -353,7 +353,7 @@ prototypes:
             sudden_death: true
         class: minemeld.ft.http.HttpFT
     RW_URLBL:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: Combined Ransomware URLs
@@ -371,7 +371,7 @@ prototypes:
             sudden_death: true
         class: minemeld.ft.http.HttpFT
     RW_IPBL:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: Combined Ransomware IPs

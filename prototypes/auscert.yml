@@ -5,7 +5,7 @@ description: >
 
 prototypes:
     7days_combo:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: 7 days combo
@@ -19,7 +19,7 @@ prototypes:
         class: minemeld.ft.auscert.MaliciousURLFeed
 
     7days_malware:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: 7 days malware
@@ -33,7 +33,7 @@ prototypes:
         class: minemeld.ft.auscert.MaliciousURLFeed
 
     7days_phishing:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: 7 days phishing
@@ -47,7 +47,7 @@ prototypes:
         class: minemeld.ft.auscert.MaliciousURLFeed
 
     7days_dumpsites:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: 7 days log or dump sites
@@ -61,7 +61,7 @@ prototypes:
         class: minemeld.ft.auscert.MaliciousURLFeed
 
     7days_muling:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: 7 days muling
@@ -75,7 +75,7 @@ prototypes:
         class: minemeld.ft.auscert.MaliciousURLFeed
 
     1day_combo:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: 1 day combo
@@ -89,7 +89,7 @@ prototypes:
         class: minemeld.ft.auscert.MaliciousURLFeed
 
     1day_malware:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: 1 day malware
@@ -103,7 +103,7 @@ prototypes:
         class: minemeld.ft.auscert.MaliciousURLFeed
 
     1day_phishing:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: 1 day phishing
@@ -117,7 +117,7 @@ prototypes:
         class: minemeld.ft.auscert.MaliciousURLFeed
 
     1day_dumpsites:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: 1 day1 log or dump sites
@@ -131,7 +131,7 @@ prototypes:
         class: minemeld.ft.auscert.MaliciousURLFeed
 
     1day_muling:
-        author: Palo Alto Networks
+        author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
         description: 1 day muling
