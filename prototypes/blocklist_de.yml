@@ -14,7 +14,7 @@ prototypes:
             customers/servers in the last 48 hours.
         config:
             source_name: blocklist_de.all
-            url: http://lists.blocklist.de/lists/all.txt
+            url: https://lists.blocklist.de/lists/all.txt
             attributes:
                 type: IPv4
                 direction: inbound
@@ -30,7 +30,7 @@ prototypes:
             48 hours as having run attacks on the service SSH
         config:
             source_name: blocklist_de.ssh
-            url: http://lists.blocklist.de/lists/ssh.txt
+            url: https://lists.blocklist.de/lists/ssh.txt
             attributes:
                 type: IPv4
                 direction: inbound
@@ -47,7 +47,7 @@ prototypes:
             48 hours as having run attacks on the service Mail, Postfix.
         config:
             source_name: blocklist_de.mail
-            url: http://lists.blocklist.de/lists/mail.txt
+            url: https://lists.blocklist.de/lists/mail.txt
             attributes:
                 type: IPv4
                 direction: inbound
@@ -65,7 +65,7 @@ prototypes:
             Apache-DDOS, RFI-Attacks.
         config:
             source_name: blocklist_de.apache
-            url: http://lists.blocklist.de/lists/apache.txt
+            url: https://lists.blocklist.de/lists/apache.txt
             attributes:
                 type: IPv4
                 direction: inbound
@@ -81,7 +81,7 @@ prototypes:
             48 hours for attacks on the Service imap, sasl, pop3..... 
         config:
             source_name: blocklist_de.imap
-            url: http://lists.blocklist.de/lists/imap.txt
+            url: https://lists.blocklist.de/lists/imap.txt
             attributes:
                 type: IPv4
                 direction: inbound
@@ -98,7 +98,7 @@ prototypes:
             last 48 hours for attacks on the Service FTP. 
         config:
             source_name: blocklist_de.ftp
-            url: http://lists.blocklist.de/lists/ftp.txt
+            url: https://lists.blocklist.de/lists/ftp.txt
             attributes:
                 type: IPv4
                 direction: inbound
@@ -116,7 +116,7 @@ prototypes:
             http://www.infiltrated.net/ (Twitter).
         config:
             source_name: blocklist_de.sip
-            url: http://lists.blocklist.de/lists/sip.txt
+            url: https://lists.blocklist.de/lists/sip.txt
             attributes:
                 type: IPv4
                 direction: inbound
@@ -135,7 +135,7 @@ prototypes:
             Spam-Comment on a open Forum or Wiki).
         config:
             source_name: blocklist_de.bots
-            url: http://lists.blocklist.de/lists/bots.txt
+            url: https://lists.blocklist.de/lists/bots.txt
             attributes:
                 type: IPv4
                 direction: inbound
@@ -151,7 +151,7 @@ prototypes:
             then 5.000 attacks. 
         config:
             source_name: blocklist_de.strongips
-            url: http://lists.blocklist.de/lists/strongips.txt
+            url: https://lists.blocklist.de/lists/strongips.txt
             attributes:
                 type: IPv4
                 direction: inbound
@@ -165,7 +165,7 @@ prototypes:
         description: ''
         config:
             source_name: blocklist_de.ircbot
-            url: http://lists.blocklist.de/lists/ircbot.txt
+            url: https://lists.blocklist.de/lists/ircbot.txt
             attributes:
                 type: IPv4
                 direction: inbound
@@ -181,7 +181,7 @@ prototypes:
             Web-Logins with Brute-Force Logins. 
         config:
             source_name: blocklist_de.bruteforcelogin
-            url: http://lists.blocklist.de/lists/bruteforcelogin.txt
+            url: https://lists.blocklist.de/lists/bruteforcelogin.txt
             attributes:
                 type: IPv4
                 direction: inbound
