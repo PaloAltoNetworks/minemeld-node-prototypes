@@ -23,7 +23,7 @@ prototypes:
             ignore_regex: '^;.*'
             indicator:
                 regex: '^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}/[0-9]{1,2}'
-            url: http://www.spamhaus.org/drop/drop.txt
+            url: https://www.spamhaus.org/drop/drop.txt
             age_out:
                 default: null
                 sudden_death: true
