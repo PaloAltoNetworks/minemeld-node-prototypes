@@ -22,3 +22,18 @@ prototypes:
                 share_level: green
                 confidence: 50
         class: minemeld.ft.http.HttpFT
+    blockIPs:
+        author: Gregory Roehl (paloaltonetworks.com)
+        development_status: STABLE
+        node_type: miner
+        description: >
+            Raw IPs for the firewall block lists. These come from
+            Spam nets identified by Spamhaus (www.spamhaus.org), Top
+            Attackers listed by DShield (www.dshield.org), Abuse.ch.
+        config:
+            source_name: ET.block_ips
+            attributes:
+                type: IPv4
+                share_level: green
+                confidence: 50
+        class: minemeld.ft.http.HttpFT
