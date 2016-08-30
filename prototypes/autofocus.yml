@@ -9,10 +9,11 @@ description: >
 prototypes:
     exportList:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: >
-            Miner for Autofocus Export List. You need a valid Autofocus API Key.
+            Miner for Autofocus Export List. You need a valid Autofocus API Key
+            to use this Miner. Type of indicators: IPv4, URL, domain.
         config:
             attributes:
                 confidence: 70

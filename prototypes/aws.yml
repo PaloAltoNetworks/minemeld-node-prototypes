@@ -6,7 +6,7 @@ description: >
 prototypes:
     AMAZON:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         description: all AMAZON ranges
         node_type: miner
         class: minemeld.ft.json.SimpleJSON
@@ -28,7 +28,7 @@ prototypes:
                 confidence: 100
     EC2:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         description: EC2 ranges
         node_type: miner
         class: minemeld.ft.json.SimpleJSON
@@ -50,7 +50,7 @@ prototypes:
                 confidence: 100
     ROUTE53:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         description: ROUTE53 ranges
         node_type: miner
         class: minemeld.ft.json.SimpleJSON
@@ -72,7 +72,7 @@ prototypes:
                 confidence: 100
     ROUTE53_HEALTHCHECKS:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         description: ROUTE53_HEALTHCHECKS ranges
         node_type: miner
         class: minemeld.ft.json.SimpleJSON
@@ -94,7 +94,7 @@ prototypes:
                 confidence: 100
     CLOUDFRONT:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         description: CLOUDFRONT ranges
         node_type: miner
         class: minemeld.ft.json.SimpleJSON

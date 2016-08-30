@@ -7,7 +7,7 @@ description: >
 prototypes:
     CW_C2_URLBL:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: CryptoWall C2 URLs
         config:
@@ -25,7 +25,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     CW_C2_DOMBL:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: CryptoWall C2 domains
         config:
@@ -43,7 +43,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     CW_PS_DOMBL:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: CryptoWall C2 Payment Sites domains
         config:
@@ -61,7 +61,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     CW_PS_IPBL:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: CryptoWall Payment Sites IPs
         config:
@@ -80,7 +80,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     TC_C2_URLBL:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: TeslaCrypt C2 URLs
         config:
@@ -98,7 +98,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     TC_C2_DOMBL:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: TeslaCrypt C2 domains
         config:
@@ -116,7 +116,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     TC_PS_DOMBL:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: TeslaCrypt Payment Sites domains
         config:
@@ -134,7 +134,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     TC_PS_IPBL:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: TeslaCrypt Payment Sites IPs
         config:
@@ -153,7 +153,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     TC_DS_URLBL:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: TeslaCrypt Distribution Sites URLs
         config:
@@ -171,7 +171,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     LY_C2_DOMBL:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: Locky C2 domains
         config:
@@ -189,7 +189,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     LY_C2_IPBL:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: Locky IPs
         config:
@@ -208,7 +208,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     LY_PS_DOMBL:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: Locky Payment Sites domains
         config:
@@ -226,7 +226,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     LY_PS_IPBL:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: Locky Payment Sites IPs
         config:
@@ -244,7 +244,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     LY_DS_URLBL:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: Locky Distribution Sites URLs
         config:
@@ -262,7 +262,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     TL_C2_DOMBL:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: TorrentLocker C2 domains
         config:
@@ -280,7 +280,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     TL_C2_IPBL:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: TorrentLocker C2 IPs
         config:
@@ -299,7 +299,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     TL_PS_DOMBL:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: TorrentLocker Payment Sites domains
         config:
@@ -317,7 +317,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     TL_PS_IPBL:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: TorrentLocker Payment Sites IPs
         config:
@@ -336,7 +336,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     RW_DOMBL:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: Combined Ransomware domains
         config:
@@ -354,7 +354,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     RW_URLBL:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: Combined Ransomware URLs
         config:
@@ -372,7 +372,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     RW_IPBL:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: Combined Ransomware IPs
         config:

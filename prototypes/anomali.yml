@@ -14,7 +14,8 @@ prototypes:
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
-            Miner for Anomali Optic API
+            Miner for Anomali Optic API. You need a valid Optic API Key
+            to use this Miner.
         class: minemeld.ft.anomali.Intelligence
         config:
             age_out:

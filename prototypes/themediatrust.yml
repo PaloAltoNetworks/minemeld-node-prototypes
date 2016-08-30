@@ -14,7 +14,8 @@ prototypes:
         development_status: EXPERIMENTAL
         node_type: miner
         description: >
-            Miner for The Media Trust DTI API
+            Miner for The Media Trust DTI API. You need a valid TMT DTI API
+            Key to use this Miner.
         class: minemeld.ft.tmt.DTIAPI
         config:
             age_out:
