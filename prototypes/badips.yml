@@ -7,7 +7,7 @@ url: https://www.badips.com
 prototypes:
     blocklist_any_3_2weeks:
         author: CERT (uc3m.es)
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: >
             blocklist with IPs of last 2 weeks any category and score > 3

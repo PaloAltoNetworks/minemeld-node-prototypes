@@ -9,7 +9,7 @@ description: >
 prototypes:
     O365:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: >
             The endpoints listed in this section are only to support the portal and identity
@@ -27,7 +27,7 @@ prototypes:
 
     exchangeOnline:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: >
             If you have licensed Exchange Online as a standalone or as part of a suite, you
@@ -45,7 +45,7 @@ prototypes:
 
     skypeBusinessOnline:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: >
             If you have licensed Skype for Business Online as a standalone or as part of a
@@ -64,7 +64,7 @@ prototypes:
 
     sharepointOnline:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: >
             If you have licensed SharePoint Online as a standalone or as part of a suite,
@@ -83,7 +83,7 @@ prototypes:
 
     exchangeOnlineProtection:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: >
             If you have licensed Exchange Online Protection (EOP) as a standalone or as part
@@ -102,7 +102,7 @@ prototypes:
 
     O365RemoteAnalyzers:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: >
             This list of IPv4 IP addresses is the current list required for the Office 365
@@ -120,7 +120,7 @@ prototypes:
 
     yammer:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: >
             This list of URLs and IPv4 IP subnet is the current list required for Yammer.
@@ -137,7 +137,7 @@ prototypes:
 
     O365ProPlus:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: >
             Here is the current list of endpoints PCs and Macs need to be able to access
@@ -155,7 +155,7 @@ prototypes:
 
     officeOnline:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: >
             This list of IP addresses is the current list required for Office Web Apps.
@@ -172,7 +172,7 @@ prototypes:
 
     officeiPad:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: >
             This is the current list of Office for iPad URLs.
@@ -189,7 +189,7 @@ prototypes:
 
     officeMobile:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: >
             This is the current list of Office Mobile URLs.
@@ -206,7 +206,7 @@ prototypes:
 
     planner:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: >
             This is the current list of Planner IPs and URLs.
@@ -223,7 +223,7 @@ prototypes:
 
     oneNote:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: >
             This is the current list of OneNote IPs and URLs.
@@ -240,7 +240,7 @@ prototypes:
 
     identity:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: >
             This is the current list of Office 365 authentication and
@@ -258,7 +258,7 @@ prototypes:
 
     sway:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: >
             This is the current list of Sway IPs and URLs.
@@ -275,7 +275,7 @@ prototypes:
 
     office365Video:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: >
             This is the current list of Office365 Video IPs and URLs.
@@ -292,7 +292,7 @@ prototypes:
 
     crls:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         description: >
             This is the current list of Office365 CRLs IPs and URLs.
