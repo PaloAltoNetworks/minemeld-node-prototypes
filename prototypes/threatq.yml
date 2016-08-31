@@ -1,0 +1,62 @@
+description: >
+    ThreatQ - The only Threat Intelligence Platform (TIP) that
+    centrally manages and correlates external sources with internal
+    security and analytics solutions for contextual intelligence in a
+    single pane of glass.
+url: https://www.threatq.com
+
+prototypes:
+    exportHC:
+        author: MineMeld Core Team
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            Miner for Threatq Export API. This prototype sets confidence
+            of produced indicators to 100 (High Confidence).
+            You need an installation of ThreatQ to use this Miner.
+        class: minemeld.ft.threatq.Export
+        config:
+            source_name: threatq.export
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                share_level: amber
+                confidence: 100
+    exportMC:
+        author: MineMeld Core Team
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            Miner for Threatq Export API. This prototype sets confidence
+            of produced indicators to 70 (Medium Confidence).
+            You need an installation of ThreatQ to use this Miner.
+        class: minemeld.ft.threatq.Export
+        config:
+            source_name: threatq.export
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                share_level: amber
+                confidence: 70
+    exportLC:
+        author: MineMeld Core Team
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            Miner for Threatq Export API. This prototype sets confidence
+            of produced indicators to 30 (Low Confidence).
+            You need an installation of ThreatQ to use this Miner.
+        class: minemeld.ft.threatq.Export
+        config:
+            source_name: threatq.export
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                share_level: amber
+                confidence: 30
