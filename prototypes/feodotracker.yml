@@ -4,7 +4,7 @@ description: >
     Feodo botnet C&C traffic.
 
 prototypes:
-    baddomains:
+    domainblocklist:
         author: MineMeld Core Team
         development_status: STABLE
         description: >
@@ -21,13 +21,30 @@ prototypes:
           by this blocklist.
         node_type: miner
         config:
+          source_name: feodotracker.domainblocklist
+          attributes:
+            type: domain
+            confidence: 100
+            share_level: green
+          ignore_regex: '^#'
+          url: https://feodotracker.abuse.ch/blocklist/?download=domainblocklist
+          interval: 1800
+        class: minemeld.ft.http.HttpFT
+    baddomains:
+        author: MineMeld Core Team
+        development_status: STABLE
+        description: >
+          Do not use, use feodotracker.domainblocklist instead. Will be removed in
+          a future release.
+        node_type: miner
+        config:
           source_name: feodotracker.baddomains
           attributes:
             type: domain
             confidence: 100
             share_level: green
           ignore_regex: '^#'
-          url: https://feodotracker.abuse.ch/blocklist.php?download=baddomains
+          url: https://feodotracker.abuse.ch/blocklist/?download=domainblocklist
           interval: 1800
         class: minemeld.ft.http.HttpFT
     badips:
