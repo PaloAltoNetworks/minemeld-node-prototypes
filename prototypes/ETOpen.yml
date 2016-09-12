@@ -36,4 +36,7 @@ prototypes:
                 type: IPv4
                 share_level: green
                 confidence: 50
+            url: http://rules.emergingthreats.net/fwrules/emerging-Block-IPs.txt
+            ignore_regex: ^#
         class: minemeld.ft.http.HttpFT
+
