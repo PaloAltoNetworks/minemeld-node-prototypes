@@ -1,0 +1,25 @@
+url: http://csirtgadgets.org/collective-intelligence-framework/
+description: >
+    CIF allows you to combine known malicious threat information
+    from many sources and use that information for identification
+    (incident response), detection (IDS) and mitigation (null route).
+    The most common types of threat intelligence warehoused in CIF
+    are IP addresses, domains and urls that are observed to be
+    related to malicious activity.
+
+prototypes:
+    Feed:
+        author: MineMeld Core Team
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            Miner for CIF API. Based on CIF SDK
+            https://github.com/csirtgadgets/cif-sdk-py
+        class: minemeld.ft.cif.Feed
+        config:
+            age_out:
+                default: last_seen+30d
+                sudden_death: false
+                interval: 3307
+            attributes:
+                share_level: green
