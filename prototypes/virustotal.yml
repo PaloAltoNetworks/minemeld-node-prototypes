@@ -1,0 +1,22 @@
+url: https://www.virustotal.com
+description: >
+    VirusTotal is a free service that analyzes suspicious files
+    and URLs and facilitates the quick detection of viruses, worms,
+    trojans, and all kinds of malware.
+
+prototypes:
+    notifications:
+        author: MineMeld Core Team
+        development_status: EXPERIMENTAL
+        node_type: miner
+        description: >
+            Miner for VirusTotal Intelligence Notifications feed.
+        config:
+            attributes:
+                confidence: 100
+                share_level: red
+            age_out:
+                default: 365d
+                sudden_death: false
+                interval: 7200
+        class: minemeld.ft.vt.Notifications
