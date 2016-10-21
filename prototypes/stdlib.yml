@@ -178,6 +178,114 @@ prototypes:
                   actions:
                     - drop
 
+    aggregatorMD5:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: processor
+        description: >
+            Aggregator for MD5 indicators.
+            Inputs with names starting with "wl" will be interpreted as
+            whitelists.
+        class: minemeld.ft.op.AggregateFT
+        config:
+            whitelist_prefixes:
+                - wl
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept MD5
+                  conditions:
+                    - type == 'md5'
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+
+    aggregatorSHA1:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: processor
+        description: >
+            Aggregator for SHA1 indicators.
+            Inputs with names starting with "wl" will be interpreted as
+            whitelists.
+        class: minemeld.ft.op.AggregateFT
+        config:
+            whitelist_prefixes:
+                - wl
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept SHA1
+                  conditions:
+                    - type == 'sha1'
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+
+    aggregatorSHA256:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: processor
+        description: >
+            Aggregator for SHA256 indicators.
+            Inputs with names starting with "wl" will be interpreted as
+            whitelists.
+        class: minemeld.ft.op.AggregateFT
+        config:
+            whitelist_prefixes:
+                - wl
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept SHA256
+                  conditions:
+                    - type == 'sha256'
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+
+    aggregatorSSDEEP:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: processor
+        description: >
+            Aggregator for ssdeep indicators.
+            Inputs with names starting with "wl" will be interpreted as
+            whitelists.
+        class: minemeld.ft.op.AggregateFT
+        config:
+            whitelist_prefixes:
+                - wl
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept ssdeep
+                  conditions:
+                    - type == 'ssdeep'
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+
     feedLCGreen:
         author: MineMeld Core Team
         development_status: STABLE
