@@ -2,5 +2,5 @@
 
 Prototypes for minemeld nodes
 
-**version:** 0.9.25b2
+**version:** 0.9.25b3
 
