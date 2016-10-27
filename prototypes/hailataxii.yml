@@ -4,6 +4,60 @@ description: >
     Threat Intellegence feeds in STIX format.
 
 prototypes:
+    guest_Abuse_ch:
+        author: Soltra Dev Team
+        development_status: EXPERIMENTAL
+        node_type: miner
+        class: minemeld.ft.taxii.TaxiiClient
+        description: public TAXII feed from Abuse_ch
+        config:
+            source_name: hailataxii.guest.Abuse_ch
+            discovery_service: http://hailataxii.com/taxii-discovery-service
+            username: guest
+            password: guest
+            collection: guest.Abuse_ch
+            attributes:
+                confidence: 30
+            age_out:
+               sudden_death: false
+               default: 30d
+
+    guest_CyberCrime_Tracker:
+        author: Soltra Dev Team
+        development_status: EXPERIMENTAL
+        node_type: miner
+        class: minemeld.ft.taxii.TaxiiClient
+        description: public TAXII feed from CyberCrime_Tracker
+        config:
+            source_name: hailataxii.guest.CyberCrime_Tracker
+            discovery_service: http://hailataxii.com/taxii-discovery-service
+            username: guest
+            password: guest
+            collection: guest.CyberCrime_Tracker
+            attributes:
+                confidence: 30
+            age_out:
+               sudden_death: false
+               default: 30d
+
+    guest_EmergingThreats_rules:
+        author: Soltra Dev Team
+        development_status: EXPERIMENTAL
+        node_type: miner
+        class: minemeld.ft.taxii.TaxiiClient
+        description: public TAXII feed from EmergingThreats_rules
+        config:
+            source_name: hailataxii.guest.EmergingThreats_rules
+            discovery_service: http://hailataxii.com/taxii-discovery-service
+            username: guest
+            password: guest
+            collection: guest.EmergingThreats_rules
+            attributes:
+                confidence: 30
+            age_out:
+               sudden_death: false
+               default: 30d
+
     guest_Lehigh_edu:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
@@ -16,6 +70,78 @@ prototypes:
             username: guest
             password: guest
             collection: guest.Lehigh_edu
+            attributes:
+                confidence: 30
+            age_out:
+               sudden_death: false
+               default: 30d
+
+    guest_MalwareDomainList_Hostlist:
+        author: Soltra Dev Team
+        development_status: EXPERIMENTAL
+        node_type: miner
+        class: minemeld.ft.taxii.TaxiiClient
+        description: public TAXII feed from MalwareDomainList_Hostlist
+        config:
+            source_name: hailataxii.guest.MalwareDomainList_Hostlist
+            discovery_service: http://hailataxii.com/taxii-discovery-service
+            username: guest
+            password: guest
+            collection: guest.MalwareDomainList_Hostlist
+            attributes:
+                confidence: 30
+            age_out:
+               sudden_death: false
+               default: 30d
+
+    guest_blutmagie_de_torExits:
+        author: Soltra Dev Team
+        development_status: EXPERIMENTAL
+        node_type: miner
+        class: minemeld.ft.taxii.TaxiiClient
+        description: public TAXII feed from blutmagie_de_torExits
+        config:
+            source_name: hailataxii.guest.blutmagie_de_torExits
+            discovery_service: http://hailataxii.com/taxii-discovery-service
+            username: guest
+            password: guest
+            collection: guest.blutmagie_de_torExits
+            attributes:
+                confidence: 30
+            age_out:
+               sudden_death: false
+               default: 30d
+
+    guest_dataForLast_7daysOnly:
+        author: Soltra Dev Team
+        development_status: EXPERIMENTAL
+        node_type: miner
+        class: minemeld.ft.taxii.TaxiiClient
+        description: public TAXII feed from dataForLast_7daysOnly
+        config:
+            source_name: hailataxii.guest.dataForLast_7daysOnly
+            discovery_service: http://hailataxii.com/taxii-discovery-service
+            username: guest
+            password: guest
+            collection: guest.dataForLast_7daysOnly
+            attributes:
+                confidence: 30
+            age_out:
+               sudden_death: false
+               default: 30d
+
+    guest_dshield_BlockList:
+        author: Soltra Dev Team
+        development_status: EXPERIMENTAL
+        node_type: miner
+        class: minemeld.ft.taxii.TaxiiClient
+        description: public TAXII feed from dshield_BlockList
+        config:
+            source_name: hailataxii.guest.dshield_BlockList
+            discovery_service: http://hailataxii.com/taxii-discovery-service
+            username: guest
+            password: guest
+            collection: guest.dshield_BlockList
             attributes:
                 confidence: 30
             age_out:
@@ -39,3 +165,4 @@ prototypes:
             age_out:
                sudden_death: false
                default: 30d
+
