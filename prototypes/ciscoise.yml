@@ -1,0 +1,37 @@
+url: http://www.cisco.com/c/en/us/products/security/identity-services-engine/index.html
+description: >
+  Cisco Identity Services Engine (ISE) allows you to see and control
+  users and devices connecting to the corporate network.
+
+prototypes:
+  ers_sgt:
+    author: MineMeld Core Team
+    development_status: EXPERIMENTAL
+    node_type: miner
+    description: >
+      IP to SGT (Security Group Tag) mappings from ISE using ERS (External
+      RESTful Services) API.
+    class: minemeld.ft.ciscoise.ErsSgt
+    config:
+      username: ers-operator
+      verify_cert: false
+      interval: 300
+      attributes:
+        confidence: 100
+        share_level: red
+      age_out:
+        default: null
+        sudden_death: true
+        interval: null
+
+  sgt_dag:
+      author: MineMeld Core Team
+      development_status: STABLE
+      node_type: output
+      description: >
+          Push IP to SGT mappings to PAN-OS devices via DAG.
+      class: minemeld.ft.dag.DagPusher
+      config:
+        persistent_registered_ips: false
+        tag_attributes:
+          - ise_sgt
