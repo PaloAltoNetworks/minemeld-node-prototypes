@@ -22,7 +22,7 @@ prototypes:
       age_out:
         default: null
         sudden_death: true
-        interval: 233 # XXX set to 0 when possible
+        interval: null
 
   sgt_dag:
       author: MineMeld Core Team
