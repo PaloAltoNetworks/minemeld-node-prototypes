@@ -340,7 +340,7 @@ prototypes:
         development_status: STABLE
         node_type: output
         description: >
-            EDL for high confidence indicators (>75) and share level green, with value
+            EDL for high confidence indicators (>75) and share level green
         class: minemeld.ft.redis.RedisSet
         config:
             infilters:
