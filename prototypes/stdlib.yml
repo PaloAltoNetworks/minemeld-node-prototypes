@@ -559,10 +559,20 @@ prototypes:
         development_status: STABLE
         node_type: output
         description: >
-            Push IP unicast indicators to PAN-OS devices via DAG, typically connected
-            to a syslog node
+            Push IP unicast indicators to PAN-OS devices via DAG.
         class: minemeld.ft.dag.DagPusher
         config: {}
+
+    nonpersistentDagPusher:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: output
+        description: >
+            Push IP unicast indicators to PAN-OS devices via DAG. Generates
+            non persistent registered IPs.
+        class: minemeld.ft.dag.DagPusher
+        config:
+          persistent_registered_ips: false
 
     feedLCRedWithValue:
         author: MineMeld Core Team
