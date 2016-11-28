@@ -8,6 +8,12 @@ prototypes:
         author: Axel Bodart (ulg.ac.be)
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - OSINT
+            - ConfidenceMedium
+            - ShareLevelGreen
         description: The full banlist
         config:
             source_name: binarydefense.banlist

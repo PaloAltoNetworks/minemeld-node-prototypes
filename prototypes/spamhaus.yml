@@ -12,6 +12,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - OSINT
+            - ConfidenceHigh
+            - ShareLevelGreen
         description: Spamhaus Don't Route Or Peer List (DROP)
         config:
             source_name: spamhaus.DROP
@@ -34,6 +40,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - OSINT
+            - ConfidenceHigh
+            - ShareLevelGreen
         description: Spamhaus Extended DROP List (EDROP)
         config:
             source_name: spamhaus.EDROP

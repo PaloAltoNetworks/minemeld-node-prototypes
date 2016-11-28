@@ -9,6 +9,12 @@ prototypes:
         author: CERT (uc3m.es)
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - OSINT
+            - ConfidenceMedium
+            - ShareLevelGreen
         description: >
             blocklist with IPs of last 2 weeks any category and score > 3
         class: minemeld.ft.http.HttpFT

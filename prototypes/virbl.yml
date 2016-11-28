@@ -9,6 +9,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - ConfidenceHigh
+            - OSINT
+            - ShareLevelGreen
         class: minemeld.ft.http.HttpFT
         description: virbl IP blocklist
         config:

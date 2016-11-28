@@ -7,6 +7,11 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - ConfidenceHigh
+            - ShareLevelGreen
         description: >
             Public IP addresses of Microsoft Azure
         class: minemeld.ft.azure.AzureXML

@@ -11,6 +11,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - OSINT
+            - ShareLevelGreen
+            - ConfidenceHigh
         description: suggested block list
         class: minemeld.ft.http.HttpFT
         config:
