@@ -7,8 +7,14 @@ url: http://osint.bambenekconsulting.com/feeds/
 prototypes:
     c2_ipmasterlist:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - OSINT
+            - ConfidenceMedium
+            - ShareLevelGreen
         description: >
             Master Feed of known, active and non-sinkholed C&Cs IP addresses
         class: minemeld.ft.csv.CSVFT
@@ -31,8 +37,14 @@ prototypes:
             source_name: bambenekconsulting.c2_ipmasterlist
     c2_dommasterlist:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
+        indicator_types:
+            - domain
+        tags:
+            - OSINT
+            - ConfidenceMedium
+            - ShareLevelGreen
         description: >
             Master Feed of known, active and non-sinkholed C&Cs domain names
         class: minemeld.ft.csv.CSVFT
@@ -55,8 +67,14 @@ prototypes:
             source_name: bambenekconsulting.c2_dommasterlist
     c2_ipmasterlist_high:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - OSINT
+            - ConfidenceHigh
+            - ShareLevelGreen
         description: >
             High Confidence Master Feed of known, active and non-sinkholed C&Cs IP addresses
         class: minemeld.ft.csv.CSVFT
@@ -79,8 +97,14 @@ prototypes:
             source_name: bambenekconsulting.c2_ipmasterlist_high
     c2_dommasterlist_high:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
+        indicator_types:
+            - domain
+        tags:
+            - OSINT
+            - ConfidenceHigh
+            - ShareLevelGreen
         description: >
             High Confidence Master Feed of known, active and non-sinkholed C&Cs domain names
         class: minemeld.ft.csv.CSVFT

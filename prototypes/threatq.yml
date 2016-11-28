@@ -10,6 +10,14 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
+        indicator_types:
+            - IPv4
+            - IPv6
+            - domain
+            - URL
+        tags:
+            - ShareLevelAmber
+            - ConfidenceHigh
         description: >
             Miner for Threatq Export API. This prototype sets confidence
             of produced indicators to 100 (High Confidence).
@@ -28,6 +36,14 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
+        indicator_types:
+            - IPv4
+            - IPv6
+            - domain
+            - URL
+        tags:
+            - ShareLevelAmber
+            - ConfidenceMedium
         description: >
             Miner for Threatq Export API. This prototype sets confidence
             of produced indicators to 70 (Medium Confidence).
@@ -46,6 +62,14 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
+        indicator_types:
+            - IPv4
+            - IPv6
+            - domain
+            - URL
+        tags:
+            - ShareLevelAmber
+            - ConfidenceLow
         description: >
             Miner for Threatq Export API. This prototype sets confidence
             of produced indicators to 30 (Low Confidence).

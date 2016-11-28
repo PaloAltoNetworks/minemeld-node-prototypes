@@ -25,6 +25,11 @@ def _check_library(l):
         assert 'class' in prototype, "No class field in %s::%s" % (l, p)
         assert 'config' in prototype, "No config field in %s::%s" % (l, p)
         assert 'node_type' in prototype, "No node_type field in %s::%s" % (l, p)
+        assert 'tags' in prototype, "No tags field in %s::%s" % (l, p)
+        assert isinstance(prototype['tags'], list), "Wrong type for attribute tags in %s::%s" % (l, p)
+        assert 'indicator_types' in prototype, "No indicator_types field in %s::%s" % (l, p)
+        assert isinstance(prototype['indicator_types'], list), "Wrong type for attribute indicator_types in %s::%s" % (l, p)
+        assert len(prototype['indicator_types']), "0 indicator_types in %s::%s" % (l, p)
 
 def test_prototypes():
     libraries = [os.path.join('prototypes', x) for x in os.listdir('prototypes')]

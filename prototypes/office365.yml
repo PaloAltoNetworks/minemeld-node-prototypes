@@ -11,6 +11,13 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
         description: >
             The endpoints listed in this section are only to support the portal and identity
             portion of Office 365.
@@ -29,6 +36,13 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
         description: >
             If you have licensed Exchange Online as a standalone or as part of a suite, you
             must be able to reach the following endpoints.
@@ -47,6 +61,13 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
         description: >
             If you have licensed Skype for Business Online as a standalone or as part of a
             suite, you must be able to reach the Office 365 portal and identity URLs as well
@@ -66,6 +87,13 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
         description: >
             If you have licensed SharePoint Online as a standalone or as part of a suite,
             you must be able to reach the Office 365 portal and identity URLs as well as
@@ -85,6 +113,13 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
         description: >
             If you have licensed Exchange Online Protection (EOP) as a standalone or as part
             of a suite, you must be able to reach the Office 365 portal and identity URLs as
@@ -104,6 +139,13 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
         description: >
             This list of IPv4 IP addresses is the current list required for the Office 365
             remote analyzer tools.
@@ -122,6 +164,13 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
         description: >
             This list of URLs and IPv4 IP subnet is the current list required for Yammer.
         class: minemeld.ft.o365.O365XML
@@ -139,6 +188,13 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
         description: >
             Here is the current list of endpoints PCs and Macs need to be able to access
             to use Office 365 ProPlus.
@@ -157,6 +213,13 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
         description: >
             This list of IP addresses is the current list required for Office Web Apps.
         class: minemeld.ft.o365.O365XML
@@ -174,6 +237,13 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
         description: >
             This is the current list of Office for iPad URLs.
         class: minemeld.ft.o365.O365XML
@@ -191,6 +261,13 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
         description: >
             This is the current list of Office Mobile URLs.
         class: minemeld.ft.o365.O365XML
@@ -208,6 +285,13 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
         description: >
             This is the current list of Planner IPs and URLs.
         class: minemeld.ft.o365.O365XML
@@ -225,6 +309,13 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
         description: >
             This is the current list of OneNote IPs and URLs.
         class: minemeld.ft.o365.O365XML
@@ -242,6 +333,13 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
         description: >
             This is the current list of Office 365 authentication and
             identity IPs and URLs.
@@ -260,6 +358,13 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
         description: >
             This is the current list of Sway IPs and URLs.
         class: minemeld.ft.o365.O365XML
@@ -277,6 +382,13 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
         description: >
             This is the current list of Office365 Video IPs and URLs.
         class: minemeld.ft.o365.O365XML
@@ -294,6 +406,13 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
         description: >
             This is the current list of Office365 CRLs IPs and URLs.
         class: minemeld.ft.o365.O365XML

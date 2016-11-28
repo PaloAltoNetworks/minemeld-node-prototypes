@@ -8,6 +8,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
+        indicator_types:
+            - URL
+        tags:
+            - OSINT
+            - ShareLevelGreen
+            - ConfidenceMedium
         description: The free feed
         config:
             source_name: openphish.feed

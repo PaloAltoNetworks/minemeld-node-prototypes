@@ -11,6 +11,13 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - IPv4
+            - URL
+            - domain
+        tags:
+            - ConfidenceMedium
+            - ShareLevelRed
         description: >
             Miner for Autofocus Export List. You need a valid Autofocus API Key
             to use this Miner. Type of indicators: IPv4, URL, domain.

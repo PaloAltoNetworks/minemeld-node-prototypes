@@ -11,6 +11,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
+        indicator_types:
+            - IPv4
+            - IPv6
+        tags:
+            - ConfidenceHigh
+            - ShareLevelRed
         description: >
             Recorded Future continually analyzes indicator-related reporting
             from sources including websites, blogs, paste sites, IRC, malware
