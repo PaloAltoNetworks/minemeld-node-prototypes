@@ -425,3 +425,27 @@ prototypes:
                 interval: 257
             attributes:
                 share_level: green
+
+    any:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            This is the current list of IPs and URLs associated with
+            any Office365 product.
+        class: minemeld.ft.o365.O365XML
+        config:
+            products: []
+            age_out:
+                default: null
+                sudden_death: true
+                interval: null
+            attributes:
+                share_level: green
