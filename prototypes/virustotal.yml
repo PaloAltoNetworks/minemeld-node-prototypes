@@ -9,6 +9,13 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
+        indicator_types:
+            - md5
+            - sha256
+            - sha1
+        tags:
+            - ConfidenceHigh
+            - ShareLevelRed
         description: >
             Miner for VirusTotal Intelligence Notifications feed.
         config:

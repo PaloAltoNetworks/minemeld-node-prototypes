@@ -12,6 +12,15 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
+        indicator_types:
+            - IPv4
+            - domain
+            - URL
+        tags:
+            - ShareLevelRed
+            - ConfidenceLow
+            - ConfidenceMedium
+            - ConfidenceHigh
         description: >
             PhishMe Intelligence provides accurate and timely alerts so that
             you can be ready to take fast action when under attack. PhishMe

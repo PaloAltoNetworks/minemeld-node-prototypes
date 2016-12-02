@@ -20,6 +20,12 @@ prototypes:
           channels used by version A, version C and version D are not covered
           by this blocklist.
         node_type: miner
+        indicator_types:
+            - domain
+        tags:
+            - ConfidenceHigh
+            - ShareLevelGreen
+            - OSINT
         config:
           source_name: feodotracker.domainblocklist
           attributes:
@@ -37,6 +43,12 @@ prototypes:
           Do not use, use feodotracker.domainblocklist instead. Will be removed in
           a future release.
         node_type: miner
+        indicator_types:
+            - domain
+        tags:
+            - ConfidenceHigh
+            - ShareLevelGreen
+            - OSINT
         config:
           source_name: feodotracker.baddomains
           attributes:
@@ -63,6 +75,12 @@ prototypes:
           Feodo Trojan. C&C communication channels used by version A, version
           C and version D are not covered by this blocklist.
         node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - ConfidenceHigh
+            - ShareLevelGreen
+            - OSINT
         config:
           source_name: feodotracker.badips
           attributes:
@@ -94,6 +112,12 @@ prototypes:
           and version D. If you only want to block/drop traffic to Feodo C&C
           servers hosted on bad IPs (version B), please use the blocklist BadIPs.
         node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - ConfidenceMedium
+            - ShareLevelGreen
+            - OSINT
         config:
           source_name: feodotracker.ipblocklist
           attributes:

@@ -10,6 +10,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - IPv4
+            - IPv6
+        tags:
+            - ConfidenceMedium
+            - ShareLevelRed
         description: >
             Detailed feed of IPs classified in different categories.
             You need a valid authorization code from Proofpoint ET
@@ -29,6 +35,11 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - domain
+        tags:
+            - ConfidenceHigh
+            - ShareLevelRed
         description: >
             Detailed feed of domains classified in different categories.
             You need a valid authorization code from Proofpoint ET

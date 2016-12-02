@@ -12,6 +12,16 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
+        indicator_types:
+            - IPv4
+            - IPv6
+            - domain
+            - URL
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+            - ConfidenceMedium
+            - ConfidenceLow
         description: >
             Miner for CIF API. Based on CIF SDK
             https://github.com/csirtgadgets/cif-sdk-py

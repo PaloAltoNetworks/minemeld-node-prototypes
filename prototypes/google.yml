@@ -7,6 +7,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
+        indicator_types:
+            - IPv4
+            - IPv6
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
         description: >
             Net blocks of Google services
         class: minemeld.ft.google.GoogleNetBlocks
@@ -21,6 +27,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
+        indicator_types:
+            - IPv4
+            - IPv6
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
         description: >
             Net blocks of GCE
         class: minemeld.ft.google.GoogleCloudNetBlocks

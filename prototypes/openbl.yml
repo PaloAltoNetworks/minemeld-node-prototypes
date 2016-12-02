@@ -13,6 +13,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - OSINT
+            - ShareLevelGreen
+            - ConfidenceMedium
         description: The suggested DEFAULT list
         config:
             source_name: openbl.base
@@ -28,6 +34,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - OSINT
+            - ShareLevelGreen
+            - ConfidenceMedium
         description: IP list for last 1 days
         config:
             source_name: openbl.base_1days
@@ -43,6 +55,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - OSINT
+            - ShareLevelGreen
+            - ConfidenceMedium
         description: IP list for last 7 days
         config:
             source_name: openbl.base_7days
@@ -58,6 +76,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - OSINT
+            - ShareLevelGreen
+            - ConfidenceMedium
         description: IP list for last 30 days
         config:
             source_name: openbl.base_30days
@@ -73,6 +97,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - OSINT
+            - ShareLevelGreen
+            - ConfidenceMedium
         description: IP list for last 60 days
         config:
             source_name: openbl.base_60days
@@ -88,6 +118,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - OSINT
+            - ShareLevelGreen
+            - ConfidenceMedium
         description: openbl.base_90days
         config:
             source_name: https://www.openbl.org/lists/base_90days.txt
@@ -103,6 +139,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - OSINT
+            - ShareLevelGreen
+            - ConfidenceMedium
         description: IP list for last 180 days
         config:
             source_name: openbl.base_180days
@@ -118,6 +160,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - OSINT
+            - ShareLevelGreen
+            - ConfidenceMedium
         description: IP list for last 360 days
         config:
             source_name: openbl.base_360days

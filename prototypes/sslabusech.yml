@@ -12,6 +12,12 @@ prototypes:
             seen in the past 30 days being associated with a malicious SSL
             certificate.
         node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - OSINT
+            - ConfidenceHigh
+            - ShareLevelGreen
         class: minemeld.ft.csv.CSVFT
         config:
             url: https://sslbl.abuse.ch/blacklist/sslipblacklist.csv
@@ -29,6 +35,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - OSINT
+            - ConfidenceHigh
+            - ShareLevelGreen
         description: Dyre SSL blacklist
         class: minemeld.ft.csv.CSVFT
         config:

@@ -6,6 +6,9 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: processor
+        indicator_types:
+          - URL
+        tags: []
         description: >
             Aggregator for URL indicators.
             Inputs with names starting with "wl" will be interpreted as
@@ -33,6 +36,9 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: processor
+        indicator_types:
+          - IPv6
+        tags: []
         description: >
             Simple aggregator for IPv6 indicators.
             Inputs with names starting with "wl" will be interpreted as
@@ -60,6 +66,9 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: processor
+        indicator_types:
+          - domain
+        tags: []
         description: >
             Aggregator for domain indicators.
             Inputs with names starting with "wl" will be interpreted as
@@ -87,6 +96,9 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: processor
+        indicator_types:
+          - IPv4
+        tags: []
         description: >
             Generic Aggregator for IPv4 indicators.
             Inputs with names starting with "wl" will be interpreted as
@@ -114,6 +126,9 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: processor
+        indicator_types:
+          - IPv4
+        tags: []
         description: >
             Aggregator for inbound IPv4 indicators.
             Inputs with names starting with "wl" will be interpreted as
@@ -148,6 +163,9 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: processor
+        indicator_types:
+          - IPv4
+        tags: []
         description: >
             Aggregator for outbound IPv4 indicators.
             Inputs with names starting with "wl" will be interpreted as
@@ -182,6 +200,9 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: processor
+        indicator_types:
+          - md5
+        tags: []
         description: >
             Aggregator for MD5 indicators.
             Inputs with names starting with "wl" will be interpreted as
@@ -209,6 +230,9 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: processor
+        indicator_types:
+          - sha1
+        tags: []
         description: >
             Aggregator for SHA1 indicators.
             Inputs with names starting with "wl" will be interpreted as
@@ -236,6 +260,9 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: processor
+        indicator_types:
+          - sha256
+        tags: []
         description: >
             Aggregator for SHA256 indicators.
             Inputs with names starting with "wl" will be interpreted as
@@ -263,6 +290,9 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: processor
+        indicator_types:
+          - ssdeep
+        tags: []
         description: >
             Aggregator for ssdeep indicators.
             Inputs with names starting with "wl" will be interpreted as
@@ -290,6 +320,10 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: output
+        indicator_types: [ any ]
+        tags:
+          - ShareLevelGreen
+          - ConfidenceLow
         description: >
             EDL for low confidence indicators (<50) and share level green
         class: minemeld.ft.redis.RedisSet
@@ -314,6 +348,10 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: output
+        indicator_types: [ any ]
+        tags:
+          - ConfidenceMedium
+          - ShareLevelGreen
         description: >
             EDL for medium confidence indicators (>=50,<75) and share level green
         class: minemeld.ft.redis.RedisSet
@@ -339,6 +377,10 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: output
+        indicator_types: [ any ]
+        tags:
+          - ConfidenceHigh
+          - ShareLevelGreen
         description: >
             EDL for high confidence indicators (>75) and share level green
         class: minemeld.ft.redis.RedisSet
@@ -363,6 +405,10 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: output
+        indicator_types: [ any ]
+        tags:
+          - ConfidenceLow
+          - ShareLevelGreen
         description: >
             EDL for low confidence indicators (<50) and share level green, with value
         class: minemeld.ft.redis.RedisSet
@@ -388,6 +434,10 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: output
+        indicator_types: [ any ]
+        tags:
+          - ConfidenceMedium
+          - ShareLevelGreen
         description: >
             EDL for medium confidence indicators (>=50,<75) and share level green, with value
         class: minemeld.ft.redis.RedisSet
@@ -414,6 +464,10 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: output
+        indicator_types: [ any ]
+        tags:
+          - ConfidenceHigh
+          - ShareLevelGreen
         description: >
             EDL for high confidence indicators (>75) and share level green, with value
         class: minemeld.ft.redis.RedisSet
@@ -439,6 +493,9 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: output
+        indicator_types: [ any ]
+        tags:
+          - ConfidenceLow
         description: >
             EDL for low confidence indicators (<50), with value
         class: minemeld.ft.redis.RedisSet
@@ -463,6 +520,9 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: output
+        indicator_types: [ any ]
+        tags:
+          - ConfidenceMedium
         description: >
             EDL for medium confidence indicators (>=50,<75), with value
         class: minemeld.ft.redis.RedisSet
@@ -488,6 +548,9 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: output
+        indicator_types: [ any ]
+        tags:
+          - ConfidenceHigh
         description: >
             EDL for high confidence indicators (>75), with value
         class: minemeld.ft.redis.RedisSet
@@ -512,6 +575,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
+        indicator_types:
+          - URL
+          - IPv4
+          - IPv6
+        tags:
+          - ConfidenceMedium
         description: >
             Miner for PAN-OS syslog messages
         class: minemeld.ft.syslog.SyslogMiner
@@ -524,6 +593,11 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: processor
+        indicator_types:
+          - domain
+          - IPv4
+          - IPv6
+        tags: []
         description: >
             Syslog node connection to the local syslog server to receive PAN-OS logs
         class: minemeld.ft.syslog.SyslogMatcher
@@ -533,6 +607,11 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: processor
+        indicator_types:
+          - IPv4
+          - IPv6
+          - domain
+        tags: []
         description: >
             Syslog node connection to the local syslog server to receive PAN-OS logs.
             This prototype also logs matching sessions/indicators pairs to a Logstash
@@ -546,6 +625,8 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: output
+        indicator_types: [ any ]
+        tags: []
         description: >
             Logstash node to send indicators message to a local logstash instance on
             port 5514
@@ -558,6 +639,10 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: output
+        indicator_types:
+          - IPv4
+          - IPv6
+        tags: []
         description: >
             Push IP unicast indicators to PAN-OS devices via DAG.
         class: minemeld.ft.dag.DagPusher
@@ -567,6 +652,10 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: output
+        indicator_types:
+          - IPv4
+          - IPv6
+        tags: []
         description: >
             Push IP unicast indicators to PAN-OS devices via DAG. Generates
             non persistent registered IPs.
@@ -578,6 +667,10 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: output
+        indicator_types: [ any ]
+        tags:
+          - ConfidenceLow
+          - ShareLevelRed
         description: >
             EDL for low confidence indicators (<50) and share level red, with value
         class: minemeld.ft.redis.RedisSet
@@ -603,6 +696,10 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: output
+        indicator_types: [ any ]
+        tags:
+          - ConfidenceMedium
+          - ShareLevelRed
         description: >
             EDL for medium confidence indicators (>=50,<75) and share level red, with value
         class: minemeld.ft.redis.RedisSet
@@ -629,6 +726,10 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: output
+        indicator_types: [ any ]
+        tags:
+          - ConfidenceHigh
+          - ShareLevelRed
         description: >
             EDL for high confidence indicators (>75) and share level red, with value
         class: minemeld.ft.redis.RedisSet
@@ -654,6 +755,10 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
+        indicator_types:
+          - IPv4
+        tags:
+          - ConfidenceHigh
         description: >
             list of IPv4 addresses. Use a name starting with "wl" to create a whitelist for
             an aggregator
@@ -672,6 +777,10 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
+        indicator_types:
+          - IPv6
+        tags:
+          - ConfidenceHigh
         description: >
             list of IPv6 addresses. Use a name starting with "wl" to create a whitelist for
             an aggregator
@@ -690,6 +799,10 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
+        indicator_types:
+          - URL
+        tags:
+          - ConfidenceHigh
         description: >
             list of URLs. Use a name starting with "wl" to create a whitelist for
             an aggregator
@@ -708,6 +821,10 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
+        indicator_types:
+          - domain
+        tags:
+          - ConfidenceHigh
         description: >
             list of domain. Use a name starting with "wl" to create a whitelist for
             an aggregator
@@ -726,7 +843,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: output
+        indicator_types:
+          - IPv4
+          - IPv6
+          - domain
+          - URL
+        tags: []
         description: TAXII DataFeed
         class: minemeld.ft.taxii.DataFeed
         config: {}
-

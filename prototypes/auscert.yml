@@ -8,6 +8,10 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
+        indicator_types: [ URL ]
+        tags:
+            - ConfidenceHigh
+            - ShareLevelRed
         description: 7 days combo
         config:
             source_name: auscert.7days_combo
@@ -22,6 +26,10 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
+        indicator_types: [ URL ]
+        tags:
+            - ConfidenceHigh
+            - ShareLevelRed
         description: 7 days malware
         config:
             source_name: auscert.7day_smalware
@@ -36,6 +44,10 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
+        indicator_types: [ URL ]
+        tags:
+            - ConfidenceHigh
+            - ShareLevelRed
         description: 7 days phishing
         config:
             source_name: auscert.7days_phishing
@@ -50,6 +62,10 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
+        indicator_types: [ URL ]
+        tags:
+            - ConfidenceHigh
+            - ShareLevelRed
         description: 7 days log or dump sites
         config:
             source_name: auscert.7days_dumpsites
@@ -64,6 +80,10 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
+        indicator_types: [ URL ]
+        tags:
+            - ConfidenceHigh
+            - ShareLevelRed
         description: 7 days muling
         config:
             source_name: auscert.7days_muling
@@ -78,6 +98,10 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
+        indicator_types: [ URL ]
+        tags:
+            - ConfidenceHigh
+            - ShareLevelRed
         description: 1 day combo
         config:
             source_name: auscert.1day_combo
@@ -92,6 +116,10 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
+        indicator_types:  [ URL ]
+        tags:
+            - ConfidenceHigh
+            - ShareLevelRed
         description: 1 day malware
         config:
             source_name: auscert.1day_malware
@@ -106,6 +134,10 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
+        indicator_types: [ URL ]
+        tags:
+            - ConfidenceHigh
+            - ShareLevelRed
         description: 1 day phishing
         config:
             source_name: auscert.1day_phishing
@@ -120,6 +152,10 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
+        indicator_types: [ URL ]
+        tags:
+            - ConfidenceHigh
+            - ShareLevelRed
         description: 1 day1 log or dump sites
         config:
             source_name: auscert.1day_dumpsites
@@ -134,6 +170,10 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
+        indicator_types: [ URL ] 
+        tags:
+            - ConfidenceHigh
+            - ShareLevelRed
         description: 1 day muling
         config:
             source_name: auscert.1day_muling

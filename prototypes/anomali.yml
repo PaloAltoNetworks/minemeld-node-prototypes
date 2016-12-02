@@ -13,6 +13,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
+        indicator_types: [ domain, URL, IPv4, IPv6 ]
+        tags:
+            - ConfidenceHigh
+            - ConfidenceLow
+            - ConfidenceMedium
+            - ShareLevelRed
         description: >
             Miner for Anomali Optic API. You need a valid Optic API Key
             to use this Miner.

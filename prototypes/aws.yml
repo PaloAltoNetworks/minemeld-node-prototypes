@@ -9,6 +9,11 @@ prototypes:
         development_status: STABLE
         description: all AMAZON ranges
         node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - ConfidenceHigh
+            - ShareLevelGreen
         class: minemeld.ft.json.SimpleJSON
         config:
             source_name: aws.AMAZON
@@ -26,11 +31,17 @@ prototypes:
             attributes:
                 type: IPv4
                 confidence: 100
+                share_level: green
     EC2:
         author: MineMeld Core Team
         development_status: STABLE
         description: EC2 ranges
         node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - ConfidenceHigh
+            - ShareLevelGreen
         class: minemeld.ft.json.SimpleJSON
         config:
             source_name: aws.EC2
@@ -48,11 +59,17 @@ prototypes:
             attributes:
                 type: IPv4
                 confidence: 100
+                share_level: green
     ROUTE53:
         author: MineMeld Core Team
         development_status: STABLE
         description: ROUTE53 ranges
         node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - ConfidenceHigh
+            - ShareLevelGreen
         class: minemeld.ft.json.SimpleJSON
         config:
             source_name: aws.ROUTE53
@@ -70,11 +87,17 @@ prototypes:
             attributes:
                 type: IPv4
                 confidence: 100
+                share_level: green
     ROUTE53_HEALTHCHECKS:
         author: MineMeld Core Team
         development_status: STABLE
         description: ROUTE53_HEALTHCHECKS ranges
         node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - ConfidenceHigh
+            - ShareLevelGreen
         class: minemeld.ft.json.SimpleJSON
         config:
             source_name: aws.ROUTE53_HEALTHCHECKS
@@ -92,11 +115,17 @@ prototypes:
             attributes:
                 type: IPv4
                 confidence: 100
+                share_level: green
     CLOUDFRONT:
         author: MineMeld Core Team
         development_status: STABLE
         description: CLOUDFRONT ranges
         node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - ConfidenceHigh
+            - ShareLevelGreen
         class: minemeld.ft.json.SimpleJSON
         config:
             source_name: aws.CLOUDFRONT
@@ -114,3 +143,4 @@ prototypes:
             attributes:
                 type: IPv4
                 confidence: 100
+                share_level: green

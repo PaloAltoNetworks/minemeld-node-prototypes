@@ -8,6 +8,12 @@ prototypes:
     author: MineMeld Core Team
     development_status: EXPERIMENTAL
     node_type: miner
+    indicator_types:
+      - IPv4
+      - IPv6
+    tags:
+      - ConfidenceHigh
+      - ShareLevelRed
     description: >
       IP to SGT (Security Group Tag) mappings from ISE using ERS (External
       RESTful Services) API.
@@ -28,6 +34,10 @@ prototypes:
       author: MineMeld Core Team
       development_status: STABLE
       node_type: output
+      indicator_types:
+        - IPv4
+        - IPv6
+      tags: []
       description: >
           Push IP to SGT mappings to PAN-OS devices via DAG.
       class: minemeld.ft.dag.DagPusher

@@ -13,6 +13,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: EXPERIMENTAL
         node_type: miner
+        indicator_types:
+            - domain
+            - IPv4
+        tags:
+            - ShareLevelRed
+            - ConfidenceMedium
         description: >
             Miner for The Media Trust DTI API. You need a valid TMT DTI API
             Key to use this Miner.

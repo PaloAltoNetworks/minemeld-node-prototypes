@@ -9,6 +9,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+          - URL
+        tags:
+          - OSINT
+          - ConfidenceHigh
+          - ShareLevelGreen
         description: CryptoWall C2 URLs
         config:
           source_name: ransomwaretracker.CW_C2_URLBL
@@ -27,6 +33,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+          - domain
+        tags:
+          - OSINT
+          - ConfidenceLow
+          - ShareLevelGreen
         description: CryptoWall C2 domains
         config:
           source_name: ransomwaretracker.CW_C2_DOMBL
@@ -45,6 +57,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+          - domain
+        tags:
+          - OSINT
+          - ConfidenceHigh
+          - ShareLevelGreen
         description: CryptoWall C2 Payment Sites domains
         config:
           source_name: ransomwaretracker.CW_PS_DOMBL
@@ -63,6 +81,13 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+          - IPv4
+        tags:
+          - OSINT
+          - ConfidenceMedium
+          - ShareLevelGreen
+          - DirectionOutbound
         description: CryptoWall Payment Sites IPs
         config:
           source_name: ransomwaretracker.CW_PS_IPBL
@@ -82,6 +107,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+          - URL
+        tags:
+          - OSINT
+          - ConfidenceHigh
+          - ShareLevelGreen
         description: TeslaCrypt C2 URLs
         config:
           source_name: ransomwaretracker.TC_C2_URLBL
@@ -100,6 +131,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+          - domain
+        tags:
+          - OSINT
+          - ConfidenceLow
+          - ShareLevelGreen
         description: TeslaCrypt C2 domains
         config:
           source_name: ransomwaretracker.TC_C2_DOMBL
@@ -118,6 +155,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+          - domain
+        tags:
+          - OSINT
+          - ConfidenceLow
+          - ShareLevelGreen
         description: TeslaCrypt Payment Sites domains
         config:
           source_name: ransomwaretracker.TC_PS_DOMBL
@@ -136,6 +179,13 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+          - IPv4
+        tags:
+          - OSINT
+          - ConfidenceMedium
+          - ShareLevelGreen
+          - DirectionOutbound
         description: TeslaCrypt Payment Sites IPs
         config:
           source_name: ransomwaretracker.TC_PS_IPBL
@@ -155,6 +205,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+          - URL
+        tags:
+          - OSINT
+          - ConfidenceHigh
+          - ShareLevelGreen
         description: TeslaCrypt Distribution Sites URLs
         config:
           source_name: ransomwaretracker.TC_DS_URLBL
@@ -173,6 +229,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+          - domain
+        tags:
+          - OSINT
+          - ConfidenceHigh
+          - ShareLevelGreen
         description: Locky C2 domains
         config:
           source_name: ransomwaretracker.LY_C2_DOMBL
@@ -191,6 +253,13 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+          - IPv4
+        tags:
+          - OSINT
+          - ConfidenceMedium
+          - ShareLevelGreen
+          - DirectionOutbound
         description: Locky IPs
         config:
           source_name: ransomwaretracker.LY_C2_IPBL
@@ -210,6 +279,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+          - domain
+        tags:
+          - OSINT
+          - ConfidenceHigh
+          - ShareLevelGreen
         description: Locky Payment Sites domains
         config:
           source_name: ransomwaretracker.LY_PS_DOMBL
@@ -228,6 +303,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+          - IPv4
+        tags:
+          - OSINT
+          - ConfidenceLow
+          - ShareLevelGreen
         description: Locky Payment Sites IPs
         config:
           source_name: ransomwaretracker.LY_PS_IPBL
@@ -246,6 +327,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+          - URL
+        tags:
+          - OSINT
+          - ConfidenceHigh
+          - ShareLevelGreen
         description: Locky Distribution Sites URLs
         config:
           source_name: ransomwaretracker.LY_DS_URLBL
@@ -264,6 +351,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+          - domain
+        tags:
+          - OSINT
+          - ConfidenceHigh
+          - ShareLevelGreen
         description: TorrentLocker C2 domains
         config:
           source_name: ransomwaretracker.TL_C2_DOMBL
@@ -282,6 +375,13 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+          - IPv4
+        tags:
+          - OSINT
+          - ConfidenceMedium
+          - ShareLevelGreen
+          - DirectionOutbound
         description: TorrentLocker C2 IPs
         config:
           source_name: ransomwaretracker.TL_C2_IPBL
@@ -301,6 +401,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+          - domain
+        tags:
+          - OSINT
+          - ConfidenceHigh
+          - ShareLevelGreen
         description: TorrentLocker Payment Sites domains
         config:
           source_name: ransomwaretracker.TL_PS_DOMBL
@@ -319,6 +425,13 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+          - IPv4
+        tags:
+          - OSINT
+          - ConfidenceMedium
+          - ShareLevelGreen
+          - DirectionOutbound
         description: TorrentLocker Payment Sites IPs
         config:
           source_name: ransomwaretracker.TL_PS_IPBL
@@ -338,6 +451,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+          - domain
+        tags:
+          - OSINT
+          - ConfidenceHigh
+          - ShareLevelGreen
         description: Combined Ransomware domains
         config:
           source_name: ransomwaretracker.RW_DOMBL
@@ -356,6 +475,12 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+          - URL
+        tags:
+          - OSINT
+          - ConfidenceHigh
+          - ShareLevelGreen
         description: Combined Ransomware URLs
         config:
           source_name: ransomwaretracker.RW_URLBL
@@ -374,6 +499,13 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
+        indicator_types:
+          - IPv4
+        tags:
+          - OSINT
+          - ConfidenceMedium
+          - ShareLevelGreen
+          - DirectionOutbound
         description: Combined Ransomware IPs
         config:
           source_name: ransomwaretracker.RW_IPBL
