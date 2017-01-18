@@ -416,6 +416,31 @@ prototypes:
                   actions:
                     - drop
 
+    aggregatorProcessCommandLine:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: processor
+        indicator_types:
+          - process.command_line
+        tags: []
+        description: >
+            Aggregator for process.command_line indicators.
+            Inputs with names starting with "wl" will be interpreted as
+            whitelists.
+        class: minemeld.ft.op.AggregateFT
+        config:
+            whitelist_prefixes:
+                - wl
+            infilters:
+                - name: accept process.command_line
+                  conditions:
+                    - type == 'process.command_line'
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+
     feedLCGreen:
         author: MineMeld Core Team
         development_status: STABLE
