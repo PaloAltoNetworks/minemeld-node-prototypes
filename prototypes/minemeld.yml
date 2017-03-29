@@ -1,0 +1,21 @@
+description: >
+    Library of nodes to work with multiple MineMeld instances
+url: https://github.com/PaloAltoNetworks/minemeld/wiki
+
+prototypes:
+    JSONSEQFeed:
+        author: MineMeld Core Team
+        development_status: EXPERIMENTAL
+        node_type: miner
+        indicator_types: [ any ]
+        tags: []
+        description: Miner to connect to MineMeld feeds
+        class: minemeld.ft.mm.JSONSEQMiner
+        config:
+            # insert the URL of the MineMeld feed here
+            url: null
+            interval: 3600
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 86400
