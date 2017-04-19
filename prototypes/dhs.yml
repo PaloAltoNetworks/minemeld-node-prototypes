@@ -1,0 +1,56 @@
+url: https://taxii.dhs.gov/
+description: >
+    DHS Automated Indicator Sharing (AIS) and
+    Cyber Information Sharing and Collaboration Program (CISCP)
+    are Threat Intellegence feeds in STIX format.
+
+prototypes:
+    AIS:
+        author: Unit 42
+        development_status: EXPERIMENTAL
+        node_type: miner
+        indicator_types:
+            - any
+        tags:
+            - AIS
+            - DHS
+        class: minmeld.ft.taxii.TaxiiClient
+        config:
+            source_name: dhs.AIS
+            collection: AIS
+            prefix: AIS
+            subscription_id_required: true
+            discovery_service: https://taxii.dhs.gov:8443/flare/taxii11/discovery
+            client_cert_required: true
+            client_credentials_required: false
+            attributes:
+                confidence: 30
+                share_level: red
+            age_out:
+                default: 30d
+                sudden_death: false
+
+    CISCP:
+        author: Unit 42
+        development_status: EXPERIMENTAL
+        node_type: miner
+        indicator_types:
+            - any
+        tags:
+            - CISCP
+            - DHS
+        class: minmeld.ft.taxii.TaxiiClient
+        config:
+            source_name: dhs.CISCP
+            collection: CISCP
+            prefix: CISCP
+            subscription_id_required: true
+            discovery_service: https://taxii.dhs.gov:8443/flare/taxii11/discovery
+            client_cert_required: true
+            client_credentials_required: false
+            attributes:
+                confidence: 30
+                share_level: red
+            age_out:
+                default: 30d
+                sudden_death: false
