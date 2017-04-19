@@ -14,7 +14,7 @@ prototypes:
         tags:
             - AIS
             - DHS
-        class: minmeld.ft.taxii.TaxiiClient
+        class: minemeld.ft.taxii.TaxiiClient
         config:
             source_name: dhs.AIS
             collection: AIS
@@ -39,7 +39,7 @@ prototypes:
         tags:
             - CISCP
             - DHS
-        class: minmeld.ft.taxii.TaxiiClient
+        class: minemeld.ft.taxii.TaxiiClient
         config:
             source_name: dhs.CISCP
             collection: CISCP
