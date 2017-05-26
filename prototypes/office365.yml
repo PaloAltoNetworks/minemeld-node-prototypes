@@ -426,6 +426,30 @@ prototypes:
             attributes:
                 share_level: green
 
+    Teams:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            This is the current list of Office365 Teams IPs and URLs.
+        class: minemeld.ft.o365.O365XML
+        config:
+            products:
+                - Teams
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                share_level: green
+
     any:
         author: MineMeld Core Team
         development_status: STABLE
