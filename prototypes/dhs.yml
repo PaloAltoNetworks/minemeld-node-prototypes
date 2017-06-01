@@ -32,7 +32,7 @@ prototypes:
                 confidence: 30
                 share_level: red
             age_out:
-                default: 30d
+                default: last_seen+30d
                 sudden_death: false
 
     CISCP:
@@ -61,5 +61,5 @@ prototypes:
                 confidence: 30
                 share_level: red
             age_out:
-                default: 30d
+                default: last_seen+30d
                 sudden_death: false
