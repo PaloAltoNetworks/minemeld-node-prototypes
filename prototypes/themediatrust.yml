@@ -25,7 +25,7 @@ prototypes:
         class: minemeld.ft.tmt.DTIAPI
         config:
             age_out:
-                default: 30d
+                default: last_seen+30d
                 sudden_death: false
                 interval: 3307
             attributes:

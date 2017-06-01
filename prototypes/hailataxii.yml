@@ -32,7 +32,7 @@ prototypes:
                 share_level: green
             age_out:
                sudden_death: false
-               default: 30d
+               default: last_seen+30d
 
     guest_CyberCrime_Tracker:
         author: Soltra Dev Team
@@ -62,7 +62,7 @@ prototypes:
                 share_level: green
             age_out:
                sudden_death: false
-               default: 30d
+               default: last_seen+30d
 
     guest_EmergingThreats_rules:
         author: Soltra Dev Team
@@ -92,7 +92,7 @@ prototypes:
                 share_level: green
             age_out:
                sudden_death: false
-               default: 30d
+               default: last_seen+30d
 
     guest_Lehigh_edu:
         author: MineMeld Core Team
@@ -122,7 +122,7 @@ prototypes:
                 share_level: green
             age_out:
                sudden_death: false
-               default: 30d
+               default: last_seen+30d
 
     guest_MalwareDomainList_Hostlist:
         author: Soltra Dev Team
@@ -152,7 +152,7 @@ prototypes:
                 share_level: green
             age_out:
                sudden_death: false
-               default: 30d
+               default: last_seen+30d
 
     guest_blutmagie_de_torExits:
         author: Soltra Dev Team
@@ -182,7 +182,7 @@ prototypes:
                 share_level: green
             age_out:
                sudden_death: false
-               default: 30d
+               default: last_seen+30d
 
     guest_dataForLast_7daysOnly:
         author: Soltra Dev Team
@@ -212,7 +212,7 @@ prototypes:
                 share_level: green
             age_out:
                sudden_death: false
-               default: 30d
+               default: last_seen+30d
 
     guest_dshield_BlockList:
         author: Soltra Dev Team
@@ -242,7 +242,7 @@ prototypes:
                 share_level: green
             age_out:
                sudden_death: false
-               default: 30d
+               default: last_seen+30d
 
     guest_phishtank_com:
         author: MineMeld Core Team
@@ -272,5 +272,4 @@ prototypes:
                 share_level: green
             age_out:
                sudden_death: false
-               default: 30d
-
+               default: last_seen+30d

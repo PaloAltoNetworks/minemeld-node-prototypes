@@ -10,7 +10,7 @@ description: >
 prototypes:
     Intelligence:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         indicator_types:
             - IPv4

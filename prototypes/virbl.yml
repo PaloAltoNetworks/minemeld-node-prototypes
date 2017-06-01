@@ -15,6 +15,7 @@ prototypes:
             - ConfidenceHigh
             - OSINT
             - ShareLevelGreen
+            - Deprecated
         class: minemeld.ft.http.HttpFT
         description: virbl IP blocklist
         config:
