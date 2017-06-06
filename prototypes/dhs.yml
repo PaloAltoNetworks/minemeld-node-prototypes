@@ -28,6 +28,7 @@ prototypes:
             discovery_service: https://taxii.dhs.gov:8443/flare/taxii11/discovery
             client_cert_required: true
             client_credentials_required: false
+            lower_timestamp_precision: true
             attributes:
                 confidence: 30
                 share_level: red
@@ -57,6 +58,7 @@ prototypes:
             discovery_service: https://taxii.dhs.gov:8443/flare/taxii11/discovery
             client_cert_required: true
             client_credentials_required: false
+            lower_timestamp_precision: true
             attributes:
                 confidence: 30
                 share_level: red
