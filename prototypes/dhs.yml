@@ -28,11 +28,12 @@ prototypes:
             discovery_service: https://taxii.dhs.gov:8443/flare/taxii11/discovery
             client_cert_required: true
             client_credentials_required: false
+            lower_timestamp_precision: true
             attributes:
                 confidence: 30
                 share_level: red
             age_out:
-                default: 30d
+                default: last_seen+30d
                 sudden_death: false
 
     CISCP:
@@ -57,9 +58,10 @@ prototypes:
             discovery_service: https://taxii.dhs.gov:8443/flare/taxii11/discovery
             client_cert_required: true
             client_credentials_required: false
+            lower_timestamp_precision: true
             attributes:
                 confidence: 30
                 share_level: red
             age_out:
-                default: 30d
+                default: last_seen+30d
                 sudden_death: false

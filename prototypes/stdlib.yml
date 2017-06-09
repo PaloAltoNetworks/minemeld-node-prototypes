@@ -34,7 +34,7 @@ prototypes:
 
     aggregatorIPv6Simple:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: processor
         indicator_types:
           - IPv6
@@ -878,7 +878,7 @@ prototypes:
 
     listIPv4Generic:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         indicator_types:
           - IPv4
@@ -889,7 +889,7 @@ prototypes:
             an aggregator
         class: minemeld.ft.local.YamlIPv4FT
         config:
-            interval: 53
+            interval: 3600
             age_out:
                 default: null
                 sudden_death: true
@@ -900,7 +900,7 @@ prototypes:
 
     listIPv6Generic:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         indicator_types:
           - IPv6
@@ -911,7 +911,7 @@ prototypes:
             an aggregator
         class: minemeld.ft.local.YamlIPv6FT
         config:
-            interval: 53
+            interval: 3600
             age_out:
                 default: null
                 sudden_death: true
@@ -922,7 +922,7 @@ prototypes:
 
     listURLGeneric:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         indicator_types:
           - URL
@@ -933,7 +933,7 @@ prototypes:
             an aggregator
         class: minemeld.ft.local.YamlURLFT
         config:
-            interval: 53
+            interval: 3600
             age_out:
                 default: null
                 sudden_death: true
@@ -944,7 +944,7 @@ prototypes:
 
     listDomainGeneric:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         indicator_types:
           - domain
@@ -955,7 +955,7 @@ prototypes:
             an aggregator
         class: minemeld.ft.local.YamlDomainFT
         config:
-            interval: 53
+            interval: 3600
             age_out:
                 default: null
                 sudden_death: true
@@ -966,7 +966,7 @@ prototypes:
 
     taxiiDataFeed:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: output
         indicator_types:
           - IPv4

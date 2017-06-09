@@ -144,3 +144,31 @@ prototypes:
                 type: IPv4
                 confidence: 100
                 share_level: green
+    S3:
+        author: MineMeld Core Team
+        development_status: STABLE
+        description: S3 ranges
+        node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - ConfidenceHigh
+            - ShareLevelGreen
+        class: minemeld.ft.json.SimpleJSON
+        config:
+            source_name: aws.S3
+            url: https://ip-ranges.amazonaws.com/ip-ranges.json
+            extractor: "prefixes[?service=='S3']"
+            prefix: aws
+            indicator: ip_prefix
+            fields:
+                - region
+                - service
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                type: IPv4
+                confidence: 100
+                share_level: green
