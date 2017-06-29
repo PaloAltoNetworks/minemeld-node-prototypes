@@ -7,6 +7,8 @@ description: >
     for bruteforce login attacks as well as scans on ports 80 (HTTP) and
     443 (HTTPS) for vulnerable installations of phpMyAdmin and other
     web applications.
+    DO NOT USE ! OPENBL has stopped operations, the prototypes are still here for
+    backwards compatibility
 
 prototypes:
     base:
@@ -19,6 +21,7 @@ prototypes:
             - OSINT
             - ShareLevelGreen
             - ConfidenceMedium
+            - Deprecated
         description: The suggested DEFAULT list
         config:
             source_name: openbl.base
@@ -40,6 +43,7 @@ prototypes:
             - OSINT
             - ShareLevelGreen
             - ConfidenceMedium
+            - Deprecated
         description: IP list for last 1 days
         config:
             source_name: openbl.base_1days
@@ -61,6 +65,7 @@ prototypes:
             - OSINT
             - ShareLevelGreen
             - ConfidenceMedium
+            - Deprecated
         description: IP list for last 7 days
         config:
             source_name: openbl.base_7days
@@ -82,6 +87,7 @@ prototypes:
             - OSINT
             - ShareLevelGreen
             - ConfidenceMedium
+            - Deprecated
         description: IP list for last 30 days
         config:
             source_name: openbl.base_30days
@@ -103,6 +109,7 @@ prototypes:
             - OSINT
             - ShareLevelGreen
             - ConfidenceMedium
+            - Deprecated
         description: IP list for last 60 days
         config:
             source_name: openbl.base_60days
@@ -124,6 +131,7 @@ prototypes:
             - OSINT
             - ShareLevelGreen
             - ConfidenceMedium
+            - Deprecated
         description: openbl.base_90days
         config:
             source_name: https://www.openbl.org/lists/base_90days.txt
@@ -145,6 +153,7 @@ prototypes:
             - OSINT
             - ShareLevelGreen
             - ConfidenceMedium
+            - Deprecated
         description: IP list for last 180 days
         config:
             source_name: openbl.base_180days
@@ -166,6 +175,7 @@ prototypes:
             - OSINT
             - ShareLevelGreen
             - ConfidenceMedium
+            - Deprecated
         description: IP list for last 360 days
         config:
             source_name: openbl.base_360days

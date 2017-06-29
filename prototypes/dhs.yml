@@ -1,0 +1,67 @@
+url: https://taxii.dhs.gov/
+description: >
+    DHS Information sharing is essential to the protection of critical infrastructure
+    and to furthering cybersecurity for the nation.  Each Threat Intellegence feeds are
+    shared in the STIX format.
+
+prototypes:
+    AIS:
+        author: Unit 42
+        development_status: EXPERIMENTAL
+        description: >
+          AIS is a part of DHS's effort to create an ecosystem
+          where as soon as a company or federal agency observes an attempted
+          compromise, the indicator will be shared in real time with all of our partners,
+          protecting them from that particular threat.
+        node_type: miner
+        indicator_types:
+            - any
+        tags:
+            - AIS
+            - DHS
+        class: minemeld.ft.taxii.TaxiiClient
+        config:
+            source_name: dhs.AIS
+            collection: AIS
+            prefix: AIS
+            subscription_id_required: true
+            discovery_service: https://taxii.dhs.gov:8443/flare/taxii11/discovery
+            client_cert_required: true
+            client_credentials_required: false
+            lower_timestamp_precision: true
+            attributes:
+                confidence: 30
+                share_level: red
+            age_out:
+                default: last_seen+30d
+                sudden_death: false
+
+    CISCP:
+        author: Unit 42
+        development_status: EXPERIMENTAL
+        description: >
+          The DHS’s National Cybersecurity and Communications Integration Center (NCCIC)
+          serves as the hub of information sharing activities for the Department to increase
+          awareness of vulnerabilities, incidents, and mitigations.
+        node_type: miner
+        indicator_types:
+            - any
+        tags:
+            - CISCP
+            - DHS
+        class: minemeld.ft.taxii.TaxiiClient
+        config:
+            source_name: dhs.CISCP
+            collection: CISCP
+            prefix: CISCP
+            subscription_id_required: true
+            discovery_service: https://taxii.dhs.gov:8443/flare/taxii11/discovery
+            client_cert_required: true
+            client_credentials_required: false
+            lower_timestamp_precision: true
+            attributes:
+                confidence: 30
+                share_level: red
+            age_out:
+                default: last_seen+30d
+                sudden_death: false
