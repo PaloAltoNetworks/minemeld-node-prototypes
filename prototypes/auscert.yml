@@ -138,7 +138,7 @@ prototypes:
                 default: null
                 sudden_death: true
             source_name: auscert.1day_phishing
-            url: https://www.auscert.org.au/api/v1/malurl/malware-1-xml
+            url: https://www.auscert.org.au/api/v1/malurl/phishing-1-xml
             indicator:
                 regex: '<uri>(.*)</uri>'
                 transform: '\1'
