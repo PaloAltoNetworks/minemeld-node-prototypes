@@ -18,7 +18,7 @@ prototypes:
                 default: null
                 sudden_death: true
             source_name: auscert.7days_combo
-            url: https://www.auscert.org.au/download.html?f=279
+            url: https://www.auscert.org.au/api/v1/malurl/combo-7-xml
             indicator:
                 regex: '<uri>(.*)</uri>'
                 transform: '\1'
@@ -42,7 +42,7 @@ prototypes:
                 default: null
                 sudden_death: true
             source_name: auscert.7day_smalware
-            url: https://www.auscert.org.au/download.html?f=273
+            url: https://www.auscert.org.au/api/v1/malurl/malware-7-xml
             indicator:
                 regex: '<uri>(.*)</uri>'
                 transform: '\1'
@@ -66,55 +66,7 @@ prototypes:
                 default: null
                 sudden_death: true
             source_name: auscert.7days_phishing
-            url: https://www.auscert.org.au/download.html?f=271
-            indicator:
-                regex: '<uri>(.*)</uri>'
-                transform: '\1'
-            attributes:
-                type: URL
-                share_level: red
-                confidence: 80
-        class: minemeld.ft.auscert.MaliciousURLFeed
-
-    7days_dumpsites:
-        author: Simon Coggins
-        development_status: STABLE
-        node_type: miner
-        indicator_types: [ URL ]
-        tags:
-            - ConfidenceHigh
-            - ShareLevelRed
-        description: 7 days log or dump sites
-        config:
-            age_out:
-                default: null
-                sudden_death: true
-            source_name: auscert.7days_dumpsites
-            url: https://www.auscert.org.au/download.html?f=277
-            indicator:
-                regex: '<uri>(.*)</uri>'
-                transform: '\1'
-            attributes:
-                type: URL
-                share_level: red
-                confidence: 80
-        class: minemeld.ft.auscert.MaliciousURLFeed
-
-    7days_muling:
-        author: Simon Coggins
-        development_status: STABLE
-        node_type: miner
-        indicator_types: [ URL ]
-        tags:
-            - ConfidenceHigh
-            - ShareLevelRed
-        description: 7 days muling
-        config:
-            age_out:
-                default: null
-                sudden_death: true
-            source_name: auscert.7days_muling
-            url: https://www.auscert.org.au/download.html?f=275
+            url: https://www.auscert.org.au/api/v1/malurl/phishing-7-xml
             indicator:
                 regex: '<uri>(.*)</uri>'
                 transform: '\1'
@@ -138,7 +90,7 @@ prototypes:
                 default: null
                 sudden_death: true
             source_name: auscert.1day_combo
-            url: https://www.auscert.org.au/download.html?f=280
+            url: https://www.auscert.org.au/api/v1/malurl/combo-1-xml
             indicator:
                 regex: '<uri>(.*)</uri>'
                 transform: '\1'
@@ -162,7 +114,7 @@ prototypes:
                 default: null
                 sudden_death: true
             source_name: auscert.1day_malware
-            url: https://www.auscert.org.au/download.html?f=274
+            url: https://www.auscert.org.au/api/v1/malurl/malware-1-xml
             indicator:
                 regex: '<uri>(.*)</uri>'
                 transform: '\1'
@@ -186,7 +138,7 @@ prototypes:
                 default: null
                 sudden_death: true
             source_name: auscert.1day_phishing
-            url: https://www.auscert.org.au/download.html?f=272
+            url: https://www.auscert.org.au/api/v1/malurl/phishing-1-xml
             indicator:
                 regex: '<uri>(.*)</uri>'
                 transform: '\1'
@@ -196,50 +148,3 @@ prototypes:
                 confidence: 80
         class: minemeld.ft.auscert.MaliciousURLFeed
 
-    1day_dumpsites:
-        author: Simon Coggins
-        development_status: STABLE
-        node_type: miner
-        indicator_types: [ URL ]
-        tags:
-            - ConfidenceHigh
-            - ShareLevelRed
-        description: 1 day1 log or dump sites
-        config:
-            age_out:
-                default: null
-                sudden_death: true
-            source_name: auscert.1day_dumpsites
-            url: https://www.auscert.org.au/download.html?f=278
-            indicator:
-                regex: '<uri>(.*)</uri>'
-                transform: '\1'
-            attributes:
-                type: URL
-                share_level: red
-                confidence: 80
-        class: minemeld.ft.auscert.MaliciousURLFeed
-
-    1day_muling:
-        author: Simon Coggins
-        development_status: STABLE
-        node_type: miner
-        indicator_types: [ URL ] 
-        tags:
-            - ConfidenceHigh
-            - ShareLevelRed
-        description: 1 day muling
-        config:
-            age_out:
-                default: null
-                sudden_death: true
-            source_name: auscert.1day_muling
-            url: https://www.auscert.org.au/download.html?f=276
-            indicator:
-                regex: '<uri>(.*)</uri>'
-                transform: '\1'
-            attributes:
-                type: URL
-                share_level: red
-                confidence: 80
-        class: minemeld.ft.auscert.MaliciousURLFeed
