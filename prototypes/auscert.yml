@@ -76,6 +76,40 @@ prototypes:
                 confidence: 80
         class: minemeld.ft.auscert.MaliciousURLFeed
 
+    7days_dumpsites:
+        author: MineMeld Core Team
+        development_status: DEPRECATED
+        node_type: miner
+        indicator_types: [ URL ]
+        tags:
+            - Deprecated
+            - ShareLevelRed
+        description: Do not use !
+        config:
+            age_out:
+                default: null
+                sudden_death: true
+            source_name: auscert.7days_dumpsites
+            url: https://minemeld-updates.panw.io/deprecated-feed.txt
+        class: minemeld.ft.http.HttpFT
+
+    7days_muling:
+        author: MineMeld Core Team
+        development_status: DEPRECATED
+        node_type: miner
+        indicator_types: [ URL ]
+        tags:
+            - Deprecated
+            - ShareLevelRed
+        description: Do not use !
+        config:
+            age_out:
+                default: null
+                sudden_death: true
+            source_name: auscert.7days_muling
+            url: https://minemeld-updates.panw.io/deprecated-feed.txt
+        class: minemeld.ft.http.HttpFT
+
     1day_combo:
         author: Simon Coggins
         development_status: STABLE
@@ -148,3 +182,36 @@ prototypes:
                 confidence: 80
         class: minemeld.ft.auscert.MaliciousURLFeed
 
+    1day_dumpsites:
+        author: MineMeld Core Team
+        development_status: DEPRECATED
+        node_type: miner
+        indicator_types: [ URL ]
+        tags:
+            - Deprecated
+            - ShareLevelRed
+        description: Do not use !
+        config:
+            age_out:
+                default: null
+                sudden_death: true
+            source_name: auscert.1day_dumpsites
+            url: https://minemeld-updates.panw.io/deprecated-feed.txt
+        class: minemeld.ft.http.HttpFT
+
+    1day_muling:
+        author: MineMeld Core Team
+        development_status: DEPRECATED
+        node_type: miner
+        indicator_types: [ URL ]
+        tags:
+            - Deprecated
+            - ShareLevelRed
+        description: Do not use !
+        config:
+            age_out:
+                default: null
+                sudden_death: true
+            source_name: auscert.1day_muling
+            url: https://minemeld-updates.panw.io/deprecated-feed.txt
+        class: minemeld.ft.http.HttpFT
