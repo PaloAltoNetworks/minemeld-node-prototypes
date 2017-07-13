@@ -7,7 +7,7 @@ description: >
 prototypes:
     bl:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
             - IPv4
@@ -27,4 +27,4 @@ prototypes:
                 confidence: 80
                 share_level: green
             ignore_regex: '^Export'
-            url: http://virbl.org/download/virbl.dnsbl.bit.nl.txt
+            url: https://minemeld-updates.panw.io/deprecated-feed.txt
