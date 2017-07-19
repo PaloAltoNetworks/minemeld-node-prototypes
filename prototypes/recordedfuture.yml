@@ -35,7 +35,7 @@ prototypes:
                 share_level: red
 
     DomainRiskList:
-        author: MineMeld Core Team
+        author: Jonas Eichinger
         development_status: STABLE
         node_type: miner
         indicator_types:
