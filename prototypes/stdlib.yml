@@ -614,6 +614,60 @@ prototypes:
                   actions:
                     - drop
 
+    feedGreenWithValue:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: output
+        indicator_types: [ any ]
+        tags:
+          - ShareLevelGreen
+        description: >
+            EDL for indicators with share level green, with value
+        class: minemeld.ft.redis.RedisSet
+        config:
+            store_value: true
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept share level green
+                  conditions:
+                    - share_level == 'green'
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+
+    feedRedWithValue:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: output
+        indicator_types: [ any ]
+        tags:
+          - ShareLevelRed
+        description: >
+            EDL for indicators with share level red, with value
+        class: minemeld.ft.redis.RedisSet
+        config:
+            store_value: true
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept share level red
+                  conditions:
+                    - share_level == 'red'
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+
     feedLCWithValue:
         author: MineMeld Core Team
         development_status: STABLE
