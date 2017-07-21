@@ -1,0 +1,89 @@
+url: https://infosec.cert-pa.it/
+description: >
+    Infosec feeds from italian CERT-PA, Computer Emergency Response Team - Public Administration
+    Implemented prototypes:
+    - itcertpa.IP: IP addresses (/32)
+    - itcertpa.DOMAINS: domains
+    - itcertpa.URLS: URLs
+
+prototypes:
+    IP:
+        author: Giovanni Mellini
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - ConfidenceHigh
+            - ShareLevelGreen
+        description: Italian CERT-PA Infosec IP hosts indicators
+        config:
+            source_name: itcertpa.IP
+            attributes:
+                type: IPv4
+                direction: inbound
+                confidence: 80
+                share_level: green
+            ignore_regex: '^#.*'
+            indicator:
+                regex: '^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$'
+            url: https://infosec.cert-pa.it/analyze/listip.txt
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 600
+        class: minemeld.ft.http.HttpFT
+
+    DOMAINS:
+        author: Giovanni Mellini
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - domain
+        tags:
+            - ConfidenceHigh
+            - ShareLevelGreen
+        description: Italian CERT-PA Infosec DOMAINS indicators
+        config:
+            source_name: itcertpa.DOMAINS
+            attributes:
+                type: domain
+                direction: inbound
+                confidence: 80
+                share_level: green
+            ignore_regex: '^#.*'
+            indicator:
+                regex: '^.*'
+            url: https://infosec.cert-pa.it/analyze/listdomains.txt
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 600
+        class: minemeld.ft.http.HttpFT
+
+    URLS:
+        author: Giovanni Mellini
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+        tags:
+            - ConfidenceHigh
+            - ShareLevelGreen
+        description: Italian CERT-PA Infosec URLS indicators
+        config:
+            source_name: itcertpa.URLS
+            attributes:
+                type: URL
+                direction: inbound
+                confidence: 80
+                share_level: green
+            ignore_regex: '^#.*'
+            indicator:
+                regex: '^http.*'
+            url: https://infosec.cert-pa.it/analyze/listurls.txt
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 600
+        class: minemeld.ft.http.HttpFT
