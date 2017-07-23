@@ -33,3 +33,29 @@ prototypes:
                 interval: 3307
             attributes:
                 share_level: red
+
+    DomainRiskList:
+        author: Jonas Eichinger
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - Domain
+        tags:
+            - ConfidenceHigh
+            - ShareLevelRed
+        description: >
+            Recorded Future continually analyzes indicator-related reporting
+            from sources including websites, blogs, paste sites, IRC, malware
+            analyses, social media, and open source threat feeds to identify
+            and score DNS Domains for current risk. The risk list includes
+            evidence details for risk scores. To access this resource, you need
+            a valid API token.
+        class: minemeld.ft.recordedfuture.DomainRiskList
+        config:
+            confidence: 80
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 3307
+            attributes:
+                share_level: red
