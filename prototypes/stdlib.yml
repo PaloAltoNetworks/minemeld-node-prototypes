@@ -1031,3 +1031,22 @@ prototypes:
         description: TAXII DataFeed
         class: minemeld.ft.taxii.DataFeed
         config: {}
+
+    localDB:
+        author: MineMeld Core Team
+        development_status: EXPERIMENTAL
+        node_type: miner
+        indicator_types:
+          - any
+        tags:
+          - ConfidenceAny
+          - ShareLevelAny
+        description: >
+            list of indicators. Use a name starting with "wl" to create a whitelist for
+            an aggregator
+        class: minemeld.ft.localdb.Miner
+        config:
+            interval: 3600
+            attributes:
+                confidence: 100
+                share_level: red
