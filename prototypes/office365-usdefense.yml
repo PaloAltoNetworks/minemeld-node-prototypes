@@ -1,0 +1,242 @@
+url: 'https://support.office.com/en-us/article/Office-365-U-S-Government-Defense-endpoints-cbd2369c-fd96-464c-bf48-c99826b459ee?ui=en-US&rs=en-US&ad=US'
+description: >
+    This reference article lists every endpoints used by Office 365 US Government Defense endpoints.
+    If your organization restricts computers on your network from connecting to the Internet,
+    this article lists the endpoints (FQDNs, Ports, URLs, IPv4, and IPv6 address ranges) that
+    you should include in your outbound allow lists to ensure your computers can successfully
+    use Office 365.
+
+prototypes:
+    exchangeOnline:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            If you have licensed Exchange Online as a standalone or as part of a suite, you
+            must be able to reach the following endpoints.
+        class: minemeld.ft.o365.O365XML
+        config:
+            url: https://support.content.office.net/en-us/static/O365IPAddresses_USDefense.xml
+            products:
+                - EXO
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                share_level: green
+
+    portal:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Portal and shared.
+        class: minemeld.ft.o365.O365XML
+        config:
+            url: https://support.content.office.net/en-us/static/O365IPAddresses_USDefense.xml
+            products:
+                - portal
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                share_level: green
+
+    skypeBusinessOnline:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            If you have licensed Skype for Business Online as a standalone or as part of a
+            suite, you must be able to reach the Office 365 portal and identity URLs as well
+            as the Skype for Business Online URLs or IP addresses.
+        class: minemeld.ft.o365.O365XML
+        config:
+            url: https://support.content.office.net/en-us/static/O365IPAddresses_USDefense.xml
+            products:
+                - SfB
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                share_level: green
+
+    sharepointOnline:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            If you have licensed SharePoint Online as a standalone or as part of a suite,
+            you must be able to reach the Office 365 portal and identity URLs as well as
+            the SharePoint Online URLs or IP addresses.
+        class: minemeld.ft.o365.O365XML
+        config:
+            url: https://support.content.office.net/en-us/static/O365IPAddresses_USDefense.xml
+            products:
+                - SPO
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                share_level: green
+
+    exchangeOnlineProtection:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            If you have licensed Exchange Online Protection (EOP) as a standalone or as part
+            of a suite, you must be able to reach the Office 365 portal and identity URLs as
+            well as the EOP IP addresses.
+        class: minemeld.ft.o365.O365XML
+        config:
+            url: https://support.content.office.net/en-us/static/O365IPAddresses_USDefense.xml
+            products:
+                - EOP
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                share_level: green
+
+    O365ProPlus:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Here is the current list of endpoints PCs and Macs need to be able to access
+            to use Office 365 ProPlus.
+        class: minemeld.ft.o365.O365XML
+        config:
+            url: https://support.content.office.net/en-us/static/O365IPAddresses_USDefense.xml
+            products:
+                - ProPlus
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                share_level: green
+
+    officeOnline:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            This list of IP addresses is the current list required for Office Web Apps.
+        class: minemeld.ft.o365.O365XML
+        config:
+            url: https://support.content.office.net/en-us/static/O365IPAddresses_USDefense.xml
+            products:
+                - officeonline
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                share_level: green
+
+    identity:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            This is the current list of Office 365 authentication and
+            identity IPs and URLs.
+        class: minemeld.ft.o365.O365XML
+        config:
+            url: https://support.content.office.net/en-us/static/O365IPAddresses_USDefense.xml
+            products:
+                - identity
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                share_level: green
+
+    any:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            This is the current list of IPs and URLs associated with
+            any Office365 product.
+        class: minemeld.ft.o365.O365XML
+        config:
+            url: https://support.content.office.net/en-us/static/O365IPAddresses_USDefense.xml
+            products: []
+            age_out:
+                default: null
+                sudden_death: true
+                interval: null
+            attributes:
+                share_level: gree
