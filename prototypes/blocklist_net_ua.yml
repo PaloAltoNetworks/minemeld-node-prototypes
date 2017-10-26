@@ -1,0 +1,34 @@
+description: >
+    The BlockList project was created to become protection against negative 
+    influence of the harmful and potentially dangerous events 
+    on the Internet. First of all this service will help 
+    internet and hosting providers to protect subscribers sites 
+    from being hacked. BlockList will help to stop receiving a 
+    large amount of spam from dubious SMTP relays or from 
+    attempts of brute force passwords to servers and network 
+    equipment.
+url: https://blocklist.net.ua
+
+prototypes:
+    ipset:
+        author: MineMeld Core Team
+        development_status: EXPERIMENTAL
+        node_type: miner
+        indicator_types:
+            - IPv4
+            - IPv6
+        tags:
+            - ConfidenceLow
+            - ShareLevelGreen
+        description: >
+            Active IPs of brute forcers and spammers
+        class: minemeld.ft.csv.CSVFT
+        config:
+            url: https://blocklist.net.ua/blocklist.csv
+            fieldnames:
+                - indicator
+                - blocklist_net_ua_ban_date
+                - blocklist_net_ua_unban_date
+                - blocklist_net_ua_reason
+            delimiter: ';'
+            ignore_regex: '^IP.*'
