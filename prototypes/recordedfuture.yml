@@ -39,7 +39,7 @@ prototypes:
         development_status: STABLE
         node_type: miner
         indicator_types:
-            - Domain
+            - domain
         tags:
             - ConfidenceHigh
             - ShareLevelRed
@@ -59,3 +59,4 @@ prototypes:
                 interval: 3307
             attributes:
                 share_level: red
+                type: domain
