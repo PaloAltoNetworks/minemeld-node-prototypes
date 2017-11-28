@@ -40,7 +40,7 @@ prototypes:
       - ShareLevelGreen
     description: This file will be automatically updated daily and populated with the last 30 days of malicious domains.
     config:
-      source_name: malc0de:DOMAINS
+      source_name: malc0de.DOMAINS
       attributes:
         type: domain
         direction: inbound
