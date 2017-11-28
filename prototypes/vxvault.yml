@@ -1,0 +1,31 @@
+url: http://vxvault.net/ViriList.php
+description: >
+  Malicious URLs collected by VXVault
+
+prototypes:
+  URLBL:
+    author: Pansaen Boonyakarn
+    development_status: EXPERIMENTAL
+    node_type: miner
+    indicator_types:
+      - URL
+    tags:
+      - OSINT
+      - ConfidenceHigh
+      - ShareLevelGreen
+    description: Malicious URLs collected by VXVault
+    config:
+      source_name: vxvault.URLBL
+      attributes:
+        type: URL
+        direction: inbound
+        confidence: 70
+        share_level: green
+      indicator:
+        regex: '(http|https):\/\/.*?(\/)'
+      url: http://vxvault.net/URL_List.php
+      interval: 300
+      age_out:
+        default: null
+        sudden_death: true
+    class: minemeld.ft.http.HttpFT
