@@ -1,0 +1,52 @@
+url: https://www.cloudflare.com
+description: >
+    Cloudflare provides a Content Delivery Network that was designed and built to integrate emerging technologies to
+    ensure his customers receive the most advanced protocols on the web. They have built a global network designed
+    to optimize security, performance and reliability, without the bloat of legacy technologies.
+
+prototypes:
+    ipv4:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        class: minemeld.ft.http.HttpFT
+        config:
+            age_out:
+                default: null
+                interval: 257
+                sudden_death: true
+            attributes:
+                confidence: 100
+                share_level: green
+                type: IPv4
+            source_name: cloudflare
+            url: https://www.cloudflare.com/ips-v4
+        description: CloudFlare IPv4 ranges
+        indicator_types:
+        - IPv4
+        tags:
+        - ConfidenceHigh
+        - ShareLevelGreen
+
+    ipv6:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        class: minemeld.ft.http.HttpFT
+        config:
+            age_out:
+                default: null
+                interval: 257
+                sudden_death: true
+            attributes:
+                confidence: 100
+                share_level: green
+                type: IPv6
+            source_name: cloudflare
+            url: https://www.cloudflare.com/ips-v6
+        description: CloudFlare IPv6 ranges
+        indicator_types:
+        - IPv6
+        tags:
+        - ConfidenceHigh
+        - ShareLevelGreen
