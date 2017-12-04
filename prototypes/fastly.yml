@@ -1,0 +1,31 @@
+url: https://www.fastly.com/
+description: >
+    Fastly’s edge cloud platform enhances web and mobile delivery by accelerating dynamic assets and caching
+    unpredictably changing content. His CDN transform and serve images faster from the edge, reducing origin traffic
+    and saving on infrastructure and egress costs.
+
+prototypes:
+    ipv4:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        class: minemeld.ft.json.SimpleJSON
+        config:
+            age_out:
+                default: null
+                interval: 257
+                sudden_death: true
+            attributes:
+                confidence: 100
+                share_level: green
+                type: IPv4
+            extractor: addresses[].{ip_prefix:@}
+            indicator: ip_prefix
+            source_name: fastly
+            url: https://api.fastly.com/public-ip-list
+        description: all Fastly ranges
+        indicator_types:
+        - IPv4
+        tags:
+        - ConfidenceHigh
+        - ShareLevelGreen
