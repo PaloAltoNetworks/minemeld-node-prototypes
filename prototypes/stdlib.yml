@@ -831,10 +831,6 @@ prototypes:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: output
-        indicator_types:
-          - IPv4
-          - IPv6
-        tags: []
         description: >
             Push IP unicast indicators to PAN-OS devices via DAG. Generates
             non persistent registered IPs.
