@@ -43,7 +43,6 @@ prototypes:
       source_name: malc0de.DOMAINS
       attributes:
         type: domain
-        direction: inbound
         confidence: 70
         share_level: green
       ignore_regex: '[//S].*'
