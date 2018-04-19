@@ -14,13 +14,11 @@ prototypes:
       - extension
       - threatconnect
     description: >
-      Example prototype for threatconnect.IndicatorsMiner.
+      Prototype for threatconnect.IndicatorsMiner.
     config:
-      apikey: <API_KEY>
-      apisecret: <API_SECRET>
-      owner: <OWNER>
+      owner: null
       initial_interval: 60
-      sandbox: true
+      sandbox: false
       interval: 3600
       # age out of indicators
       age_out:
@@ -41,11 +39,9 @@ prototypes:
       - extension
       - threatconnect
     description: >
-      Example prototype for threatconnect.GroupsMiner.
+      Example prototype for threatconnect GroupsMiner. Not valid for cloning. Groups must be defined in a new prototype.
     config:
-      apikey: <API_KEY>
-      apisecret: <API_SECRET>
-      owner: <OWNER>
+      owner: null
       groups:
         incidents:
           - <INCIDENT ID 1>
@@ -56,7 +52,7 @@ prototypes:
         emails:
         signatures:
         threats:
-      sandbox: true
+      sandbox: false
       interval: 3600
       # age out of indicators
       age_out:
