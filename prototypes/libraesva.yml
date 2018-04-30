@@ -191,7 +191,7 @@ prototypes:
 		    confidence: 100
 		    direction: inbound
 		    share_level: yellow
-		    type: IPv4
+		    type: md5
 		ignore_regex: ^#.*
 		indicator:
 		    regex: ^.*
