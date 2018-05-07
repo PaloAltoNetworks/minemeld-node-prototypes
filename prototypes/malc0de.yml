@@ -8,7 +8,7 @@ prototypes:
     development_status: EXPERIMENTAL
     node_type: miner
     indicator_types:
-      - IPV4
+      - IPv4
     tags:
       - OSINT
       - ConfidenceHigh
