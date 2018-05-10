@@ -1,0 +1,56 @@
+url: http://malc0de.com/bl/
+description: >
+  IP blacklist from malc0de DNS Sinkhole
+
+prototypes:
+  IP:
+    author: Pansaen Boonyakarn
+    development_status: EXPERIMENTAL
+    node_type: miner
+    indicator_types:
+      - IPv4
+    tags:
+      - OSINT
+      - ConfidenceHigh
+      - ShareLevelGreen
+    description: The files below will be updated daily with domains that have been indentified distributing malware during the past 30 days.
+    config:
+      source_name: malc0de.IP
+      attributes:
+        type: IPv4
+        direction: inbound
+        confidence: 70
+        share_level: green
+      ignore_regex: '[//S].*'
+      url: http://malc0de.com/bl/IP_Blacklist.txt
+      interval: 300
+      age_out:
+        default: null
+        sudden_death: true
+    class: minemeld.ft.http.HttpFT
+  DOMAINS:
+    author: Pansaen Boonyakarn
+    development_status: EXPERIMENTAL
+    node_type: miner
+    indicator_types:
+      - domain
+    tags:
+      - OSINT
+      - ConfidenceHigh
+      - ShareLevelGreen
+    description: This file will be automatically updated daily and populated with the last 30 days of malicious domains.
+    config:
+      source_name: malc0de.DOMAINS
+      attributes:
+        type: domain
+        confidence: 70
+        share_level: green
+      ignore_regex: '[//S].*'
+      indicator:
+        regex: '(?<=PRIMARY\s).*(?= blockeddomain\.hosts)'
+      url: http://malc0de.com/bl/BOOT
+      interval: 300
+      age_out:
+        default: null
+        sudden_death: true
+    class: minemeld.ft.http.HttpFT

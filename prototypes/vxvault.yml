@@ -1,0 +1,28 @@
+url: http://vxvault.net
+description: Threat feed from S!Ri.URZ
+
+prototypes:
+  URLBL:
+    author: Pansaen Boonyakarn
+    development_status: EXPERIMENTAL
+    node_type: miner
+    indicator_types:
+      - URL
+    tags:
+      - OSINT
+      - ConfidenceHigh
+      - ShareLevelGreen
+    description: URL blacklist provided by VXVault
+    config:
+      source_name: vxvault.URLBL
+      attributes:
+        type: URL
+        confidence: 70
+        share_level: green
+      ignore_regex: ^(?!http).*$
+      url: http://vxvault.net/URL_List.php
+      interval: 86400
+      age_out:
+        default: null
+        sudden_death: true
+    class: minemeld.ft.http.HttpFT

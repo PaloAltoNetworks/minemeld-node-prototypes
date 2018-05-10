@@ -1027,6 +1027,9 @@ prototypes:
           - IPv6
           - domain
           - URL
+          - md5
+          - sha256
+          - sha1
         tags: []
         description: TAXII DataFeed
         class: minemeld.ft.taxii.DataFeed
