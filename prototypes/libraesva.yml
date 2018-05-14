@@ -113,7 +113,7 @@ prototypes:
             indicator:
                 regex: ^.*
             source_name: libraesva.malware_domains
-            url: http://repo.libraesva.com/ioc/domain.malware.txt
+            url: https://repo.libraesva.com/ioc/domain.malware.txt
         class: minemeld.ft.http.HttpFT
 
     LIBRAESVA_Advertising_IP4:
