@@ -19,20 +19,20 @@ prototypes:
             - ShareLevelYellow
         description: Domains delivering advertising only
         config:
-        age_out:
-            default: null
-            interval: 600
-            sudden_death: true
-        attributes:
-            confidence: 100
-            direction: inbound
-            share_level: yellow
-            type: domain
-        ignore_regex: ^#.*
-        indicator:
-            regex: ^.*
-        source_name: libraesva.advertising_domains
-        url: https://repo.libraesva.com/ioc/domain.black.txt
+            age_out:
+                default: null
+                interval: 600
+                sudden_death: true
+            attributes:
+                confidence: 100
+                direction: inbound
+                share_level: yellow
+                type: domain
+            ignore_regex: ^#.*
+            indicator:
+                regex: ^.*
+            source_name: libraesva.advertising_domains
+            url: https://repo.libraesva.com/ioc/domain.black.txt
         class: minemeld.ft.http.HttpFT
 
     LIBRAESVA_Bulk_Email_Domains:
@@ -46,20 +46,20 @@ prototypes:
             - ShareLevelYellow
         description: Domains delivering bulk email traffic
         config:
-        age_out:
-            default: null
-            interval: 600
-            sudden_death: true
-        attributes:
-            confidence: 100
-            direction: inbound
-            share_level: yellow
-            type: domain
-        ignore_regex: ^#.*
-        indicator:
-            regex: ^.*
-        source_name: libraesva.bulk_email
-        url: https://repo.libraesva.com/ioc/domain.grey.txt
+            age_out:
+                default: null
+                interval: 600
+                sudden_death: true
+            attributes:
+                confidence: 100
+                direction: inbound
+                share_level: yellow
+                type: domain
+            ignore_regex: ^#.*
+            indicator:
+                regex: ^.*
+            source_name: libraesva.bulk_email
+            url: https://repo.libraesva.com/ioc/domain.grey.txt
         class: minemeld.ft.http.HttpFT
 
     LIBRAESVA_White_Domains:
@@ -73,20 +73,20 @@ prototypes:
             - ShareLevelYellow
         description: Legit email and web domains
         config:
-        age_out:
-            default: null
-            interval: 600
-            sudden_death: true
-        attributes:
-            confidence: 100
-            direction: inbound
-            share_level: yellow
-            type: domain
-        ignore_regex: ^#.*
-        indicator:
-            regex: ^.*
-        source_name: libraesva.white_domains
-        url: https://repo.libraesva.com/ioc/domain.white.txt
+            age_out:
+                default: null
+                interval: 600
+                sudden_death: true
+            attributes:
+                confidence: 100
+                direction: inbound
+                share_level: yellow
+                type: domain
+            ignore_regex: ^#.*
+            indicator:
+                regex: ^.*
+            source_name: libraesva.white_domains
+            url: https://repo.libraesva.com/ioc/domain.white.txt
         class: minemeld.ft.http.HttpFT
 
     LIBRAESVA_Malware_Domains:
@@ -100,20 +100,20 @@ prototypes:
             - ShareLevelYellow
         description: Malware,phishing,comprimised sites..
         config:
-        age_out:
-            default: null
-            interval: 600
-            sudden_death: true
-        attributes:
-            confidence: 100
-            direction: inbound
-            share_level: yellow
-            type: domain
-        ignore_regex: ^#.*
-        indicator:
-            regex: ^.*
-        source_name: libraesva.malware_domains
-        url: http://repo.libraesva.com/ioc/domain.malware.txt
+            age_out:
+                default: null
+                interval: 600
+                sudden_death: true
+            attributes:
+                confidence: 100
+                direction: inbound
+                share_level: yellow
+                type: domain
+            ignore_regex: ^#.*
+            indicator:
+                regex: ^.*
+            source_name: libraesva.malware_domains
+            url: http://repo.libraesva.com/ioc/domain.malware.txt
         class: minemeld.ft.http.HttpFT
 
     LIBRAESVA_Advertising_IP4:
@@ -127,20 +127,20 @@ prototypes:
             - ShareLevelYellow
         description: IPv4 classes delivering advertising email traffic only
         config:
-        age_out:
-            default: null
-            interval: 600
-            sudden_death: true
-        attributes:
-            confidence: 100
-            direction: inbound
-            share_level: yellow
-            type: IPv4
-        ignore_regex: ^#.*
-        indicator:
-            regex: ^.*
-        source_name: libraesva.advertising_ip4
-        url: https://repo.libraesva.com/ioc/ip.black.txt
+            age_out:
+                default: null
+                interval: 600
+                sudden_death: true
+            attributes:
+                confidence: 100
+                direction: inbound
+                share_level: yellow
+                type: IPv4
+            ignore_regex: ^#.*
+            indicator:
+                regex: ^.*
+            source_name: libraesva.advertising_ip4
+            url: https://repo.libraesva.com/ioc/ip.black.txt
         class: minemeld.ft.http.HttpFT
 
 
@@ -155,20 +155,20 @@ prototypes:
             - ShareLevelYellow
         description: IPv4 classess delivering bulk email traffic
         config:
-        age_out:
-            default: null
-            interval: 600
-            sudden_death: true
-        attributes:
-            confidence: 100
-            direction: inbound
-            share_level: yellow
-            type: IPv4
-        ignore_regex: ^#.*
-        indicator:
-            regex: ^.*
-        source_name: libraesva.bulk_ip4
-        url: https://repo.libraesva.com/ioc/ip.grey.txt
+            age_out:
+                default: null
+                interval: 600
+                sudden_death: true
+            attributes:
+                confidence: 100
+                direction: inbound
+                share_level: yellow
+                type: IPv4
+            ignore_regex: ^#.*
+            indicator:
+                regex: ^.*
+            source_name: libraesva.bulk_ip4
+            url: https://repo.libraesva.com/ioc/ip.grey.txt
         class: minemeld.ft.http.HttpFT
 
     LIBRAESVA_Bad_Email_IXHASH:
@@ -182,19 +182,19 @@ prototypes:
             - ShareLevelYellow
         description: Undesired email hashes, uses IX hash algoritm
         config:
-        age_out:
-            default: null
-            interval: 600
-            sudden_death: true
-        attributes:
-            confidence: 100
-            direction: inbound
-            share_level: yellow
-            type: md5
-        ignore_regex: ^#.*
-        indicator:
-            regex: ^.*
-        source_name: libraesva.bad_email_ixhash
-        url: https://repo.libraesva.com/ioc/ix.black.txt
+            age_out:
+                default: null
+                interval: 600
+                sudden_death: true
+            attributes:
+                confidence: 100
+                direction: inbound
+                share_level: yellow
+                type: md5
+            ignore_regex: ^#.*
+            indicator:
+                regex: ^.*
+            source_name: libraesva.bad_email_ixhash
+            url: https://repo.libraesva.com/ioc/ix.black.txt
         class: minemeld.ft.http.HttpFT
 
