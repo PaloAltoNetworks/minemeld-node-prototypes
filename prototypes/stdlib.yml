@@ -32,6 +32,36 @@ prototypes:
                   actions:
                     - drop
 
+    aggregatorEmailAddress:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: processor
+        indicator_types:
+          - email-addr
+        tags: []
+        description: >
+            Aggregator for Email Address indicators.
+            Inputs with names starting with "wl" will be interpreted as
+            whitelists.
+        class: minemeld.ft.op.AggregateFT
+        config:
+            whitelist_prefixes:
+                - wl
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept email addresses
+                  conditions:
+                    - type == 'email-addr'
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+
     aggregatorIPv6Simple:
         author: MineMeld Core Team
         development_status: STABLE
