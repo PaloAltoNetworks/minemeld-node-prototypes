@@ -18,7 +18,7 @@ prototypes:
             Endpoints for O365, worldwide instance, any service
         class: minemeld.ft.o365.O365API
         config:
-            instance: O365Worldwide
+            instance: Worldwide
             service_areas: null
             age_out:
                 default: null
@@ -42,7 +42,7 @@ prototypes:
             Endpoints for O365, worldwide instance, Skype service
         class: minemeld.ft.o365.O365API
         config:
-            instance: O365Worldwide
+            instance: Worldwide
             service_areas:
                 - Skype
             age_out:
@@ -67,7 +67,7 @@ prototypes:
             Endpoints for O365, worldwide instance, Exchange service
         class: minemeld.ft.o365.O365API
         config:
-            instance: O365Worldwide
+            instance: Worldwide
             service_areas:
                 - Exchange
             age_out:
@@ -92,7 +92,7 @@ prototypes:
             Endpoints for O365, worldwide instance, SharePoint service
         class: minemeld.ft.o365.O365API
         config:
-            instance: O365Worldwide
+            instance: Worldwide
             service_areas:
                 - SharePoint
             age_out:
@@ -117,7 +117,7 @@ prototypes:
             Endpoints for O365, China instance, any service
         class: minemeld.ft.o365.O365API
         config:
-            instance: O365China
+            instance: China
             service_areas: null
             age_out:
                 default: null
@@ -141,7 +141,7 @@ prototypes:
             Endpoints for O365, China instance, Skype service
         class: minemeld.ft.o365.O365API
         config:
-            instance: O365China
+            instance: China
             service_areas:
                 - Skype
             age_out:
@@ -166,7 +166,7 @@ prototypes:
             Endpoints for O365, China instance, Exchange service
         class: minemeld.ft.o365.O365API
         config:
-            instance: O365China
+            instance: China
             service_areas:
                 - Exchange
             age_out:
@@ -191,7 +191,7 @@ prototypes:
             Endpoints for O365, China instance, SharePoint service
         class: minemeld.ft.o365.O365API
         config:
-            instance: O365China
+            instance: China
             service_areas:
                 - SharePoint
             age_out:
@@ -216,7 +216,7 @@ prototypes:
             Endpoints for O365, Germany instance, any service
         class: minemeld.ft.o365.O365API
         config:
-            instance: O365Germany
+            instance: Germany
             service_areas: null
             age_out:
                 default: null
@@ -240,7 +240,7 @@ prototypes:
             Endpoints for O365, Germany instance, Skype service
         class: minemeld.ft.o365.O365API
         config:
-            instance: O365Germany
+            instance: Germany
             service_areas:
                 - Skype
             age_out:
@@ -265,7 +265,7 @@ prototypes:
             Endpoints for O365, Germany instance, Exchange service
         class: minemeld.ft.o365.O365API
         config:
-            instance: O365Germany
+            instance: Germany
             service_areas:
                 - Exchange
             age_out:
@@ -290,7 +290,7 @@ prototypes:
             Endpoints for O365, Germany instance, SharePoint service
         class: minemeld.ft.o365.O365API
         config:
-            instance: O365Germany
+            instance: Germany
             service_areas:
                 - SharePoint
             age_out:
@@ -315,7 +315,7 @@ prototypes:
             Endpoints for O365, USGovDoD instance, any service
         class: minemeld.ft.o365.O365API
         config:
-            instance: O365USGovDoD
+            instance: USGovDoD
             service_areas: null
             age_out:
                 default: null
@@ -339,7 +339,7 @@ prototypes:
             Endpoints for O365, USGovDoD instance, Skype service
         class: minemeld.ft.o365.O365API
         config:
-            instance: O365USGovDoD
+            instance: USGovDoD
             service_areas:
                 - Skype
             age_out:
@@ -364,7 +364,7 @@ prototypes:
             Endpoints for O365, USGovDoD instance, Exchange service
         class: minemeld.ft.o365.O365API
         config:
-            instance: O365USGovDoD
+            instance: USGovDoD
             service_areas:
                 - Exchange
             age_out:
@@ -389,7 +389,7 @@ prototypes:
             Endpoints for O365, USGovDoD instance, SharePoint service
         class: minemeld.ft.o365.O365API
         config:
-            instance: O365USGovDoD
+            instance: USGovDoD
             service_areas:
                 - SharePoint
             age_out:
@@ -414,7 +414,7 @@ prototypes:
             Endpoints for O365, USGovGCCHigh instance, any service
         class: minemeld.ft.o365.O365API
         config:
-            instance: O365USGovGCCHigh
+            instance: USGovGCCHigh
             service_areas: null
             age_out:
                 default: null
@@ -438,7 +438,7 @@ prototypes:
             Endpoints for O365, USGovGCCHigh instance, Skype service
         class: minemeld.ft.o365.O365API
         config:
-            instance: O365USGovGCCHigh
+            instance: USGovGCCHigh
             service_areas:
                 - Skype
             age_out:
@@ -463,7 +463,7 @@ prototypes:
             Endpoints for O365, USGovGCCHigh instance, Exchange service
         class: minemeld.ft.o365.O365API
         config:
-            instance: O365USGovGCCHigh
+            instance: USGovGCCHigh
             service_areas:
                 - Exchange
             age_out:
@@ -488,7 +488,7 @@ prototypes:
             Endpoints for O365, USGovGCCHigh instance, SharePoint service
         class: minemeld.ft.o365.O365API
         config:
-            instance: O365USGovGCCHigh
+            instance: USGovGCCHigh
             service_areas:
                 - SharePoint
             age_out:
