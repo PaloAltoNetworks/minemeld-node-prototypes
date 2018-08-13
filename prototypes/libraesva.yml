@@ -1,0 +1,200 @@
+url: https://libraesva.com/
+description: >
+    Libraesva Reputation Services provides high quality data feeds about email threats, spam and malware.
+    Most of the threats that these feeds allow to block are unknown to any other public source.
+    The feeds are updated very frequently and they are kept clean. Ceased threats are automatically removed.
+    We aim at a false positive rate close to zero while maintaining a high efficiency in blocking threats
+    that are yet unknown to any public source.
+    The feeds are free to use but we require a free registration. Go to https://docs.libraesva.com/esvalabs-ioc-access-request/ to request access.
+
+prototypes:
+    LIBRAESVA_Advertising_Domains:
+        author: LibraEsva Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - domain
+        tags:
+            - ConfidenceHigh
+            - ShareLevelYellow
+        description: Domains delivering advertising only
+        config:
+            age_out:
+                default: null
+                interval: 600
+                sudden_death: true
+            attributes:
+                confidence: 100
+                direction: inbound
+                share_level: yellow
+                type: domain
+            ignore_regex: ^#.*
+            indicator:
+                regex: ^.*
+            source_name: libraesva.advertising_domains
+            url: https://repo.libraesva.com/ioc/domain.black.txt
+        class: minemeld.ft.http.HttpFT
+
+    LIBRAESVA_Bulk_Email_Domains:
+        author: LibraEsva Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - domain
+        tags:
+            - ConfidenceHigh
+            - ShareLevelYellow
+        description: Domains delivering bulk email traffic
+        config:
+            age_out:
+                default: null
+                interval: 600
+                sudden_death: true
+            attributes:
+                confidence: 100
+                direction: inbound
+                share_level: yellow
+                type: domain
+            ignore_regex: ^#.*
+            indicator:
+                regex: ^.*
+            source_name: libraesva.bulk_email
+            url: https://repo.libraesva.com/ioc/domain.grey.txt
+        class: minemeld.ft.http.HttpFT
+
+    LIBRAESVA_White_Domains:
+        author: LibraEsva Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - domain
+        tags:
+            - ConfidenceHigh
+            - ShareLevelYellow
+        description: Legit email and web domains
+        config:
+            age_out:
+                default: null
+                interval: 600
+                sudden_death: true
+            attributes:
+                confidence: 100
+                direction: inbound
+                share_level: yellow
+                type: domain
+            ignore_regex: ^#.*
+            indicator:
+                regex: ^.*
+            source_name: libraesva.white_domains
+            url: https://repo.libraesva.com/ioc/domain.white.txt
+        class: minemeld.ft.http.HttpFT
+
+    LIBRAESVA_Malware_Domains:
+        author: LibraEsva Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - domain
+        tags:
+            - ConfidenceHigh
+            - ShareLevelYellow
+        description: Malware,phishing,comprimised sites..
+        config:
+            age_out:
+                default: null
+                interval: 600
+                sudden_death: true
+            attributes:
+                confidence: 100
+                direction: inbound
+                share_level: yellow
+                type: domain
+            ignore_regex: ^#.*
+            indicator:
+                regex: ^.*
+            source_name: libraesva.malware_domains
+            url: https://repo.libraesva.com/ioc/domain.malware.txt
+        class: minemeld.ft.http.HttpFT
+
+    LIBRAESVA_Advertising_IP4:
+        author: LibraEsva Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - ConfidenceHigh
+            - ShareLevelYellow
+        description: IPv4 classes delivering advertising email traffic only
+        config:
+            age_out:
+                default: null
+                interval: 600
+                sudden_death: true
+            attributes:
+                confidence: 100
+                direction: inbound
+                share_level: yellow
+                type: IPv4
+            ignore_regex: ^#.*
+            indicator:
+                regex: ^.*
+            source_name: libraesva.advertising_ip4
+            url: https://repo.libraesva.com/ioc/ip.black.txt
+        class: minemeld.ft.http.HttpFT
+
+
+    LIBRAESVA_Bulk_IP4:
+        author: LibraEsva Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - ConfidenceHigh
+            - ShareLevelYellow
+        description: IPv4 classess delivering bulk email traffic
+        config:
+            age_out:
+                default: null
+                interval: 600
+                sudden_death: true
+            attributes:
+                confidence: 100
+                direction: inbound
+                share_level: yellow
+                type: IPv4
+            ignore_regex: ^#.*
+            indicator:
+                regex: ^.*
+            source_name: libraesva.bulk_ip4
+            url: https://repo.libraesva.com/ioc/ip.grey.txt
+        class: minemeld.ft.http.HttpFT
+
+    LIBRAESVA_Bad_Email_IXHASH:
+        author: LibraEsva Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - md5
+        tags:
+            - ConfidenceHigh
+            - ShareLevelYellow
+        description: Undesired email hashes, uses IX hash algoritm
+        config:
+            age_out:
+                default: null
+                interval: 600
+                sudden_death: true
+            attributes:
+                confidence: 100
+                direction: inbound
+                share_level: yellow
+                type: md5
+            ignore_regex: ^#.*
+            indicator:
+                regex: ^.*
+            source_name: libraesva.bad_email_ixhash
+            url: https://repo.libraesva.com/ioc/ix.black.txt
+        class: minemeld.ft.http.HttpFT
+
