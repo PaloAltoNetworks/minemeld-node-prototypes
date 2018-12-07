@@ -5,7 +5,7 @@ description: >
 prototypes:
     worldwide-any:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         indicator_types:
             - URL
@@ -27,9 +27,34 @@ prototypes:
             attributes:
                 confidence: 100
                 share_level: green
+    worldwide-common:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Endpoints for O365, worldwide instance, Common endpoints
+        class: minemeld.ft.o365.O365API
+        config:
+            instance: Worldwide
+            service_areas:
+                - Common
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                confidence: 100
+                share_level: green
     worldwide-skype:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         indicator_types:
             - URL
@@ -54,7 +79,7 @@ prototypes:
                 share_level: green
     worldwide-exchange:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         indicator_types:
             - URL
@@ -79,7 +104,7 @@ prototypes:
                 share_level: green
     worldwide-sharepoint:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         indicator_types:
             - URL
@@ -104,7 +129,7 @@ prototypes:
                 share_level: green
     china-any:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         indicator_types:
             - URL
@@ -126,9 +151,34 @@ prototypes:
             attributes:
                 confidence: 100
                 share_level: green
+    china-common:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Endpoints for O365, China instance, Common endpoints
+        class: minemeld.ft.o365.O365API
+        config:
+            instance: China
+            service_areas:
+                - Common
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                confidence: 100
+                share_level: green
     china-skype:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         indicator_types:
             - URL
@@ -153,7 +203,7 @@ prototypes:
                 share_level: green
     china-exchange:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         indicator_types:
             - URL
@@ -178,7 +228,7 @@ prototypes:
                 share_level: green
     china-sharepoint:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         indicator_types:
             - URL
@@ -203,7 +253,7 @@ prototypes:
                 share_level: green
     germany-any:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         indicator_types:
             - URL
@@ -225,9 +275,34 @@ prototypes:
             attributes:
                 confidence: 100
                 share_level: green
+    germany-common:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Endpoints for O365, Germany instance, Common endpoints
+        class: minemeld.ft.o365.O365API
+        config:
+            instance: Germany
+            service_areas:
+                - Common
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                confidence: 100
+                share_level: green
     germany-skype:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         indicator_types:
             - URL
@@ -252,7 +327,7 @@ prototypes:
                 share_level: green
     germany-exchange:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         indicator_types:
             - URL
@@ -277,7 +352,7 @@ prototypes:
                 share_level: green
     germany-sharepoint:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         indicator_types:
             - URL
@@ -302,7 +377,7 @@ prototypes:
                 share_level: green
     usgovdod-any:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         indicator_types:
             - URL
@@ -324,9 +399,34 @@ prototypes:
             attributes:
                 confidence: 100
                 share_level: green
+    usgovdod-common:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Endpoints for O365, USGovDoD instance, Common endpoints
+        class: minemeld.ft.o365.O365API
+        config:
+            instance: USGovDoD
+            service_areas:
+                - Common
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                confidence: 100
+                share_level: green
     usgovdod-skype:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         indicator_types:
             - URL
@@ -351,7 +451,7 @@ prototypes:
                 share_level: green
     usgovdod-exchange:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         indicator_types:
             - URL
@@ -376,7 +476,7 @@ prototypes:
                 share_level: green
     usgovdod-sharepoint:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         indicator_types:
             - URL
@@ -401,7 +501,7 @@ prototypes:
                 share_level: green
     usgovgcchigh-any:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         indicator_types:
             - URL
@@ -423,9 +523,34 @@ prototypes:
             attributes:
                 confidence: 100
                 share_level: green
+    usgovgcchigh-common:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Endpoints for O365, USGovGCCHigh instance, Common endpoints
+        class: minemeld.ft.o365.O365API
+        config:
+            instance: USGovGCCHigh
+            service_areas:
+                - Common
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                confidence: 100
+                share_level: green
     usgovgcchigh-skype:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         indicator_types:
             - URL
@@ -450,7 +575,7 @@ prototypes:
                 share_level: green
     usgovgcchigh-exchange:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         indicator_types:
             - URL
@@ -475,7 +600,7 @@ prototypes:
                 share_level: green
     usgovgcchigh-sharepoint:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: STABLE
         node_type: miner
         indicator_types:
             - URL
@@ -500,20 +625,21 @@ prototypes:
                 share_level: green
     feed-no-3rdparty:
         author: MineMeld Core Team
-        development_status: EXPERIMENTAL
+        development_status: DEPRECATED
         node_type: output
         indicator_types: [ any ]
         tags:
           - ConfidenceHigh
           - ShareLevelGreen
         description: >
-            EDL for O365 URLs and IPs excluding 3rd party integrations
+            EDL for O365 URLs and IPs excluding 3rd party integrations.
+            Deprecated, disable integrations on the Miner instead
         class: minemeld.ft.redis.RedisSet
         config:
             infilters:
                 - name: drop integrations
                   conditions:
-                    - contains(o365_optionalImpact, 'integration') == true
+                    - contains(o365_notes, 'integration') == true
                   actions:
                     - drop
                 - name: accept withdraws

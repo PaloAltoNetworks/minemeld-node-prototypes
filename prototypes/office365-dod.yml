@@ -9,7 +9,7 @@ description: >
 prototypes:
     exchangeOnline:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
             - URL
@@ -35,7 +35,7 @@ prototypes:
 
     portal:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
             - URL
@@ -60,7 +60,7 @@ prototypes:
 
     skypeBusinessOnline:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
             - URL
@@ -87,7 +87,7 @@ prototypes:
 
     sharepointOnline:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
             - URL
@@ -114,7 +114,7 @@ prototypes:
 
     exchangeOnlineProtection:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
             - URL
@@ -141,7 +141,7 @@ prototypes:
 
     O365ProPlus:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
             - URL
@@ -167,7 +167,7 @@ prototypes:
 
     officeOnline:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
             - URL
@@ -192,7 +192,7 @@ prototypes:
 
     identity:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
             - URL
@@ -218,7 +218,7 @@ prototypes:
 
     any:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
             - URL
