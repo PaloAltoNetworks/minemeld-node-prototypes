@@ -6,19 +6,9 @@ description: >
 prototypes:
     domainblocklist:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         description: >
-          From the website:
-          The Feodo Tracker Feodo Domain Blocklist contains domain names (FQDN)
-          used as C&C communication channel by the Feodo Trojan. These domains
-          names are usually registered and operated by cybercriminals for the
-          exclusive purpose of hosting a Feodo botnet controller. Hence you
-          should expect no legit traffic to those domains. I highly recommend
-          you to block/drop any traffic towards any Feodo C&C domain by using
-          the Feodo Domain Blocklist. Please consider that domain names are
-          usually only used by version B of the Feodo Trojan. C&C communication
-          channels used by version A, version C and version D are not covered
-          by this blocklist.
+          This feed was dismissed by the provider
         node_type: miner
         indicator_types:
             - domain
@@ -33,12 +23,12 @@ prototypes:
             confidence: 100
             share_level: green
           ignore_regex: '^#'
-          url: https://feodotracker.abuse.ch/blocklist/?download=domainblocklist
+          url: https://minemeld-updates.panw.io/deprecated-feed.txt
           interval: 1800
         class: minemeld.ft.http.HttpFT
     baddomains:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         description: >
           Do not use, use feodotracker.domainblocklist instead. Will be removed in
           a future release.
@@ -56,7 +46,7 @@ prototypes:
             confidence: 100
             share_level: green
           ignore_regex: '^#'
-          url: https://feodotracker.abuse.ch/blocklist/?download=domainblocklist
+          url: https://minemeld-updates.panw.io/deprecated-feed.txt
           interval: 1800
         class: minemeld.ft.http.HttpFT
     badips:
@@ -64,16 +54,15 @@ prototypes:
         development_status: STABLE
         description: >
           From the website:
-          The Feodo Tracker Feodo BadIP Blocklist only contains IP addresses
-          (IPv4) used as C&C communication channel by the Feodo Trojan version
-          B. These IP addresses are usually servers rented by cybercriminals
-          directly and used for the exclusive purpose of hosting a Feodo C&C
-          server. Hence you should expect no legit traffic to those IP
-          addresses. I highly recommend you to block/drop any traffic towards
-          any Feodo C&C using the Feodo BadIP Blocklist. Please consider that
-          this blocklist only contains IP addresses used by version B of the
-          Feodo Trojan. C&C communication channels used by version A, version
-          C and version D are not covered by this blocklist.
+          Dridex and Emotet/Heodo botnet command&control servers (C&Cs) reside on
+          a compromised server or a server that has been rent and setup by the 
+          botnet herder itself for the sole purpose of botnet hosting. Feodo Tracker 
+          offers a blocklist of IP addresses that are associated with such botnet 
+          C&Cs which can be used to detect and block botnet C2 traffic from infected 
+          machines towards the internet, leaving your network. An IP address will 
+          only get added to the blocklist if it responds with a valid botnet C2 
+          response. However, a botnet C2 may become offline later. The Botnet C2 
+          IP Blocklist is available in different formats documented below.
         node_type: miner
         indicator_types:
             - IPv4
@@ -89,28 +78,23 @@ prototypes:
             confidence: 100
             share_level: green
           ignore_regex: '#'
-          url: https://feodotracker.abuse.ch/blocklist.php?download=badips
-          interval: 1800
+          url: https://feodotracker.abuse.ch/downloads/ipblocklist.txt
+          interval: 600
         class: minemeld.ft.http.HttpFT
     ipblocklist:
         author: MineMeld Core Team
         development_status: STABLE
         description: >
           From the website:
-          The Feodo Tracker Feodo IP Blocklist contains IP addresses (IPv4)
-          used as C&C communication channel by the Feodo Trojan. This lists
-          contains two types of IP address: Feodo C&C servers used by version
-          A, version C and version D of the Feodo Trojan (these IP addresses
-          are usually compromised servers running an nginx daemon on port 8080
-          TCP or 7779 TCP that is acting as proxy, forwarding all traffic to a
-          tier 2 proxy node) and Feodo C&C servers used by version B which are
-          usually used for the exclusive purpose of hosting a Feodo C&C server.
-          Attention: Since Feodo C&C servers associated with version A, version
-          C and version D are usually hosted on compromised servers, its likely
-          that you also block/drop legit traffic e.g. towards websites hosted
-          on a certain IP address acting as Feodo C&C for version A, version C
-          and version D. If you only want to block/drop traffic to Feodo C&C
-          servers hosted on bad IPs (version B), please use the blocklist BadIPs.
+          Dridex and Emotet/Heodo botnet command&control servers (C&Cs) reside on
+          a compromised server or a server that has been rent and setup by the 
+          botnet herder itself for the sole purpose of botnet hosting. Feodo Tracker 
+          offers a blocklist of IP addresses that are associated with such botnet 
+          C&Cs which can be used to detect and block botnet C2 traffic from infected 
+          machines towards the internet, leaving your network. An IP address will 
+          only get added to the blocklist if it responds with a valid botnet C2 
+          response. However, a botnet C2 may become offline later. The Botnet C2 
+          IP Blocklist is available in different formats documented below.
         node_type: miner
         indicator_types:
             - IPv4
@@ -123,9 +107,33 @@ prototypes:
           attributes:
             type: IPv4
             direction: outbound
-            confidence: 70
+            confidence: 30
             share_level: green
           ignore_regex: '#'
-          url: https://feodotracker.abuse.ch/blocklist/?download=ipblocklist
-          interval: 1800
+          url: https://feodotracker.abuse.ch/downloads/ipblocklist_aggressive.txt
+          interval: 600
+        class: minemeld.ft.http.HttpFT
+    hashes:
+        author: MineMeld Core Team
+        development_status: STABLE
+        description: >
+          From the website:
+          Feodo Tracker publishes a list of hashes (MD5) associated with Dridex and 
+          Emotet/Heodo malware samples.
+        node_type: miner
+        indicator_types:
+            - md5
+        tags:
+            - ConfidenceMedium
+            - ShareLevelGreen
+            - OSINT
+        config:
+          source_name: feodotracker.hashes
+          attributes:
+            type: md5
+            confidence: 100
+            share_level: green
+          ignore_regex: '#'
+          url: https://feodotracker.abuse.ch/downloads/malware_hashes.txt
+          interval: 600
         class: minemeld.ft.http.HttpFT
