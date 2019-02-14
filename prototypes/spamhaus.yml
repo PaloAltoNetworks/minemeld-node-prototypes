@@ -63,3 +63,37 @@ prototypes:
                 sudden_death: true
                 interval: 677
         class: minemeld.ft.http.HttpFT
+
+    ASNDROP:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - autonomous-system
+        tags:
+            - OSINT
+            - ConfidenceHigh
+            - ShareLevelGreen
+        description: Spamhaus ASN-DROP
+        config:
+            source_name: spamhaus.ASNDROP
+            attributes:
+                type: autonomous-system
+                confidence: 100
+                share_level: green
+            ignore_regex: '^;.*'
+            indicator:
+                regex: '^AS[0-9]+'
+            fields:
+                asndrop_country:
+                    regex: '^.*;\W([a-zA-Z]+)\W+'
+                    transform: '\1'
+                asndrop_org:
+                    regex: '^.*\|\W+(.*)'
+                    transform: '\1'
+            url: https://www.spamhaus.org/drop/asndrop.txt
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 86400
+        class: minemeld.ft.http.HttpFT
