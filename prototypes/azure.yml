@@ -22,3 +22,22 @@ prototypes:
                 interval: 257
             attributes:
                 share_level: green
+    cloudIPsWithServiceTags:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - ConfidenceHigh
+            - ShareLevelGreen
+        description: >
+            IP Ranges of Microsoft Azure with Service Tags
+        class: minemeld.ft.azure.AzureJSON
+        config:
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 600
+            attributes:
+                share_level: green
