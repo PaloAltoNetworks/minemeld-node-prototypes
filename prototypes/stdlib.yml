@@ -872,6 +872,35 @@ prototypes:
         config:
           persistent_registered_ips: false
 
+    dagPusherNg:
+        author: MineMeld Core Team
+        development_status: EXPERIMENTAL
+        node_type: output
+        indicator_types:
+          - IPv4
+          - IPv6
+        tags: []
+        description: >
+            Push IP unicast indicators to PAN-OS 8.0 and greater devices
+            via DAG.
+        class: minemeld.ft.dag_ng.DagPusher
+        config: {}
+
+    nonpersistentDagPusherNg:
+        author: MineMeld Core Team
+        development_status: EXPERIMENTAL
+        node_type: output
+        indicator_types:
+          - IPv4
+          - IPv6
+        tags: []
+        description: >
+            Push IP unicast indicators to PAN-OS 8.0 and greater devices
+            via DAG. Generates non persistent registered IPs.
+        class: minemeld.ft.dag_ng.DagPusher
+        config:
+          persistent_registered_ips: false
+
     feedLCRedWithValue:
         author: MineMeld Core Team
         development_status: STABLE
