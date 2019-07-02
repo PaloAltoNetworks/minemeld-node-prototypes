@@ -1,0 +1,89 @@
+url: https://www.usom.gov.tr/
+description: >
+    Threat intelligence feeds from: TR-CERT - Turkey Computer Emergency Response Team. /
+    Threat intelligence feeds from: USOM - Türkiye Cumhuriyeti Ulusal Siber Olaylara Müdahale Merkezi.
+
+prototypes:
+    IPs:
+        author: Engin YÜCE
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - OSINT
+            - ConfidenceHigh
+            - ShareLevelGreen
+        description: TR-CERT/USOM Infosec IP address indicators. TR-CERT/USOM publishes mixed types of feeds from a single source, this prototype extracts only IP addresses. 
+        config:
+            source_name: usom.IP
+            attributes:
+                type: IPv4
+                confidence: 80
+                share_level: green
+            ignore_regex: '^#.*'
+            indicator:
+                regex: '^([^0-9\n]*)((?:[0-9]{1,3}\.){3}[0-9]{1,3})(.*)$'
+                transform: '\2'
+            url: https://www.usom.gov.tr/url-list.txt
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 900
+        class: minemeld.ft.http.HttpFT
+
+    DOMAINs:
+        author: Engin YÜCE
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - domain
+        tags:
+            - OSINT
+            - ConfidenceHigh
+            - ShareLevelGreen
+        description: TR-CERT/USOM Infosec DOMAIN name indicators. TR-CERT/USOM publishes mixed types of feeds from a single source, this prototype extracts only DOMAIN names. 
+        config:
+            source_name: usom.DOMAIN
+            attributes:
+                type: domain
+                confidence: 80
+                share_level: green
+            ignore_regex: '^#.*'
+            indicator:
+                regex: '^(http[s]?:\/\/)?(?!(?:(?:[0-9]{1,3}\.){3}[0-9]{1,3})|http)([^:/\n]+)(.*)$'
+                transform: '\2'
+            url: https://www.usom.gov.tr/url-list.txt
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 900
+        class: minemeld.ft.http.HttpFT
+
+    URLs:
+        author: Engin YÜCE
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+        tags:
+            - OSINT
+            - ConfidenceHigh
+            - ShareLevelGreen
+        description: TR-CERT/USOM Infosec URL link indicators. TR-CERT/USOM publishes mixed types of feeds from a single source, this prototype extracts only URL links. 
+        config:
+            source_name: usom.URL
+            attributes:
+                type: URL
+                confidence: 80
+                share_level: green
+            ignore_regex: '^#.*'
+            indicator:
+                regex: '^(http[s]?:\/\/)?([^:/\n]+)(:[0-9]{1,5})?(/+)?(.*)$'
+                transform: '\2/\5'
+            url: https://www.usom.gov.tr/url-list.txt
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 900
+        class: minemeld.ft.http.HttpFT
