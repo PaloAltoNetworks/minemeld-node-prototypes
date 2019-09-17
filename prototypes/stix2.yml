@@ -1,0 +1,69 @@
+url: https://unit42.paloaltonetworks.com/
+description: >
+  Miners for STIX 2.0 and 2.1 feeds, including Unit 42 Playbooks
+
+prototypes:
+  generic:
+    author: Unit 42
+    development_status: EXPERIMENTAL
+    node_type: miner
+    indicator_types:
+      - md5
+      - sha256
+      - sha1
+      - IPv4
+      - IPv6
+      - domain
+      - URL
+    tags:
+      - STIX2
+    class: minemeld.ft.taxii2.Taxii2Client
+    description: STIX2
+    config:
+      source_name: stix2.indicators
+      auth_type: none
+      api_key: ""
+      username: ""
+      password: ""
+      discovery_service: ""
+      api_root: ""
+      collection: ""
+      verify_cert: yes
+      enabled: no
+      attributes:
+        share_level: green
+      age_out:
+        sudden_death: false
+        default: last_seen+30d
+  playbooks:
+    author: Unit 42
+    development_status: EXPERIMENTAL
+    node_type: miner
+    indicator_types:
+      - md5
+      - sha256
+      - sha1
+      - IPv4
+      - IPv6
+      - domain
+      - URL
+    tags:
+      - STIX2
+    class: minemeld.ft.taxii2.Taxii2Client
+    description: Unit 42 - Indicators from Playbooks
+    config:
+      source_name: unit42.playbooks
+      auth_type: apikey
+      api_key: ""
+      username: ""
+      password: ""
+      discovery_service: https://stix2.unit42.org/taxii/
+      api_root: playbooks
+      collection: 5ac266d8-de48-3d6b-83f1-c4e4047d6e44
+      verify_cert: yes
+      enabled: no
+      attributes:
+        share_level: green
+      age_out:
+        sudden_death: false
+        default: last_seen+30d
