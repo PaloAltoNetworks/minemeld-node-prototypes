@@ -4,12 +4,11 @@ description: >
     enables organizations to defend themselves at the speed and scale of the
     Internet. Our service continuously analyzes content from the entire Web
     to give you unmatched insight into emerging threats.
-    Follow us on Twitter @RecordedFuture
 
 prototypes:
     IPRiskList:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
             - IPv4
@@ -18,12 +17,9 @@ prototypes:
             - ConfidenceHigh
             - ShareLevelRed
         description: >
-            Recorded Future continually analyzes indicator-related reporting
-            from sources including websites, blogs, paste sites, IRC, malware
-            analyses, social media, and open source threat feeds to identify
-            and score IP Addresses for current risk. The risk list includes
-            evidence details for risk scores. To access this resource, you need
-            a valid API token.
+            The IPRiskList miner downloads from Recorded Future a list of IP Addresses with known risk.
+            The risklist includes risk scores and the supporting evidence details.  The miner uses recorded future's
+            default IP risklist to download the data. To access this resource, you need a valid Recorded Future API token.
         class: minemeld.ft.recordedfuture.IPRiskList
         config:
             confidence: 80
@@ -36,7 +32,7 @@ prototypes:
 
     DomainRiskList:
         author: Jonas Eichinger
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
             - domain
@@ -44,12 +40,9 @@ prototypes:
             - ConfidenceHigh
             - ShareLevelRed
         description: >
-            Recorded Future continually analyzes indicator-related reporting
-            from sources including websites, blogs, paste sites, IRC, malware
-            analyses, social media, and open source threat feeds to identify
-            and score DNS Domains for current risk. The risk list includes
-            evidence details for risk scores. To access this resource, you need
-            a valid API token.
+            The DomainRiskList miner downloads from Recorded Future a list of DNS domains with known risk.
+            The risklist includes risk scores and the supporting evidence details. The miner uses recorded future's
+            default domain risklist to download the data. To access this resource, you need a valid Recorded Future API token.
         class: minemeld.ft.recordedfuture.DomainRiskList
         config:
             confidence: 80
@@ -60,3 +53,32 @@ prototypes:
             attributes:
                 share_level: red
                 type: domain
+
+    MasterRiskList:
+        author: Recorded Future Inc.
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - IPv4
+            - IPv6
+            - domain
+            - hash
+            - url
+        tags:
+            - ConfidenceHigh
+            - ShareLevelRed
+        description: >
+            The MasterRiskList miner downloads from Recorded Future a list of IP Addresses, domains, urls, or file hash
+            with known risk. The risklist includes risk scores and the supporting evidence details. The miner can be configured
+            to load a specific risklist; if no risklist is specified, the default risklist is used. The miner can also be
+            configured to load a custom risklist from a user-specified Recorded Future file path; if no file path is
+            specified, the default risklist file is used. To access this resource, you need a valid Recorded Future API token.
+        class: minemeld.ft.recordedfuture.MasterRiskList
+        config:
+            confidence: 80
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 3307
+            attributes:
+                share_level: red
