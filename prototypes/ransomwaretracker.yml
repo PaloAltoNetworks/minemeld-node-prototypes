@@ -1,5 +1,6 @@
 url: https://ransomwaretracker.abuse.ch/
 description: >
+    Ransomware Tracker as Dec 8th 2019 has been DEPRECATED.
     Ransomware Tracker tracks and monitors the status of domain names,
     IP addresses and URLs that are associated with Ransomware, such as
     Botnet C&C servers, distribution sites and payment sites.
@@ -7,7 +8,7 @@ description: >
 prototypes:
     CW_C2_URLBL:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
           - URL
@@ -15,7 +16,7 @@ prototypes:
           - OSINT
           - ConfidenceHigh
           - ShareLevelGreen
-        description: CryptoWall C2 URLs
+        description: DEPRECATED. CryptoWall C2 URLs
         config:
           source_name: ransomwaretracker.CW_C2_URLBL
           attributes:
@@ -23,7 +24,7 @@ prototypes:
             confidence: 100
             share_level: green
           ignore_regex: '^#'
-          url: https://ransomwaretracker.abuse.ch/downloads/CW_C2_URLBL.txt
+          url: https://minemeld-updates.panw.io/deprecated-feed.txt
           interval: 300
           age_out:
             default: null
@@ -31,7 +32,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     CW_C2_DOMBL:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
           - domain
@@ -39,7 +40,7 @@ prototypes:
           - OSINT
           - ConfidenceLow
           - ShareLevelGreen
-        description: CryptoWall C2 domains
+        description: DEPRECATED. CryptoWall C2 domains
         config:
           source_name: ransomwaretracker.CW_C2_DOMBL
           attributes:
@@ -47,7 +48,7 @@ prototypes:
             confidence: 40
             share_level: green
           ignore_regex: '^#'
-          url: https://ransomwaretracker.abuse.ch/downloads/CW_C2_DOMBL.txt
+          url: https://minemeld-updates.panw.io/deprecated-feed.txt
           interval: 300
           age_out:
             default: null
@@ -55,7 +56,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     CW_PS_DOMBL:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
           - domain
@@ -63,7 +64,7 @@ prototypes:
           - OSINT
           - ConfidenceHigh
           - ShareLevelGreen
-        description: CryptoWall C2 Payment Sites domains
+        description: DEPRECATED. CryptoWall C2 Payment Sites domains
         config:
           source_name: ransomwaretracker.CW_PS_DOMBL
           attributes:
@@ -71,7 +72,7 @@ prototypes:
             confidence: 100
             share_level: green
           ignore_regex: '^#'
-          url: https://ransomwaretracker.abuse.ch/downloads/CW_PS_DOMBL.txt
+          url: https://minemeld-updates.panw.io/deprecated-feed.txt
           interval: 300
           age_out:
             default: null
@@ -79,7 +80,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     CW_PS_IPBL:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
           - IPv4
@@ -88,7 +89,7 @@ prototypes:
           - ConfidenceMedium
           - ShareLevelGreen
           - DirectionOutbound
-        description: CryptoWall Payment Sites IPs
+        description: DEPRECATED. CryptoWall Payment Sites IPs
         config:
           source_name: ransomwaretracker.CW_PS_IPBL
           attributes:
@@ -97,7 +98,7 @@ prototypes:
             share_level: green
             direction: outbound
           ignore_regex: '^#'
-          url: https://ransomwaretracker.abuse.ch/downloads/CW_PS_IPBL.txt
+          url: https://minemeld-updates.panw.io/deprecated-feed.txt
           interval: 300
           age_out:
             default: null
@@ -105,7 +106,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     TC_C2_URLBL:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
           - URL
@@ -113,7 +114,7 @@ prototypes:
           - OSINT
           - ConfidenceHigh
           - ShareLevelGreen
-        description: TeslaCrypt C2 URLs
+        description: DEPRECATED. TeslaCrypt C2 URLs
         config:
           source_name: ransomwaretracker.TC_C2_URLBL
           attributes:
@@ -121,7 +122,7 @@ prototypes:
             confidence: 100
             share_level: green
           ignore_regex: '^#'
-          url: https://ransomwaretracker.abuse.ch/downloads/TC_C2_URLBL.txt
+          url: https://minemeld-updates.panw.io/deprecated-feed.txt
           interval: 300
           age_out:
             default: null
@@ -129,7 +130,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     TC_C2_DOMBL:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
           - domain
@@ -137,7 +138,7 @@ prototypes:
           - OSINT
           - ConfidenceLow
           - ShareLevelGreen
-        description: TeslaCrypt C2 domains
+        description: DEPRECATED. TeslaCrypt C2 domains
         config:
           source_name: ransomwaretracker.TC_C2_DOMBL
           attributes:
@@ -145,7 +146,7 @@ prototypes:
             confidence: 40
             share_level: green
           ignore_regex: '^#'
-          url: https://ransomwaretracker.abuse.ch/downloads/TC_C2_DOMBL.txt
+          url: https://minemeld-updates.panw.io/deprecated-feed.txt
           interval: 300
           age_out:
             default: null
@@ -153,7 +154,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     TC_PS_DOMBL:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
           - domain
@@ -161,7 +162,7 @@ prototypes:
           - OSINT
           - ConfidenceLow
           - ShareLevelGreen
-        description: TeslaCrypt Payment Sites domains
+        description: DEPRECATED. TeslaCrypt Payment Sites domains
         config:
           source_name: ransomwaretracker.TC_PS_DOMBL
           attributes:
@@ -169,7 +170,7 @@ prototypes:
             confidence: 40
             share_level: green
           ignore_regex: '^#'
-          url: https://ransomwaretracker.abuse.ch/downloads/TC_PS_DOMBL.txt
+          url: https://minemeld-updates.panw.io/deprecated-feed.txt
           interval: 300
           age_out:
             default: null
@@ -177,7 +178,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     TC_PS_IPBL:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
           - IPv4
@@ -186,7 +187,7 @@ prototypes:
           - ConfidenceMedium
           - ShareLevelGreen
           - DirectionOutbound
-        description: TeslaCrypt Payment Sites IPs
+        description: DEPRECATED. TeslaCrypt Payment Sites IPs
         config:
           source_name: ransomwaretracker.TC_PS_IPBL
           attributes:
@@ -195,7 +196,7 @@ prototypes:
             share_level: green
             direction: outbound
           ignore_regex: '^#'
-          url: https://ransomwaretracker.abuse.ch/downloads/TC_PS_IPBL.txt
+          url: https://minemeld-updates.panw.io/deprecated-feed.txt
           interval: 300
           age_out:
             default: null
@@ -203,7 +204,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     TC_DS_URLBL:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
           - URL
@@ -211,7 +212,7 @@ prototypes:
           - OSINT
           - ConfidenceHigh
           - ShareLevelGreen
-        description: TeslaCrypt Distribution Sites URLs
+        description: DEPRECATED. TeslaCrypt Distribution Sites URLs
         config:
           source_name: ransomwaretracker.TC_DS_URLBL
           attributes:
@@ -219,7 +220,7 @@ prototypes:
             confidence: 100
             share_level: green
           ignore_regex: '^#'
-          url: https://ransomwaretracker.abuse.ch/downloads/TC_DS_URLBL.txt
+          url: https://minemeld-updates.panw.io/deprecated-feed.txt
           interval: 300
           age_out:
             default: null
@@ -227,7 +228,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     LY_C2_DOMBL:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
           - domain
@@ -235,7 +236,7 @@ prototypes:
           - OSINT
           - ConfidenceHigh
           - ShareLevelGreen
-        description: Locky C2 domains
+        description: DEPRECATED. Locky C2 domains
         config:
           source_name: ransomwaretracker.LY_C2_DOMBL
           attributes:
@@ -243,7 +244,7 @@ prototypes:
             confidence: 100
             share_level: green
           ignore_regex: '^#'
-          url: https://ransomwaretracker.abuse.ch/downloads/LY_C2_DOMBL.txt
+          url: https://minemeld-updates.panw.io/deprecated-feed.txt
           interval: 300
           age_out:
             default: null
@@ -251,7 +252,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     LY_C2_IPBL:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
           - IPv4
@@ -260,7 +261,7 @@ prototypes:
           - ConfidenceMedium
           - ShareLevelGreen
           - DirectionOutbound
-        description: Locky IPs
+        description: DEPRECATED. Locky IPs
         config:
           source_name: ransomwaretracker.LY_C2_IPBL
           attributes:
@@ -269,7 +270,7 @@ prototypes:
             share_level: green
             direction: outbound
           ignore_regex: '^#'
-          url: https://ransomwaretracker.abuse.ch/downloads/LY_C2_IPBL.txt
+          url: https://minemeld-updates.panw.io/deprecated-feed.txt
           interval: 300
           age_out:
             default: null
@@ -277,7 +278,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     LY_PS_DOMBL:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
           - domain
@@ -285,7 +286,7 @@ prototypes:
           - OSINT
           - ConfidenceHigh
           - ShareLevelGreen
-        description: Locky Payment Sites domains
+        description: DEPRECATED. Locky Payment Sites domains
         config:
           source_name: ransomwaretracker.LY_PS_DOMBL
           attributes:
@@ -293,7 +294,7 @@ prototypes:
             confidence: 100
             share_level: green
           ignore_regex: '^#'
-          url: https://ransomwaretracker.abuse.ch/downloads/LY_PS_DOMBL.txt
+          url: https://minemeld-updates.panw.io/deprecated-feed.txt
           interval: 300
           age_out:
             default: null
@@ -301,7 +302,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     LY_PS_IPBL:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
           - IPv4
@@ -309,7 +310,7 @@ prototypes:
           - OSINT
           - ConfidenceLow
           - ShareLevelGreen
-        description: Locky Payment Sites IPs
+        description: DEPRECATED. Locky Payment Sites IPs
         config:
           source_name: ransomwaretracker.LY_PS_IPBL
           attributes:
@@ -317,7 +318,7 @@ prototypes:
             confidence: 40
             share_level: green
           ignore_regex: '^#'
-          url: https://ransomwaretracker.abuse.ch/downloads/LY_PS_IPBL.txt
+          url: https://minemeld-updates.panw.io/deprecated-feed.txt
           interval: 300
           age_out:
             default: null
@@ -325,7 +326,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     LY_DS_URLBL:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
           - URL
@@ -333,7 +334,7 @@ prototypes:
           - OSINT
           - ConfidenceHigh
           - ShareLevelGreen
-        description: Locky Distribution Sites URLs
+        description: DEPRECATED. Locky Distribution Sites URLs
         config:
           source_name: ransomwaretracker.LY_DS_URLBL
           attributes:
@@ -341,7 +342,7 @@ prototypes:
             confidence: 100
             share_level: green
           ignore_regex: '^#'
-          url: https://ransomwaretracker.abuse.ch/downloads/LY_DS_URLBL.txt
+          url: https://minemeld-updates.panw.io/deprecated-feed.txt
           interval: 300
           age_out:
             default: null
@@ -349,7 +350,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     TL_C2_DOMBL:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
           - domain
@@ -357,7 +358,7 @@ prototypes:
           - OSINT
           - ConfidenceHigh
           - ShareLevelGreen
-        description: TorrentLocker C2 domains
+        description: DEPRECATED. TorrentLocker C2 domains
         config:
           source_name: ransomwaretracker.TL_C2_DOMBL
           attributes:
@@ -365,7 +366,7 @@ prototypes:
             confidence: 100
             share_level: green
           ignore_regex: '^#'
-          url: https://ransomwaretracker.abuse.ch/downloads/TL_C2_DOMBL.txt
+          url: https://minemeld-updates.panw.io/deprecated-feed.txt
           interval: 300
           age_out:
             default: null
@@ -373,7 +374,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     TL_C2_IPBL:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
           - IPv4
@@ -382,7 +383,7 @@ prototypes:
           - ConfidenceMedium
           - ShareLevelGreen
           - DirectionOutbound
-        description: TorrentLocker C2 IPs
+        description: DEPRECATED. TorrentLocker C2 IPs
         config:
           source_name: ransomwaretracker.TL_C2_IPBL
           attributes:
@@ -391,7 +392,7 @@ prototypes:
             share_level: green
             direction: outbound
           ignore_regex: '^#'
-          url: https://ransomwaretracker.abuse.ch/downloads/TL_C2_IPBL.txt
+          url: https://minemeld-updates.panw.io/deprecated-feed.txt
           interval: 300
           age_out:
             default: null
@@ -399,7 +400,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     TL_PS_DOMBL:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
           - domain
@@ -407,7 +408,7 @@ prototypes:
           - OSINT
           - ConfidenceHigh
           - ShareLevelGreen
-        description: TorrentLocker Payment Sites domains
+        description: DEPRECATED. TorrentLocker Payment Sites domains
         config:
           source_name: ransomwaretracker.TL_PS_DOMBL
           attributes:
@@ -415,7 +416,7 @@ prototypes:
             confidence: 100
             share_level: green
           ignore_regex: '^#'
-          url: https://ransomwaretracker.abuse.ch/downloads/TL_PS_DOMBL.txt
+          url: https://minemeld-updates.panw.io/deprecated-feed.txt
           interval: 300
           age_out:
             default: null
@@ -423,7 +424,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     TL_PS_IPBL:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
           - IPv4
@@ -432,7 +433,7 @@ prototypes:
           - ConfidenceMedium
           - ShareLevelGreen
           - DirectionOutbound
-        description: TorrentLocker Payment Sites IPs
+        description: DEPRECATED. TorrentLocker Payment Sites IPs
         config:
           source_name: ransomwaretracker.TL_PS_IPBL
           attributes:
@@ -441,7 +442,7 @@ prototypes:
             share_level: green
             direction: outbound
           ignore_regex: '^#'
-          url: https://ransomwaretracker.abuse.ch/downloads/TL_PS_IPBL.txt
+          url: https://minemeld-updates.panw.io/deprecated-feed.txt
           interval: 300
           age_out:
             default: null
@@ -449,7 +450,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     RW_DOMBL:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
           - domain
@@ -457,7 +458,7 @@ prototypes:
           - OSINT
           - ConfidenceHigh
           - ShareLevelGreen
-        description: Combined Ransomware domains
+        description: DEPRECATED. Combined Ransomware domains
         config:
           source_name: ransomwaretracker.RW_DOMBL
           attributes:
@@ -465,7 +466,7 @@ prototypes:
             confidence: 100
             share_level: green
           ignore_regex: '^#'
-          url: https://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt
+          url: https://minemeld-updates.panw.io/deprecated-feed.txt
           interval: 300
           age_out:
             default: null
@@ -473,7 +474,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     RW_URLBL:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
           - URL
@@ -481,7 +482,7 @@ prototypes:
           - OSINT
           - ConfidenceHigh
           - ShareLevelGreen
-        description: Combined Ransomware URLs
+        description: DEPRECATED. Combined Ransomware URLs
         config:
           source_name: ransomwaretracker.RW_URLBL
           attributes:
@@ -489,7 +490,7 @@ prototypes:
             confidence: 100
             share_level: green
           ignore_regex: '^#'
-          url: https://ransomwaretracker.abuse.ch/downloads/RW_URLBL.txt
+          url: https://minemeld-updates.panw.io/deprecated-feed.txt
           interval: 300
           age_out:
             default: null
@@ -497,7 +498,7 @@ prototypes:
         class: minemeld.ft.http.HttpFT
     RW_IPBL:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
           - IPv4
@@ -506,7 +507,7 @@ prototypes:
           - ConfidenceMedium
           - ShareLevelGreen
           - DirectionOutbound
-        description: Combined Ransomware IPs
+        description: DEPRECATED. Combined Ransomware IPs
         config:
           source_name: ransomwaretracker.RW_IPBL
           attributes:
@@ -515,7 +516,7 @@ prototypes:
             share_level: green
             direction: outbound
           ignore_regex: '^#'
-          url: https://ransomwaretracker.abuse.ch/downloads/RW_IPBL.txt
+          url: https://minemeld-updates.panw.io/deprecated-feed.txt
           interval: 300
           age_out:
             default: null
