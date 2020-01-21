@@ -42,3 +42,84 @@ prototypes:
                 interval: 600
             attributes:
                 share_level: green
+    public-cloudIPsWithServiceTags:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - ConfidenceHigh
+            - ShareLevelGreen
+        description: >
+            Microsoft Azure Public Cloud IP Ranges with Service Tags.
+            Same as cloudIPsWithServiceTags.
+        class: minemeld.ft.azure.AzureJSON
+        config:
+            cloud: public
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 600
+            attributes:
+                share_level: green
+    usgov-cloudIPsWithServiceTags:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - ConfidenceHigh
+            - ShareLevelGreen
+        description: >
+            Microsoft Azure US Gov Cloud IP Ranges with Service Tags.
+        class: minemeld.ft.azure.AzureJSON
+        config:
+            cloud: usgov
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 600
+            attributes:
+                share_level: green
+    china-cloudIPsWithServiceTags:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - ConfidenceHigh
+            - ShareLevelGreen
+        description: >
+            Microsoft Azure China Cloud IP Ranges with Service Tags.
+        class: minemeld.ft.azure.AzureJSON
+        config:
+            cloud: china
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 600
+            attributes:
+                share_level: green
+    germany-cloudIPsWithServiceTags:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - ConfidenceHigh
+            - ShareLevelGreen
+        description: >
+            Microsoft Azure Germany Cloud IP Ranges with Service Tags.
+        class: minemeld.ft.azure.AzureJSON
+        config:
+            cloud: germany
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 600
+            attributes:
+                share_level: green
