@@ -152,6 +152,37 @@ prototypes:
                   actions:
                     - drop
 
+    aggregatorIPv4GenericWithList:
+        author: MineMeld Core Team
+        development_status: EXPERIMENTAL
+        node_type: processor
+        indicator_types:
+          - IPv4
+        tags: []
+        description: >
+            Generic Aggregator for IPv4 indicators with list merge enabled.
+            Inputs with names starting with "wl" will be interpreted as
+            whitelists.
+        class: minemeld.ft.ipop.AggregateIPv4FT
+        config:
+            enable_list_merge: true
+            whitelist_prefixes:
+                - wl
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept IPv4
+                  conditions:
+                    - type == 'IPv4'
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+
     aggregatorIPv4Inbound:
         author: MineMeld Core Team
         development_status: STABLE
