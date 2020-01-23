@@ -1,13 +1,13 @@
 description: >
     Details about these feeds in this presentation:
     https://www.first.org/resources/papers/conf2016/FIRST-2016-80.pdf
-    and here http://osint.bambenekconsulting.com/license.txt
-url: http://osint.bambenekconsulting.com/feeds/
+    and here https://faf.bambenekconsulting.com/feeds/license.txt
+url: http://faf.bambenekconsulting.com/feeds/
 
 prototypes:
     c2_ipmasterlist:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
             - IPv4
@@ -37,7 +37,7 @@ prototypes:
             source_name: bambenekconsulting.c2_ipmasterlist
     c2_dommasterlist:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
             - domain
@@ -67,7 +67,7 @@ prototypes:
             source_name: bambenekconsulting.c2_dommasterlist
     c2_ipmasterlist_high:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
             - IPv4
@@ -97,7 +97,7 @@ prototypes:
             source_name: bambenekconsulting.c2_ipmasterlist_high
     c2_dommasterlist_high:
         author: MineMeld Core Team
-        development_status: STABLE
+        development_status: DEPRECATED
         node_type: miner
         indicator_types:
             - domain
@@ -125,3 +125,154 @@ prototypes:
                 confidence: 90
                 share_level: green
             source_name: bambenekconsulting.c2_dommasterlist_high
+    dga_feed:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - domain
+        tags:
+            - OSINT
+            - ConfidenceMedium
+            - ShareLevelRed
+        description: >
+            DGA Feed
+        class: minemeld.ft.bambenek.Miner
+        config:
+            url: https://faf.bambenekconsulting.com/feeds/dga-feed.gz
+            decode_gzip: true
+            ignore_regex: '^#'
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            fieldnames:
+                - indicator
+                - bambenekconsulting_description
+                - bambenekconsulting_date
+                - bambenekconsulting_info
+            attributes:
+                type: domain
+                confidence: 70
+                share_level: green
+            source_name: bambenekconsulting.dga_feed
+    dga_feed_high:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - domain
+        tags:
+            - OSINT
+            - ConfidenceMedium
+            - ShareLevelRed
+        description: >
+            DGA Feed, High Confidence Only
+        class: minemeld.ft.bambenek.Miner
+        config:
+            url: https://faf.bambenekconsulting.com/feeds/dga-feed-high.gz
+            decode_gzip: true
+            ignore_regex: '^#'
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            fieldnames:
+                - indicator
+                - bambenekconsulting_description
+                - bambenekconsulting_date
+                - bambenekconsulting_info
+            attributes:
+                type: domain
+                confidence: 100
+                share_level: green
+            source_name: bambenekconsulting.dga_feed_high
+    c2_masterlist:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - domain
+        tags:
+            - ConfidenceMedium
+            - ShareLevelRed
+        description: >
+            C2 Domains, not sinkholed
+        class: minemeld.ft.bambenek.Miner
+        config:
+            url: https://faf.bambenekconsulting.com/feeds/dga/c2-masterlist.txt
+            ignore_regex: '^#'
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            fieldnames:
+                - indicator
+                - bambenekconsulting_c2_ip
+                - bambenekconsulting_c2_nsname
+                - bambenekconsulting_c2_nsip
+                - bambenekconsulting_description
+                - bambenekconsulting_manpage
+            attributes:
+                type: domain
+                confidence: 70
+                share_level: red
+            source_name: bambenekconsulting.c2_masterlist
+    c2_masterlist_high:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - domain
+        tags:
+            - ConfidenceHigh
+            - ShareLevelRed
+        description: >
+            C2 Domains, not sinkholed. High Confidence Only
+        class: minemeld.ft.bambenek.Miner
+        config:
+            url: https://faf.bambenekconsulting.com/feeds/dga/c2-masterlist-high.txt
+            ignore_regex: '^#'
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            fieldnames:
+                - indicator
+                - bambenekconsulting_c2_ip
+                - bambenekconsulting_c2_nsname
+                - bambenekconsulting_c2_nsip
+                - bambenekconsulting_description
+                - bambenekconsulting_manpage
+            attributes:
+                type: domain
+                confidence: 100
+                share_level: red
+            source_name: bambenekconsulting.c2_masterlist
+    sinkhole:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - ConfidenceHigh
+            - ShareLevelRed
+        description: >
+            IP of known sinkholes
+        class: minemeld.ft.bambenek.Miner
+        config:
+            url: https://faf.bambenekconsulting.com/feeds/sinkhole/sinkhole.txt
+            ignore_regex: '^#'
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            fieldnames:
+                - indicator
+                - bambenekconsulting_sinkhole
+            attributes:
+                type: IPv4
+                confidence: 100
+                share_level: red
+            source_name: bambenekconsulting.sinkhole
