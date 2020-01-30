@@ -10,7 +10,7 @@ description: >
 prototypes:
     Intelligence:
         author: MineMeld Core Team
-        development_status: DEPRECATED
+        development_status: STABLE
         node_type: miner
         indicator_types:
             - IPv4
@@ -22,7 +22,6 @@ prototypes:
             - ConfidenceMedium
             - ConfidenceHigh
         description: >
-            Depreacted. Use cofense.Intelligence instead.
             Cofense Intelligence provides accurate and timely alerts so that
             you can be ready to take fast action when under attack. Cofense
             Analysts and Researchers work to analyze and verify phishing
