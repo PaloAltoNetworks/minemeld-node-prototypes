@@ -38,3 +38,28 @@ prototypes:
                 confidence: 10
                 share_level: red
             initial_interval: 30d
+    Triage:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - any
+        tags:
+            - ShareLevelRed
+            - ConfidenceLow
+            - ConfidenceMedium
+            - ConfidenceHigh
+        description: >
+            Cofense TriageTM accelerates phishing qualification, investigation,
+            and response by cutting through the noise automatically and surfacing
+            the real threats faster, protecting your organization from the risk
+            of compromise.
+        class: minemeld.ft.cofense.Triage
+        config:
+            age_out:
+                default: last_seen+30d
+                sudden_death: false
+            attributes:
+                confidence: 10
+                share_level: red
+            initial_interval: 30d
