@@ -1,0 +1,29 @@
+url: https://greensnow.co/
+description: >
+  GreenSnow is a team consisting of the best specialists in computer security, we harvest a large number of IPs from different computers located around the world. GreenSnow is comparable with SpamHaus.org for attacks of any kind except for spam. Our list is updated automatically and you can withdraw at any time your IP address if it has been listed.
+
+prototypes:
+  IP:
+    author: Pansaen Boonyakarn
+    development_status: EXPERIMENTAL
+    node_type: miner
+    indicator_types:
+      - IPv4
+    tags:
+      - OSINT
+      - ConfidenceHigh
+      - ShareLevelGreen
+    description: Attacks bruteforce that are monitored are Scan Port, FTP, POP3, mod_security, IMAP, SMTP, SSH, cPanel.
+    config:
+      source_name: GreenSnow.IP
+      attributes:
+        type: IPv4
+        direction: inbound
+        confidence: 70
+        share_level: green
+      url: http://blocklist.greensnow.co/greensnow.txt
+      interval: 300
+      age_out:
+        default: null
+        sudden_death: true
+    class: minemeld.ft.http.HttpFT

@@ -1,0 +1,79 @@
+url: http://www.nothink.org/
+description: SNMP, SSH, Telnet Blacklisted IPs from Matteo Cantoni Honeypots
+
+prototypes:
+  SNMP_IPBL:
+    author: Pansaen Boonyakarn
+    development_status: EXPERIMENTAL
+    node_type: miner
+    indicator_types:
+      - IPv4
+    tags:
+      - OSINT
+      - ConfidenceHigh
+      - ShareLevelGreen
+    description: SNMP blacklist provided by nothink.org
+    config:
+      source_name: NoThink.SNMP_IPBL
+      attributes:
+        type: IPv4
+        direction: inbound
+        confidence: 70
+        share_level: green
+      ignore_regex: '^#'
+      url: http://www.nothink.org/blacklist/blacklist_snmp_day.txt
+      interval: 86400
+      age_out:
+        default: null
+        sudden_death: true
+    class: minemeld.ft.http.HttpFT
+  SSH_IPBL:
+    author: Pansaen Boonyakarn
+    development_status: EXPERIMENTAL
+    node_type: miner
+    indicator_types:
+      - IPv4
+    tags:
+      - OSINT
+      - ConfidenceHigh
+      - ShareLevelGreen
+    description: SSH blacklist provided by nothink.org
+    config:
+      source_name: NoThink.SSH_IPBL
+      attributes:
+        type: IPv4
+        direction: inbound
+        confidence: 70
+        share_level: green
+      ignore_regex: '^#'
+      url: http://www.nothink.org/blacklist/blacklist_ssh_day.txt
+      interval: 86400
+      age_out:
+        default: null
+        sudden_death: true
+    class: minemeld.ft.http.HttpFT
+  Telnet_IPBL:
+    author: Pansaen Boonyakarn
+    development_status: EXPERIMENTAL
+    node_type: miner
+    indicator_types:
+      - IPv4
+    tags:
+      - OSINT
+      - ConfidenceHigh
+      - ShareLevelGreen
+    description: Telnet blacklist provided by nothink.org
+    config:
+      source_name: NoThink.Telnet_IPBl
+      attributes:
+        type: IPv4
+        direction: inbound
+        confidence: 70
+        share_level: green
+      ignore_regex: '^#'
+      url: http://www.nothink.org/blacklist/blacklist_telnet_day.txt
+      interval: 86400
+      age_out:
+        default: null
+        sudden_death: true
+    class: minemeld.ft.http.HttpFT

@@ -10,7 +10,7 @@ description: >
 prototypes:
     Intelligence:
         author: MineMeld Core Team
-        development_status: DEPRECATED
+        development_status: STABLE
         node_type: miner
         indicator_types:
             - IPv4
@@ -22,7 +22,6 @@ prototypes:
             - ConfidenceMedium
             - ConfidenceHigh
         description: >
-            Depreacted. Use cofense.Intelligence instead.
             Cofense Intelligence provides accurate and timely alerts so that
             you can be ready to take fast action when under attack. Cofense
             Analysts and Researchers work to analyze and verify phishing
@@ -31,6 +30,31 @@ prototypes:
             forms to effectively prepare and respond to attacks.
             You need a valid Cofense API key to access this feed.
         class: minemeld.ft.phishme.Intelligence
+        config:
+            age_out:
+                default: last_seen+30d
+                sudden_death: false
+            attributes:
+                confidence: 10
+                share_level: red
+            initial_interval: 30d
+    Triage:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - any
+        tags:
+            - ShareLevelRed
+            - ConfidenceLow
+            - ConfidenceMedium
+            - ConfidenceHigh
+        description: >
+            Cofense TriageTM accelerates phishing qualification, investigation,
+            and response by cutting through the noise automatically and surfacing
+            the real threats faster, protecting your organization from the risk
+            of compromise.
+        class: minemeld.ft.cofense.Triage
         config:
             age_out:
                 default: last_seen+30d

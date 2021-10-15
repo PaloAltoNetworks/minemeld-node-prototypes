@@ -6,7 +6,7 @@ description: >
 prototypes:
   ers_sgt:
     author: MineMeld Core Team
-    development_status: EXPERIMENTAL
+    development_status: DEPRECATED
     node_type: miner
     indicator_types:
       - IPv4
@@ -32,7 +32,7 @@ prototypes:
 
   sgt_dag:
       author: MineMeld Core Team
-      development_status: STABLE
+      development_status: DEPRECATED
       node_type: output
       indicator_types:
         - IPv4

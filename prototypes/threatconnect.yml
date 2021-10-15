@@ -1,0 +1,64 @@
+url: https://threatconnect.com/
+description: >
+  ThreatConnect provides Threat Intelligence, Analytics, and Orchestration in One Platform
+
+prototypes:
+  Indicators:
+    author: Palo Alto Networks TBD
+    class: minemeld.ft.threatconnect.IndicatorsMiner
+    development_status: EXPERIMENTAL
+    node_type: miner
+    indicator_types:
+      - any
+    tags:
+      - extension
+      - threatconnect
+    description: >
+      Prototype for threatconnect.IndicatorsMiner.
+    config:
+      owner: null
+      initial_interval: 60
+      sandbox: false
+      interval: 3600
+      # age out of indicators
+      age_out:
+        sudden_death: false
+        interval: 3600
+        default: last_seen+60d
+      # flag indicators with share level green
+      attributes:
+        share_level: green
+  Groups:
+    author: Palo Alto Networks TBD
+    class: minemeld.ft.threatconnect.GroupsMiner
+    development_status: EXPERIMENTAL
+    node_type: miner
+    indicator_types:
+      - any
+    tags:
+      - extension
+      - threatconnect
+    description: >
+      Example prototype for threatconnect GroupsMiner. Not valid for cloning. Groups must be defined in a new prototype.
+    config:
+      owner: null
+      groups:
+        incidents:
+          - <INCIDENT ID 1>
+          - <INCIDENT ID 2>
+        campaigns:
+        adversaries:
+        documents:
+        emails:
+        signatures:
+        threats:
+      sandbox: false
+      interval: 3600
+      # age out of indicators
+      age_out:
+        sudden_death: true
+        interval: 3600
+        default: null
+      # flag indicators with share level green
+      attributes:
+        share_level: green

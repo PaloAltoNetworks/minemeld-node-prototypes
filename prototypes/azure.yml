@@ -1,9 +1,29 @@
-url: 'https://www.microsoft.com/EN-US/DOWNLOAD/confirmation.aspx?id=41653'
+url: 'https://www.microsoft.com/en-us/download/confirmation.aspx?id=56519'
 description: >
     List of Microsoft Azure Public IP addresses.
 
 prototypes:
     cloudIPs:
+        author: MineMeld Core Team
+        development_status: DEPRECATED
+        node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - ConfidenceHigh
+            - ShareLevelGreen
+        description: >
+            DEPRECATED. Please use azure.cloudIPsWithServiceTags instead.
+            Public IP addresses of Microsoft Azure
+        class: minemeld.ft.azure.AzureXML
+        config:
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 257
+            attributes:
+                share_level: green
+    cloudIPsWithServiceTags:
         author: MineMeld Core Team
         development_status: STABLE
         node_type: miner
@@ -13,12 +33,93 @@ prototypes:
             - ConfidenceHigh
             - ShareLevelGreen
         description: >
-            Public IP addresses of Microsoft Azure
-        class: minemeld.ft.azure.AzureXML
+            IP Ranges of Microsoft Azure with Service Tags.
+        class: minemeld.ft.azure.AzureJSON
         config:
             age_out:
                 default: null
                 sudden_death: true
-                interval: 257
+                interval: 600
+            attributes:
+                share_level: green
+    public-cloudIPsWithServiceTags:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - ConfidenceHigh
+            - ShareLevelGreen
+        description: >
+            Microsoft Azure Public Cloud IP Ranges with Service Tags.
+            Same as cloudIPsWithServiceTags.
+        class: minemeld.ft.azure.AzureJSON
+        config:
+            cloud: public
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 600
+            attributes:
+                share_level: green
+    usgov-cloudIPsWithServiceTags:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - ConfidenceHigh
+            - ShareLevelGreen
+        description: >
+            Microsoft Azure US Gov Cloud IP Ranges with Service Tags.
+        class: minemeld.ft.azure.AzureJSON
+        config:
+            cloud: usgov
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 600
+            attributes:
+                share_level: green
+    china-cloudIPsWithServiceTags:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - ConfidenceHigh
+            - ShareLevelGreen
+        description: >
+            Microsoft Azure China Cloud IP Ranges with Service Tags.
+        class: minemeld.ft.azure.AzureJSON
+        config:
+            cloud: china
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 600
+            attributes:
+                share_level: green
+    germany-cloudIPsWithServiceTags:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - IPv4
+        tags:
+            - ConfidenceHigh
+            - ShareLevelGreen
+        description: >
+            Microsoft Azure Germany Cloud IP Ranges with Service Tags.
+        class: minemeld.ft.azure.AzureJSON
+        config:
+            cloud: germany
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 600
             attributes:
                 share_level: green

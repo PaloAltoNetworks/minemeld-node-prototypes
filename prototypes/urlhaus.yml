@@ -1,0 +1,29 @@
+url: https://urlhaus.abuse.ch/
+description: >
+    URLhaus is a project operated by abuse.ch. The purpose of the project is to collect, track and share malware URLs, helping network administrators and security analysts to protect their network and customers from cyber threats.
+
+prototypes:
+    URL:
+        author: Pansaen Boonyakarn
+        development_status: EXPERIMENTAL
+        node_type: miner
+        indicator_types:
+            - URL
+        tags:
+            - OSINT
+            - ConfidenceHigh
+            - ShareLevelGreen
+        description: A dump of all malware URLs known to URLhaus
+        config:
+            source_name: urlhaus.URL
+            attributes:
+                type: URL
+                confidence: 100
+                share_level: green
+            ignore_regex: '^#'
+            url: https://urlhaus.abuse.ch/downloads/text/
+            interval: 300
+            age_out:
+                default: null
+                sudden_death: true
+        class: minemeld.ft.http.HttpFT

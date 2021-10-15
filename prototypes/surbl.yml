@@ -1,0 +1,42 @@
+description: >
+    SURBLs are lists of web sites that have appeared in unsolicited messages.
+    Unlike most lists, SURBLs are not lists of message senders.
+url: http://www.surbl.org/
+
+prototypes:
+  ThreeLevelTLDS:
+      author: MineMeld Core Team
+      class: minemeld.ft.http.HttpFT
+      config:
+          attributes:
+              confidence: 100
+              share_level: green
+              type: domain
+          source_name: surbl.tlds.three_level
+          url: http://www.surbl.org/static/three-level-tlds
+      description: SURBLs are lists of web sites that have appeared in unsolicited
+          messages. Unlike most lists, SURBLs are not lists of message senders
+      development_status: EXPERIMENTAL
+      indicator_types:
+        - domain
+      node_type: miner
+      tags:
+        - SURBL
+  Two_Level_TLDS:
+      author: MineMeld Core Team
+      class: minemeld.ft.http.HttpFT
+      config:
+          attributes:
+              confidence: 100
+              share_level: green
+              type: domain
+          source_name: surbl.tlds.two_level
+          url: http://www.surbl.org/static/two-level-tlds
+      description: SURBLs are lists of web sites that have appeared in unsolicited
+          messages. Unlike most lists, SURBLs are not lists of message senders
+      development_status: EXPERIMENTAL
+      indicator_types:
+        - domain
+      node_type: miner
+      tags:
+        - SURBL

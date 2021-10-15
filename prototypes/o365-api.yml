@@ -1,0 +1,658 @@
+url: 'https://support.office.com/en-us/article/managing-office-365-endpoints-99cab9d4-ef59-4207-9f2b-3728eb46bf9a#ID0EACAAA=4._Web_service'
+description: >
+    Prototypes for working with the O365 API.
+
+prototypes:
+    worldwide-any:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Endpoints for O365, worldwide instance, any service
+        class: minemeld.ft.o365.O365API
+        config:
+            instance: Worldwide
+            service_areas: null
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                confidence: 100
+                share_level: green
+    worldwide-common:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Endpoints for O365, worldwide instance, Common endpoints
+        class: minemeld.ft.o365.O365API
+        config:
+            instance: Worldwide
+            service_areas:
+                - Common
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                confidence: 100
+                share_level: green
+    worldwide-skype:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Endpoints for O365, worldwide instance, Skype service
+        class: minemeld.ft.o365.O365API
+        config:
+            instance: Worldwide
+            service_areas:
+                - Skype
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                confidence: 100
+                share_level: green
+    worldwide-exchange:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Endpoints for O365, worldwide instance, Exchange service
+        class: minemeld.ft.o365.O365API
+        config:
+            instance: Worldwide
+            service_areas:
+                - Exchange
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                confidence: 100
+                share_level: green
+    worldwide-sharepoint:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Endpoints for O365, worldwide instance, SharePoint service
+        class: minemeld.ft.o365.O365API
+        config:
+            instance: Worldwide
+            service_areas:
+                - SharePoint
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                confidence: 100
+                share_level: green
+    china-any:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Endpoints for O365, China instance, any service
+        class: minemeld.ft.o365.O365API
+        config:
+            instance: China
+            service_areas: null
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                confidence: 100
+                share_level: green
+    china-common:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Endpoints for O365, China instance, Common endpoints
+        class: minemeld.ft.o365.O365API
+        config:
+            instance: China
+            service_areas:
+                - Common
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                confidence: 100
+                share_level: green
+    china-skype:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Endpoints for O365, China instance, Skype service
+        class: minemeld.ft.o365.O365API
+        config:
+            instance: China
+            service_areas:
+                - Skype
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                confidence: 100
+                share_level: green
+    china-exchange:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Endpoints for O365, China instance, Exchange service
+        class: minemeld.ft.o365.O365API
+        config:
+            instance: China
+            service_areas:
+                - Exchange
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                confidence: 100
+                share_level: green
+    china-sharepoint:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Endpoints for O365, China instance, SharePoint service
+        class: minemeld.ft.o365.O365API
+        config:
+            instance: China
+            service_areas:
+                - SharePoint
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                confidence: 100
+                share_level: green
+    germany-any:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Endpoints for O365, Germany instance, any service
+        class: minemeld.ft.o365.O365API
+        config:
+            instance: Germany
+            service_areas: null
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                confidence: 100
+                share_level: green
+    germany-common:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Endpoints for O365, Germany instance, Common endpoints
+        class: minemeld.ft.o365.O365API
+        config:
+            instance: Germany
+            service_areas:
+                - Common
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                confidence: 100
+                share_level: green
+    germany-skype:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Endpoints for O365, Germany instance, Skype service
+        class: minemeld.ft.o365.O365API
+        config:
+            instance: Germany
+            service_areas:
+                - Skype
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                confidence: 100
+                share_level: green
+    germany-exchange:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Endpoints for O365, Germany instance, Exchange service
+        class: minemeld.ft.o365.O365API
+        config:
+            instance: Germany
+            service_areas:
+                - Exchange
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                confidence: 100
+                share_level: green
+    germany-sharepoint:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Endpoints for O365, Germany instance, SharePoint service
+        class: minemeld.ft.o365.O365API
+        config:
+            instance: Germany
+            service_areas:
+                - SharePoint
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                confidence: 100
+                share_level: green
+    usgovdod-any:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Endpoints for O365, USGovDoD instance, any service
+        class: minemeld.ft.o365.O365API
+        config:
+            instance: USGovDoD
+            service_areas: null
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                confidence: 100
+                share_level: green
+    usgovdod-common:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Endpoints for O365, USGovDoD instance, Common endpoints
+        class: minemeld.ft.o365.O365API
+        config:
+            instance: USGovDoD
+            service_areas:
+                - Common
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                confidence: 100
+                share_level: green
+    usgovdod-skype:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Endpoints for O365, USGovDoD instance, Skype service
+        class: minemeld.ft.o365.O365API
+        config:
+            instance: USGovDoD
+            service_areas:
+                - Skype
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                confidence: 100
+                share_level: green
+    usgovdod-exchange:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Endpoints for O365, USGovDoD instance, Exchange service
+        class: minemeld.ft.o365.O365API
+        config:
+            instance: USGovDoD
+            service_areas:
+                - Exchange
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                confidence: 100
+                share_level: green
+    usgovdod-sharepoint:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Endpoints for O365, USGovDoD instance, SharePoint service
+        class: minemeld.ft.o365.O365API
+        config:
+            instance: USGovDoD
+            service_areas:
+                - SharePoint
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                confidence: 100
+                share_level: green
+    usgovgcchigh-any:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Endpoints for O365, USGovGCCHigh instance, any service
+        class: minemeld.ft.o365.O365API
+        config:
+            instance: USGovGCCHigh
+            service_areas: null
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                confidence: 100
+                share_level: green
+    usgovgcchigh-common:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Endpoints for O365, USGovGCCHigh instance, Common endpoints
+        class: minemeld.ft.o365.O365API
+        config:
+            instance: USGovGCCHigh
+            service_areas:
+                - Common
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                confidence: 100
+                share_level: green
+    usgovgcchigh-skype:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Endpoints for O365, USGovGCCHigh instance, Skype service
+        class: minemeld.ft.o365.O365API
+        config:
+            instance: USGovGCCHigh
+            service_areas:
+                - Skype
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                confidence: 100
+                share_level: green
+    usgovgcchigh-exchange:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Endpoints for O365, USGovGCCHigh instance, Exchange service
+        class: minemeld.ft.o365.O365API
+        config:
+            instance: USGovGCCHigh
+            service_areas:
+                - Exchange
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                confidence: 100
+                share_level: green
+    usgovgcchigh-sharepoint:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+            - URL
+            - IPv6
+            - IPv4
+        tags:
+            - ShareLevelGreen
+            - ConfidenceHigh
+        description: >
+            Endpoints for O365, USGovGCCHigh instance, SharePoint service
+        class: minemeld.ft.o365.O365API
+        config:
+            instance: USGovGCCHigh
+            service_areas:
+                - SharePoint
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 1800
+            attributes:
+                confidence: 100
+                share_level: green
+    feed-no-3rdparty:
+        author: MineMeld Core Team
+        development_status: DEPRECATED
+        node_type: output
+        indicator_types: [ any ]
+        tags:
+          - ConfidenceHigh
+          - ShareLevelGreen
+        description: >
+            EDL for O365 URLs and IPs excluding 3rd party integrations.
+            Deprecated, disable integrations on the Miner instead
+        class: minemeld.ft.redis.RedisSet
+        config:
+            infilters:
+                - name: drop integrations
+                  conditions:
+                    - contains(o365_notes, 'integration') == true
+                  actions:
+                    - drop
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept confidence > 75 and share level green
+                  conditions:
+                    - confidence > 75
+                    - share_level == 'green'
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop

@@ -32,6 +32,36 @@ prototypes:
                   actions:
                     - drop
 
+    aggregatorEmailAddress:
+        author: MineMeld Core Team
+        development_status: STABLE
+        node_type: processor
+        indicator_types:
+          - email-addr
+        tags: []
+        description: >
+            Aggregator for Email Address indicators.
+            Inputs with names starting with "wl" will be interpreted as
+            whitelists.
+        class: minemeld.ft.op.AggregateFT
+        config:
+            whitelist_prefixes:
+                - wl
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept email addresses
+                  conditions:
+                    - type == 'email-addr'
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+
     aggregatorIPv6Simple:
         author: MineMeld Core Team
         development_status: STABLE
@@ -105,6 +135,37 @@ prototypes:
             whitelists.
         class: minemeld.ft.ipop.AggregateIPv4FT
         config:
+            whitelist_prefixes:
+                - wl
+            infilters:
+                - name: accept withdraws
+                  conditions:
+                    - __method == 'withdraw'
+                  actions:
+                    - accept
+                - name: accept IPv4
+                  conditions:
+                    - type == 'IPv4'
+                  actions:
+                    - accept
+                - name: drop all
+                  actions:
+                    - drop
+
+    aggregatorIPv4GenericWithList:
+        author: MineMeld Core Team
+        development_status: EXPERIMENTAL
+        node_type: processor
+        indicator_types:
+          - IPv4
+        tags: []
+        description: >
+            Generic Aggregator for IPv4 indicators with list merge enabled.
+            Inputs with names starting with "wl" will be interpreted as
+            whitelists.
+        class: minemeld.ft.ipop.AggregateIPv4FT
+        config:
+            enable_list_merge: true
             whitelist_prefixes:
                 - wl
             infilters:
@@ -842,6 +903,35 @@ prototypes:
         config:
           persistent_registered_ips: false
 
+    dagPusherNg:
+        author: MineMeld Core Team
+        development_status: EXPERIMENTAL
+        node_type: output
+        indicator_types:
+          - IPv4
+          - IPv6
+        tags: []
+        description: >
+            Push IP unicast indicators to PAN-OS 8.0 and greater devices
+            via DAG.
+        class: minemeld.ft.dag_ng.DagPusher
+        config: {}
+
+    nonpersistentDagPusherNg:
+        author: MineMeld Core Team
+        development_status: EXPERIMENTAL
+        node_type: output
+        indicator_types:
+          - IPv4
+          - IPv6
+        tags: []
+        description: >
+            Push IP unicast indicators to PAN-OS 8.0 and greater devices
+            via DAG. Generates non persistent registered IPs.
+        class: minemeld.ft.dag_ng.DagPusher
+        config:
+          persistent_registered_ips: false
+
     feedLCRedWithValue:
         author: MineMeld Core Team
         development_status: STABLE
@@ -1027,6 +1117,9 @@ prototypes:
           - IPv6
           - domain
           - URL
+          - md5
+          - sha256
+          - sha1
         tags: []
         description: TAXII DataFeed
         class: minemeld.ft.taxii.DataFeed
