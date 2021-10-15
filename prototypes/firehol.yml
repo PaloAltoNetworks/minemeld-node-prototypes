@@ -1,0 +1,57 @@
+url: http://iplists.firehol.org/
+description: >
+            This site provides multiple different IP Feeds, mainly related to attacks, service abuse, malware, botnets, command and control servers and other cybercrime activities.
+
+prototypes:
+    firehol_level1:
+        author: Chris Forsythe
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+          - IPv4
+        tags:
+          - OSINT
+          - ConfidenceHigh
+          - ShareLevelGreen
+        description: Firehol Level 1 Netset
+        config:
+          source_name: firehol_level_1
+          attributes:
+            type: IPv4
+            confidence: 70
+            share_level: green
+            direction: outbound
+          ignore_regex: '^#'
+          url: https://iplists.firehol.org/files/firehol_level1.netset
+          interval: 300
+          age_out:
+            default: null
+            sudden_death: true
+        class: minemeld.ft.http.HttpFT
+    firehol_abusers_1d:
+        author: Chris Forsythe
+        development_status: STABLE
+        node_type: miner
+        indicator_types:
+          - IPv4
+        tags:
+          - OSINT
+          - ConfidenceHigh
+          - ShareLevelGreen
+        description: Firehol Level 1 Netset
+        config:
+          source_name: firehol_abusers_1d
+          attributes:
+            type: IPv4
+            confidence: 70
+            share_level: green
+            direction: outbound
+          ignore_regex: '^#'
+          url: https://iplists.firehol.org/files/firehol_abusers_1d.netset
+          interval: 300
+          age_out:
+            default: null
+            sudden_death: true
+        class: minemeld.ft.http.HttpFT
+        
+        
